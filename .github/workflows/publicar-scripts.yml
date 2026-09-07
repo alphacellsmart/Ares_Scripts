@@ -1,0 +1,41 @@
+name: Publicar Scripts
+
+# Roda manualmente (botão "Run workflow" no GitHub) ou automaticamente
+# a cada 6 horas, pra pegar scripts novos sem precisar mexer em nada.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependências
+        run: npm install
+        working-directory: ./
+
+      - name: Resolver thumbnails dos jogos
+        run: node resolve-thumbnails.js
+
+      - name: Subir no Pastefy e encurtar no Shrtfly
+        run: node shorten-and-publish.js
+        env:
+          PASTEFY_API_KEY: ${{ secrets.PASTEFY_API_KEY }}
+          SHRTFLY_API_KEY: ${{ secrets.SHRTFLY_API_KEY }}
+
+      - name: Salvar mudanças no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts-data.json
+          git diff --staged --quiet || git commit -m "Atualiza scripts-data.json automaticamente"
+          git push
