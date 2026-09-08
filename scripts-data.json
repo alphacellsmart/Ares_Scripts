@@ -1,272 +1,302 @@
 [
   {
-    "jogo": "Grow a Garden 2",
-    "hub": "@Vertex Hub",
-    "loadstringOriginal": "https://raw.githubusercontent.com/tontov/NewMM2/refs/heads/main/SCRIPT",
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@UB Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/JualNasiRendang/loader/refs/heads/main/main.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "UB Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "97598239454123",
-    "thumbnail": null,
-    "tier": "Tier 1 — Recorde mundial / topo absoluto do Roblox agora"
-  },
-  {
-    "jogo": "Steal a Brainrot",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/Youifpg/Steal-a-Brianrot/refs/heads/main/Instant%20Steal%20V2.lua",
-    "linkShrtfly": null,
-    "placeId": "109983668079237",
-    "thumbnail": null,
-    "tier": "Tier 1 — Recorde mundial / topo absoluto do Roblox agora"
-  },
-  {
-    "jogo": "Brookhaven 🏡 RP",
-    "hub": "@Hexagon x Hub",
-    "loadstringOriginal": "https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven",
-    "linkShrtfly": null,
-    "placeId": "4924922222",
-    "thumbnail": null,
-    "tier": "Tier 1 — Recorde mundial / topo absoluto do Roblox agora"
-  },
-  {
-    "jogo": "Adopt Me!",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://cdn.sourceb.in/bins/GHLhdRBTJX/0",
-    "linkShrtfly": null,
-    "placeId": "920587237",
-    "thumbnail": null,
-    "tier": "Tier 1 — Recorde mundial / topo absoluto do Roblox agora"
+    "loadstringFinal": null
   },
   {
     "jogo": "Steal an egg",
-    "hub": "@UB Hub",
-    "loadstringOriginal": "https://raw.githubusercontent.com/JualNasiRendang/loader/refs/heads/main/main.lua",
+    "place_id": "107778070777162",
+    "hub": "@Potato Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/potatohub67/potatoscripts/refs/heads/main/stealaegg.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Potato Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "107778070777162",
-    "thumbnail": null,
-    "tier": "Tier 1 — Recorde mundial / topo absoluto do Roblox agora"
+    "loadstringFinal": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Chiyo Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Chiyo Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Ouroboros Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Ouroboros Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Axur Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/XE3Scripts/Axur-sGamesHub/refs/heads/main/StealAnEgg",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Axur Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Speed X Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Speed X Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@S0ftKills Hub",
+    "loadstringOriginal": "https://pastebin.com/raw/ZuEBwb5K",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "S0ftKills Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null
   },
   {
     "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
     "hub": "@Metan Hub",
     "loadstringOriginal": "https://raw.githubusercontent.com/Youdfff/MetanHub/refs/heads/main/moonveil.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Metan Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "142823291",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
+    "loadstringFinal": null
   },
   {
-    "jogo": "Blox Fruits",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/qwrbNRt1/raw",
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Heartagram Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/tontov/NewMM2/refs/heads/main/SCRIPT",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Heartagram Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "2753915549",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
+    "loadstringFinal": null
   },
   {
-    "jogo": "99 Nights in the Forest 🔦",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/3fHAGOAN/raw",
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Yukio Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/universal-roblox/Mm2/refs/heads/main/Murder-Mystery-2.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Yukio Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "79546208627805",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
+    "loadstringFinal": null
   },
   {
-    "jogo": "RIVALS",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/FHDL2jqz/raw",
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Vertex Hub",
+    "loadstringOriginal": "https://raw.smokingscripts.org/vertex.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Vertex Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "17625359962",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
+    "loadstringFinal": null
   },
   {
-    "jogo": "Jujutsu Infinite",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://api.luarmor.net/files/v3/loaders/633e10d1252e3230100e133070ec66e9.lua",
-    "linkShrtfly": null,
-    "placeId": "10450270085",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
-  },
-  {
-    "jogo": "Fish It! 🐟",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/xsheed/loader/refs/heads/main/mainloader.lua",
-    "linkShrtfly": null,
-    "placeId": "121864768012064",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
-  },
-  {
-    "jogo": "Pet Simulator 99! [☁️UPD 5]",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://eternal-darkness.org/loaders/f3dc027cc510289008f651e5b962d8b9.lua",
-    "linkShrtfly": null,
-    "placeId": "8737899170",
-    "thumbnail": null,
-    "tier": "Tier 2 — Top 10 do live chart atual, super estabelecidos"
-  },
-  {
-    "jogo": "Forsaken",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastebin.com/raw/zHe7SGA4",
-    "linkShrtfly": null,
-    "placeId": "18687417158",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "Animal Hospital (Anomaly)",
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
     "hub": "@Tora Hub",
-    "loadstringOriginal": "https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/AnimalHospital",
+    "loadstringOriginal": "https://raw.githubusercontent.com/gumanba/Scripts/main/mm2",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Tora Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "78515283254292",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
+    "loadstringFinal": null
   },
   {
-    "jogo": "Anime Expeditions [Warriors Saga🐉]",
-    "hub": "@Speed X Hub",
-    "loadstringOriginal": "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@YARHM Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "YARHM Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "84515722934860",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "Deepwoken",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/kgrUg5xd/raw",
-    "linkShrtfly": null,
-    "placeId": "4111023553",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "Dress to Impress🎄",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/QWwRy2RN/raw",
-    "linkShrtfly": null,
-    "placeId": "15101393044",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "Kick a Lucky Block",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/vaenzz/Loader/refs/heads/main/Games",
-    "linkShrtfly": null,
-    "placeId": "89469502395769",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "Sell Lemons 🍋",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://lyesol.vercel.app/loader.lua",
-    "linkShrtfly": null,
-    "placeId": "79268393072444",
-    "thumbnail": null,
-    "tier": "Tier 3 — Fortes, gêneros consolidados com boa base de jogadores"
-  },
-  {
-    "jogo": "DOORS 👁️ [🌐🇧🇷]",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/Robanik/DOORS_BY_ROBANIK/refs/heads/main/BY_ROBANIK",
-    "linkShrtfly": null,
-    "placeId": "6516141723",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
-  },
-  {
-    "jogo": "Arsenal",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastebin.com/raw/auqMRxX4",
-    "linkShrtfly": null,
-    "placeId": "286090429",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
     "jogo": "King's Legacy",
+    "place_id": "4520749081",
     "hub": "@Teste Hub",
     "loadstringOriginal": "https://raw.githubusercontent.com/Lixtron/Hub/refs/heads/main/loader",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Teste Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "4520749081",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "Prison Life",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/kxtOnYT/prison.gg/refs/heads/main/prison.lua",
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@OMG Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "OMG Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "155615604",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "[NEW] Anomaly Café",
-    "hub": "@Delta Hub",
-    "loadstringOriginal": "https://rscripts.net/raw/esp-and-etc_1786795081184_FPh8UbrsGm.txt",
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Zee Hub",
+    "loadstringOriginal": "https://zuwz.me/Ls-Zee-Hub-KL",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Zee Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "121781732399469",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "Dead Trails [ENDLESS]",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/m00ndiety/reworked-bypass-v2/refs/heads/main/Protected_7262663125150928.lua.txt",
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Genesis Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Genesis Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "116495829188952",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "[🔥] Ink Game",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/1-16AM/xena/refs/heads/main/main.lua",
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Omg Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/FarmingHop",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Omg Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "99567941238278",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "The Strongest Battlefields",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/8xysHVR0/raw",
+    "jogo": "Brookhaven 🏡 RP",
+    "place_id": "4924922222",
+    "hub": "@Hexagon x Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Hexagon x Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "10449761463",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   },
   {
-    "jogo": "DIG 💛",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/OhhMyGehlee/et/refs/heads/main/er",
+    "jogo": "Brookhaven 🏡 RP",
+    "place_id": "4924922222",
+    "hub": "@Drip Client Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/realgengar/Main/refs/heads/main/base.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Drip Client Hub",
+    "pastefyRaw": null,
     "linkShrtfly": null,
-    "placeId": "126244816328678",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
-  },
-  {
-    "jogo": "[✈️] Build a Plane",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://raw.githubusercontent.com/NameHubScript/_/refs/heads/main/b.lua",
-    "linkShrtfly": null,
-    "placeId": "137925884276740",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
-  },
-  {
-    "jogo": "[UPD] Prospecting! 💎",
-    "hub": "@Asus Studios",
-    "loadstringOriginal": "https://pastefy.app/NwvlsuQJ/raw",
-    "linkShrtfly": null,
-    "placeId": "129827112113663",
-    "thumbnail": null,
-    "tier": "Tier 4 — Nicho consistente, bom pra variar o catálogo"
+    "loadstringFinal": null
   }
 ]

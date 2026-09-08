@@ -7,6 +7,11 @@
  * 4. Pega o RAW
  * 5. Encurta no Shrtfly
  * 6. Salva de volta no JSON
+ *
+ * Uso:
+ *   export PASTEFY_API_KEY="sua_chave"
+ *   export SHRTFLY_API_KEY="sua_chave"
+ *   node shorten-and-publish.js
  */
 
 const fs = require("fs");
@@ -23,7 +28,7 @@ if (!PASTEFY_API_KEY || !SHRTFLY_API_KEY) {
 
 async function fetchLoadstringContent(url) {
   const res = await fetch(url, {
-    headers: { "User-Agent": "Mozilla/5.0" }
+    headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" }
   });
   if (!res.ok) throw new Error(`Falha ao baixar conteúdo (status ${res.status})`);
   return res.text();
@@ -55,12 +60,12 @@ async function uploadToPastefy(title, content) {
 }
 
 async function shortenWithShrtfly(longUrl) {
-  const apiUrl = `https://shrtfly.com/api?api=\( {SHRTFLY_API_KEY}&url= \){encodeURIComponent(longUrl)}&format=json`;
+  const apiUrl = `https://shrtfly.com/api?api=${SHRTFLY_API_KEY}&url=${encodeURIComponent(longUrl)}&format=json`;
   const res = await fetch(apiUrl);
   const data = await res.json();
 
-  // Tenta vários campos comuns
-  const short = data.shortenedUrl || data.short || data.url || data.result?.shortenedUrl;
+  // Tenta vários campos comuns de APIs de encurtador
+  const short = data.shortenedUrl || data.short || data.url || data.result?.shortenedUrl || data.data?.url;
 
   if (!short) {
     console.log("Resposta Shrtfly:", JSON.stringify(data, null, 2));
@@ -79,12 +84,14 @@ async function main() {
   const scripts = JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
   let processed = 0;
   let errors = 0;
+  let skipped = 0;
 
   console.log(`\n🚀 Iniciando processamento de ${scripts.length} scripts...\n`);
 
   for (const script of scripts) {
     if (script.linkShrtfly) {
-      console.log(`[pulado] ${script.jogo} — já tem link`);
+      console.log(`[pulado] ${script.jogo} — ${script.hub}`);
+      skipped++;
       continue;
     }
 
@@ -102,7 +109,7 @@ async function main() {
       console.log(`  ✓ Shrtfly: ${shortUrl}`);
       script.linkShrtfly = shortUrl;
 
-      // Formato final que vai pro botão
+      // Formato final que vai pro botão "Get Script"
       script.loadstringFinal = `loadstring(game:HttpGet("${rawUrl}"))()`;
 
       processed++;
@@ -111,14 +118,15 @@ async function main() {
       errors++;
     }
 
-    // Evita rate limit
-    await new Promise(r => setTimeout(r, 1000));
+    // Pausa para evitar rate-limit
+    await new Promise(r => setTimeout(r, 1200));
   }
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(scripts, null, 2), "utf-8");
 
   console.log(`\n✅ Finalizado!`);
   console.log(`   Processados com sucesso: ${processed}`);
+  console.log(`   Pulados (já tinham link): ${skipped}`);
   console.log(`   Erros: ${errors}`);
   console.log(`   Total no arquivo: ${scripts.length}`);
 }
