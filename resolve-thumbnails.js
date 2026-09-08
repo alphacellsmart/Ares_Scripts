@@ -1,18 +1,10 @@
 /**
  * resolve-thumbnails.js
- * Resolve as thumbnails oficiais do Roblox pra cada script do scripts-data.json.
- *
- * Por que isso roda aqui (Node/servidor) e não direto no navegador:
- * as APIs do Roblox não liberam CORS pra sites de terceiros, então um
- * fetch() direto do downloads.html seria bloqueado pelo navegador.
- * Rodando por aqui (Termux, GitHub Actions, etc) não tem esse problema —
- * o resultado (uma URL de imagem normal) fica salvo no JSON, e a página
- * só usa um <img src="..."> comum, sem CORS nenhum.
+ * Busca as thumbnails oficiais dos jogos no Roblox
+ * usando o place_id de cada script no scripts-data.json
  *
  * Uso:
  *   node resolve-thumbnails.js
- *
- * Lê e sobrescreve: scripts-data.json (adiciona o campo "thumbnail" em cada entrada)
  */
 
 const fs = require("fs");
@@ -20,51 +12,73 @@ const path = require("path");
 
 const DATA_FILE = path.join(__dirname, "scripts-data.json");
 
-async function placeIdToUniverseId(placeId) {
-  const res = await fetch(`https://apis.roblox.com/universes/v1/places/${placeId}/universe`);
-  if (!res.ok) throw new Error(`Falha ao resolver universeId para placeId ${placeId} (status ${res.status})`);
-  const data = await res.json();
-  return data.universeId;
-}
+async function fetchThumbnail(placeId) {
+  // API oficial de thumbnails do Roblox (game icons)
+  const url = `https://thumbnails.roblox.com/v1/places/gameicons?placeIds=${placeId}&returnPolicy=PlaceHolder&size=512x512&format=Png&isCircular=false`;
 
-async function universeIdToThumbnail(universeId) {
-  const url = `https://thumbnails.roblox.com/v1/games/icons?universeIds=${universeId}&size=512x512&format=Png&isCircular=false`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Falha ao buscar thumbnail para universeId ${universeId} (status ${res.status})`);
+  const res = await fetch(url, {
+    headers: { "User-Agent": "Mozilla/5.0" }
+  });
+
+  if (!res.ok) {
+    throw new Error(`HTTP ${res.status}`);
+  }
+
   const data = await res.json();
-  const entry = data.data && data.data[0];
-  return entry ? entry.imageUrl : null;
+  const item = data?.data?.[0];
+
+  if (item && item.imageUrl && item.state === "Completed") {
+    return item.imageUrl;
+  }
+
+  // Fallback: thumbnail genérica de place
+  return `https://www.roblox.com/asset-thumbnail/image?assetId=${placeId}&width=420&height=420&format=png`;
 }
 
 async function main() {
-  const scripts = JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
-  let updated = 0;
+  if (!fs.existsSync(DATA_FILE)) {
+    console.error("❌ scripts-data.json não encontrado");
+    process.exit(1);
+  }
 
-  for (const script of scripts) {
-    if (script.thumbnail) continue; // já resolvida, pula
-    if (!script.placeId) {
-      console.log(`[pulado] ${script.jogo} — sem PlaceId`);
-      continue;
-    }
+  const scripts = JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
+
+  // Agrupa por place_id pra não buscar a mesma thumbnail várias vezes
+  const placeIds = [...new Set(scripts.map(s => String(s.place_id)).filter(Boolean))];
+  const thumbCache = {};
+
+  console.log(`\n🖼️  Resolvendo thumbnails de ${placeIds.length} jogos...\n`);
+
+  for (const placeId of placeIds) {
     try {
-      const universeId = await placeIdToUniverseId(script.placeId);
-      const thumbUrl = await universeIdToThumbnail(universeId);
-      if (thumbUrl) {
-        script.thumbnail = thumbUrl;
-        updated++;
-        console.log(`[ok] ${script.jogo} -> ${thumbUrl}`);
-      } else {
-        console.log(`[sem imagem] ${script.jogo}`);
-      }
+      const thumb = await fetchThumbnail(placeId);
+      thumbCache[placeId] = thumb;
+      console.log(`  ✓ ${placeId} → ${thumb.slice(0, 60)}...`);
     } catch (err) {
-      console.log(`[erro] ${script.jogo}: ${err.message}`);
+      console.log(`  ✗ ${placeId}: ${err.message}`);
+      thumbCache[placeId] = null;
     }
-    // pequena pausa pra não tomar rate-limit do Roblox
-    await new Promise((r) => setTimeout(r, 300));
+    // Pequena pausa pra não estressar a API
+    await new Promise(r => setTimeout(r, 300));
+  }
+
+  // Aplica em todos os scripts
+  let updated = 0;
+  for (const script of scripts) {
+    const pid = String(script.place_id);
+    if (thumbCache[pid]) {
+      script.thumbnail = thumbCache[pid];
+      updated++;
+    }
   }
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(scripts, null, 2), "utf-8");
-  console.log(`\nPronto: ${updated} thumbnails resolvidas de ${scripts.length} scripts.`);
+
+  console.log(`\n✅ Thumbnails atualizadas em ${updated} scripts.`);
+  console.log(`   Jogos únicos: ${placeIds.length}`);
 }
 
-main();
+main().catch(err => {
+  console.error("Erro fatal:", err);
+  process.exit(1);
+});

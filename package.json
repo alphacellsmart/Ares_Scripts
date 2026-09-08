@@ -1,7 +1,7 @@
 {
   "name": "downloads-page-automation",
-  "version": "1.1.0",
-  "description": "Automação da página de downloads: resolve thumbnails do Roblox e encurta os links dos scripts via Pastefy + Shrtfly.",
+  "version": "1.2.0",
+  "description": "Automação da página de downloads: thumbnails Roblox + Pastefy + Shrtfly.",
   "scripts": {
     "thumbnails": "node resolve-thumbnails.js",
     "publish": "node shorten-and-publish.js"
