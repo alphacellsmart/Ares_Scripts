@@ -6,7 +6,5 @@
     "thumbnails": "node resolve-thumbnails.js",
     "publish": "node shorten-and-publish.js"
   },
-  "dependencies": {
-    "pastefy": "^1.0.0"
-  }
+  "dependencies": {}
 }
