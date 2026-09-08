@@ -48,76 +48,42 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 .divider { display:flex; align-items:center; gap:10px; margin:20px 0 14px; }
 .div-line { flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); }
 .div-gem { width:7px; height:7px; background:var(--purple); transform:rotate(45deg); box-shadow:0 0 10px var(--purple); }
-.sec-label { font-family:'Orbitron',monospace; font-size:0.58em; letter-spacing:3px; color:var(--purple); text-transform:uppercase; margin-bottom:12px; }
 
-/* ===== CYRUS HUB — DESTAQUE ===== */
-.cyrus-wrap { margin-bottom:8px; }
-
-.cyrus-label {
-  text-align:center; font-family:'Orbitron',monospace;
-  font-size:0.55em; letter-spacing:4px; color:var(--gold);
-  text-transform:uppercase; margin-bottom:10px;
+/* PREMIUM BADGE */
+.premium-badge {
   display:flex; align-items:center; justify-content:center; gap:8px;
+  text-align:center; text-decoration:none;
+  padding:12px 18px; margin:4px 0 14px;
+  font-family:'Orbitron',monospace;
+  font-size:0.95em; font-weight:900;
+  letter-spacing:2px; text-transform:uppercase;
+  color:var(--gold);
+  text-shadow:0 0 12px rgba(201,168,76,0.8), 0 0 24px rgba(201,168,76,0.4);
+  animation:fadeUp 0.5s ease forwards, premium-pulse 2s ease-in-out infinite;
 }
-.cyrus-label::before, .cyrus-label::after {
-  content:''; flex:1; height:1px;
-  background:linear-gradient(90deg,transparent,rgba(201,168,76,0.4),transparent);
-}
-
-.cyrus-btn {
-  display:flex; align-items:center; gap:0;
-  width:100%; border-radius:16px; overflow:hidden;
-  text-decoration:none; border:1px solid rgba(139,0,255,0.5);
-  box-shadow:0 0 30px rgba(139,0,255,0.25), 0 0 60px rgba(139,0,255,0.1);
-  position:relative; transition:all 0.3s;
-  animation:cyrus-pulse 3s ease-in-out infinite;
-}
-@keyframes cyrus-pulse {
-  0%,100%{box-shadow:0 0 20px rgba(139,0,255,0.3),0 0 50px rgba(139,0,255,0.1)}
-  50%{box-shadow:0 0 40px rgba(139,0,255,0.55),0 0 80px rgba(139,0,255,0.2)}
-}
-.cyrus-btn:hover { transform:translateY(-2px); filter:brightness(1.08); }
-
-.cyrus-progress {
-  position:absolute; bottom:0; left:0; right:0; height:3px;
-  background:rgba(139,0,255,0.2);
-}
-.cyrus-progress-fill {
-  height:100%;
-  background:linear-gradient(90deg, var(--purple2), var(--purple), #bf7fff, var(--gold));
-  animation:progress-run 2.5s ease-in-out infinite;
-  border-radius:0 2px 2px 0;
-}
-@keyframes progress-run {
-  0%{width:0%;opacity:1}
-  80%{width:100%;opacity:1}
-  100%{width:100%;opacity:0}
+@keyframes premium-pulse {
+  0%,100%{ text-shadow:0 0 8px rgba(201,168,76,0.6), 0 0 16px rgba(201,168,76,0.3); }
+  50%{ text-shadow:0 0 16px rgba(201,168,76,1), 0 0 32px rgba(201,168,76,0.6); }
 }
 
-.cyrus-left {
-  background:linear-gradient(135deg, #1a0035, #2a0055);
-  padding:18px 16px;
-  display:flex; align-items:center; justify-content:center;
-  min-width:64px;
+.big-title {
+  display:flex; align-items:center; gap:14px;
+  margin:8px 0 16px;
 }
-.cyrus-icon { font-size:1.8em; }
-
-.cyrus-center { flex:1; padding:16px 14px; background:linear-gradient(135deg, rgba(30,5,60,0.95), rgba(20,5,45,0.98)); }
-.cyrus-name { font-family:'Orbitron',monospace; font-size:1em; font-weight:900; color:var(--white); letter-spacing:2px; }
-.cyrus-desc { font-size:0.78em; color:#bf7fff; margin-top:3px; }
-.cyrus-tags { display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; }
-.ctag { padding:3px 9px; border-radius:20px; font-size:0.62em; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; }
-.ctag-gold { background:rgba(201,168,76,0.15); color:var(--gold); border:1px solid rgba(201,168,76,0.3); }
-.ctag-green { background:rgba(0,200,100,0.12); color:#00c864; border:1px solid rgba(0,200,100,0.25); }
-.ctag-purple { background:rgba(139,0,255,0.15); color:#bf7fff; border:1px solid rgba(139,0,255,0.3); }
-
-.cyrus-right {
-  background:linear-gradient(135deg, var(--purple2), var(--purple));
-  padding:0 18px;
-  display:flex; align-items:center; justify-content:center;
-  min-width:64px; min-height:80px;
+.big-title-line {
+  flex:1; height:1px;
+  background:linear-gradient(90deg,transparent,var(--purple),transparent);
 }
-.cyrus-arrow { font-family:'Orbitron',monospace; font-size:0.65em; font-weight:900; color:white; letter-spacing:1px; text-transform:uppercase; writing-mode:vertical-lr; text-orientation:mixed; }
+.big-title-txt {
+  font-family:"Orbitron",monospace;
+  font-size:clamp(1.1em,5vw,1.6em);
+  font-weight:900;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  background:linear-gradient(135deg,#fff,#bf7fff,var(--gold));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+  white-space:nowrap;
+}
 
 /* ===== EXECUTOR CARDS ===== */
 .executor-card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px 16px; display:flex; align-items:center; gap:14px; backdrop-filter:blur(10px); transition:all 0.3s; position:relative; overflow:hidden; margin-bottom:10px; }
@@ -138,139 +104,242 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 .dl-btn { padding:10px 14px; background:linear-gradient(135deg,var(--purple2),var(--purple)); color:white; border:none; border-radius:10px; font-family:'Orbitron',monospace; font-size:0.6em; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all 0.3s; white-space:nowrap; flex-shrink:0; box-shadow:0 3px 12px rgba(139,0,255,0.3); }
 .dl-btn:hover { box-shadow:0 5px 20px rgba(139,0,255,0.5); filter:brightness(1.1); transform:translateY(-1px); }
 
-/* ===== GAME SECTIONS ===== */
-.game-section { margin-bottom:16px; }
-.game-header { display:flex; align-items:center; gap:12px; padding:14px 16px; border-radius:12px 12px 0 0; background:linear-gradient(135deg,rgba(139,0,255,0.18),rgba(80,0,160,0.12)); border:1px solid rgba(139,0,255,0.4); border-bottom:none; }
-.game-thumb { width:44px; height:44px; border-radius:10px; object-fit:cover; flex-shrink:0; border:1px solid rgba(139,0,255,0.5); background:rgba(139,0,255,0.1); }
-.game-thumb-fallback { width:44px; height:44px; border-radius:10px; flex-shrink:0; background:rgba(139,0,255,0.15); border:1px solid rgba(139,0,255,0.4); display:flex; align-items:center; justify-content:center; font-size:1.3em; }
-.game-header-text { flex:1; min-width:0; }
-.game-emoji { font-size:1.1em; color:var(--purple); }
-.game-name-txt { font-family:'Orbitron',monospace; font-size:0.85em; font-weight:900; letter-spacing:2px; color:var(--white); text-shadow:0 0 15px rgba(139,0,255,0.6); text-transform:uppercase; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.game-count { font-size:0.62em; color:var(--purple); letter-spacing:1px; margin-top:2px; }
+/* ===== GAMES GRID (thumbnails) ===== */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
 
-.script-item { background:var(--card); border:1px solid var(--border); border-top:none; padding:13px 16px; display:flex; align-items:center; gap:12px; backdrop-filter:blur(10px); transition:all 0.3s; }
-.script-item:last-child { border-radius:0 0 12px 12px; }
-.script-item:hover { background:rgba(139,0,255,0.06); }
-.script-item::before { content:''; width:2px; height:28px; flex-shrink:0; background:var(--purple); border-radius:2px; opacity:0.5; }
-.script-info { flex:1; min-width:0; }
-.script-name { font-size:0.9em; font-weight:700; color:var(--white); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.script-feat { font-size:0.7em; color:var(--dim); margin-top:3px; }
-.get-btn { padding:8px 14px; background:linear-gradient(135deg,var(--purple2),var(--purple)); color:white; border:none; border-radius:8px; font-family:'Orbitron',monospace; font-size:0.58em; font-weight:700; letter-spacing:1px; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all 0.3s; white-space:nowrap; flex-shrink:0; }
-.get-btn:hover { box-shadow:0 4px 15px rgba(139,0,255,0.5); filter:brightness(1.15); transform:translateY(-1px); }
+.game-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.game-card:hover {
+  border-color: rgba(139,0,255,0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139,0,255,0.25);
+}
+.game-card.active {
+  border-color: var(--purple);
+  box-shadow: 0 0 20px rgba(139,0,255,0.4);
+}
 
-.no-results { text-align:center; padding:30px 16px; color:var(--dim); font-size:0.85em; letter-spacing:1px; }
+.game-card-thumb {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+  background: rgba(139,0,255,0.1);
+}
+.game-card-thumb-fallback {
+  width: 100%;
+  aspect-ratio: 16/10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2em;
+  background: linear-gradient(135deg, rgba(139,0,255,0.15), rgba(80,0,160,0.1));
+}
 
-footer { text-align:center; padding:24px 20px; color:var(--dim); font-size:0.75em; letter-spacing:1px; position:relative; z-index:10; border-top:1px solid var(--border); }
-footer span { color:var(--purple); }
+.game-card-info {
+  padding: 10px 12px 12px;
+}
+.game-card-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-card-count {
+  font-size: 0.68em;
+  color: var(--purple);
+  margin-top: 3px;
+  letter-spacing: 0.5px;
+}
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.au{animation:fadeUp 0.5s ease forwards;opacity:0;}
+/* ===== SCRIPTS PANEL (abre ao clicar no jogo) ===== */
+.scripts-panel {
+  display: none;
+  margin-bottom: 20px;
+  animation: fadeUp 0.35s ease;
+}
+.scripts-panel.open {
+  display: block;
+}
+
+.scripts-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(139,0,255,0.2), rgba(80,0,160,0.12));
+  border: 1px solid rgba(139,0,255,0.45);
+  border-radius: 14px 14px 0 0;
+}
+.scripts-panel-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(139,0,255,0.4);
+}
+.scripts-panel-title {
+  flex: 1;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+.scripts-panel-close {
+  background: rgba(139,0,255,0.2);
+  border: 1px solid rgba(139,0,255,0.4);
+  color: var(--white);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.scripts-panel-close:hover {
+  background: rgba(139,0,255,0.4);
+}
+
+.script-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.25s;
+}
+.script-item:last-child {
+  border-radius: 0 0 14px 14px;
+}
+.script-item:hover {
+  background: rgba(139,0,255,0.07);
+}
+.script-item::before {
+  content: '';
+  width: 3px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--purple);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+.script-info { flex: 1; min-width: 0; }
+.script-name {
+  font-size: 0.95em;
+  font-weight: 700;
+  color: var(--white);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.script-meta {
+  font-size: 0.72em;
+  color: var(--dim);
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.script-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.badge-keyless {
+  background: rgba(0,200,100,0.12);
+  color: #00c864;
+  border: 1px solid rgba(0,200,100,0.25);
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.badge-delta {
+  background: rgba(139,0,255,0.12);
+  color: #bf7fff;
+  border: 1px solid rgba(139,0,255,0.25);
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.get-btn {
+  padding: 9px 14px;
+  background: linear-gradient(135deg, var(--purple2), var(--purple));
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.58em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 3px 12px rgba(139,0,255,0.3);
+}
+.get-btn:hover {
+  box-shadow: 0 5px 18px rgba(139,0,255,0.55);
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px 16px;
+  color: var(--dim);
+  font-size: 0.85em;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: var(--dim);
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid var(--border);
+}
+footer span { color: var(--purple); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.au { animation: fadeUp 0.5s ease forwards; opacity: 0; }
 .d1{animation-delay:0.05s}.d2{animation-delay:0.1s}.d3{animation-delay:0.15s}
 .d4{animation-delay:0.2s}.d5{animation-delay:0.25s}.d6{animation-delay:0.3s}
 .d7{animation-delay:0.35s}.d8{animation-delay:0.4s}
-
-/* BOTÃO TOPO */
-.top-canal-btn {
-  display:block; width:100%; text-align:center;
-  padding:14px 20px; margin-top:12px;
-  background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(201,168,76,0.05));
-  border:1px solid rgba(201,168,76,0.6);
-  border-radius:14px;
-  font-family:'Orbitron',monospace;
-  font-size:0.75em; font-weight:900;
-  letter-spacing:3px; text-transform:uppercase;
-  text-decoration:none;
-  background-clip:text;
-  color:var(--gold);
-  box-shadow:0 0 20px rgba(201,168,76,0.15);
-  transition:all 0.3s;
-  animation:fadeUp 0.5s ease forwards, top-btn-glow 2.5s ease-in-out infinite;
-}
-@keyframes top-btn-glow {
-  0%,100%{box-shadow:0 0 10px rgba(201,168,76,0.15); border-color:rgba(201,168,76,0.4)}
-  50%{box-shadow:0 0 25px rgba(201,168,76,0.4); border-color:rgba(201,168,76,0.9)}
-}
-.top-canal-btn:hover {
-  background:linear-gradient(135deg,rgba(201,168,76,0.25),rgba(201,168,76,0.1));
-  transform:translateY(-2px);
-}
-
-/* PREMIUM SCRIPTS BADGE */
-.premium-badge {
-  display:flex; align-items:center; justify-content:center; gap:8px;
-  text-align:center; text-decoration:none;
-  padding:12px 18px; margin:4px 0 14px;
-  font-family:'Orbitron',monospace;
-  font-size:0.95em; font-weight:900;
-  letter-spacing:2px; text-transform:uppercase;
-  color:var(--gold);
-  text-shadow:0 0 12px rgba(201,168,76,0.8), 0 0 24px rgba(201,168,76,0.4);
-  animation:fadeUp 0.5s ease forwards, premium-pulse 2s ease-in-out infinite;
-}
-@keyframes premium-pulse {
-  0%,100%{ text-shadow:0 0 8px rgba(201,168,76,0.6), 0 0 16px rgba(201,168,76,0.3); }
-  50%{ text-shadow:0 0 16px rgba(201,168,76,1), 0 0 32px rgba(201,168,76,0.6); }
-}
-
-/* BANNER CANAL */
-.canal-banner {
-  display:flex; align-items:center; gap:0;
-  width:100%; border-radius:14px; overflow:hidden;
-  text-decoration:none; margin:14px 0;
-  border:1px solid rgba(201,168,76,0.5);
-  box-shadow:0 0 25px rgba(201,168,76,0.2);
-  transition:all 0.3s;
-  animation:fadeUp 0.5s ease forwards, canal-glow 3s ease-in-out infinite;
-}
-@keyframes canal-glow {
-  0%,100%{box-shadow:0 0 15px rgba(201,168,76,0.2)}
-  50%{box-shadow:0 0 35px rgba(201,168,76,0.45)}
-}
-.canal-banner:hover { transform:translateY(-2px); filter:brightness(1.08); }
-.canal-left {
-  background:linear-gradient(135deg,rgba(201,168,76,0.25),rgba(201,168,76,0.1));
-  padding:16px 18px;
-  display:flex; align-items:center; justify-content:center;
-}
-.canal-crown { font-size:1.6em; }
-.canal-center {
-  flex:1; padding:14px 12px;
-  background:linear-gradient(135deg,rgba(20,10,35,0.97),rgba(15,5,25,0.98));
-}
-.canal-title {
-  font-family:'Orbitron',monospace;
-  font-size:0.72em; font-weight:900;
-  letter-spacing:2px; text-transform:uppercase;
-  background:linear-gradient(135deg,var(--gold),#fff,var(--gold));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-}
-.canal-sub { font-size:0.7em; color:rgba(201,168,76,0.7); margin-top:4px; }
-.canal-arrow {
-  background:linear-gradient(135deg,rgba(201,168,76,0.8),var(--gold));
-  padding:0 16px; min-height:60px;
-  display:flex; align-items:center; justify-content:center;
-  color:#07040f; font-size:1.2em; font-weight:900;
-}
-
-.big-title {
-  display:flex; align-items:center; gap:14px;
-  margin:8px 0 16px;
-}
-.big-title-line {
-  flex:1; height:1px;
-  background:linear-gradient(90deg,transparent,var(--purple),transparent);
-}
-.big-title-txt {
-  font-family:"Orbitron",monospace;
-  font-size:clamp(1.1em,5vw,1.6em);
-  font-weight:900;
-  letter-spacing:6px;
-  text-transform:uppercase;
-  background:linear-gradient(135deg,#fff,#bf7fff,var(--gold));
-  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
-  text-shadow:none;
-  white-space:nowrap;
-}
 </style>
 </head>
 <body>
@@ -304,18 +373,17 @@ footer span { color:var(--purple); }
   <div class="divider au d4"><div class="div-line"></div><div class="div-gem"></div><div class="div-line"></div></div>
 
   <a href="https://snet.blog/88xqao6" target="_blank" class="premium-badge au d4">
-    <span class="premium-star">⭐</span> Os Melhores Scripts Aqui <span class="premium-star">⭐</span>
+    <span>⭐</span> Os Melhores Scripts Aqui <span>⭐</span>
   </a>
 
   <div class="big-title au d4">
-  <span class="big-title-line"></span>
-  <h2 class="big-title-txt">EXECUTORES</h2>
-  <span class="big-title-line"></span>
-</div>
+    <span class="big-title-line"></span>
+    <h2 class="big-title-txt">EXECUTORES</h2>
+    <span class="big-title-line"></span>
+  </div>
 
   <div id="executores">
 
-    <!-- DELTA -->
     <div class="executor-card au d5" data-search="delta executor mobile">
       <div class="exec-ico">▶</div>
       <div class="executor-info">
@@ -330,7 +398,6 @@ footer span { color:var(--purple); }
       <a href="https://shrtslug.biz/93VvW" class="dl-btn" target="_blank">GET SCRIPT</a>
     </div>
 
-    <!-- ARCEUS X -->
     <div class="executor-card au d5" data-search="arceus x executor mobile">
       <div class="exec-ico">▶</div>
       <div class="executor-info">
@@ -344,7 +411,6 @@ footer span { color:var(--purple); }
       <a href="https://shrtslug.biz/93VwP" class="dl-btn" target="_blank">GET SCRIPT</a>
     </div>
 
-    <!-- FLUXUS -->
     <div class="executor-card au d6" data-search="fluxus executor mobile">
       <div class="exec-ico">▶</div>
       <div class="executor-info">
@@ -358,7 +424,6 @@ footer span { color:var(--purple); }
       <a href="https://shrtslug.biz/93Vyt" class="dl-btn" target="_blank">GET SCRIPT</a>
     </div>
 
-    <!-- CODEX -->
     <div class="executor-card au d6" data-search="codex executor mobile">
       <div class="exec-ico">▶</div>
       <div class="executor-info">
@@ -372,7 +437,6 @@ footer span { color:var(--purple); }
       <a href="https://shrtslug.biz/93VxC" class="dl-btn" target="_blank">GET SCRIPT</a>
     </div>
 
-    <!-- CRYPTIC -->
     <div class="executor-card au d7" data-search="cryptic executor mobile">
       <div class="exec-ico">▶</div>
       <div class="executor-info">
@@ -396,9 +460,14 @@ footer span { color:var(--purple); }
     <span class="big-title-line"></span>
   </div>
 
-  <div id="scripts-list">
-    <div class="no-results" id="scriptsLoading">Carregando scripts...</div>
-  </div>
+  <!-- Grid de jogos (thumbnails) -->
+  <div id="games-grid" class="games-grid au d7"></div>
+
+  <!-- Painel de scripts do jogo selecionado -->
+  <div id="scripts-panel" class="scripts-panel"></div>
+
+  <div id="scriptsLoading" class="no-results">Carregando scripts...</div>
+  <div id="noResultsMsg" class="no-results" style="display:none;">Nenhum script encontrado para essa busca.</div>
 
 </div>
 
@@ -408,95 +477,157 @@ footer span { color:var(--purple); }
 </footer>
 
 <script>
+let allGames = {};   // { jogoNome: [scripts...] }
+let currentGame = null;
+
 function filterAll(q) {
-  q = q.toLowerCase().trim();
+  q = (q || '').toLowerCase().trim();
+
+  // Filtra executores
   document.querySelectorAll('#executores .executor-card').forEach(card => {
     const s = card.getAttribute('data-search') || '';
     card.style.display = (!q || s.includes(q)) ? 'flex' : 'none';
   });
+
+  // Filtra cards de jogos
   let anyVisible = false;
-  document.querySelectorAll('#scripts-list .game-section').forEach(sec => {
-    const g = sec.getAttribute('data-game') || '';
-    let match = g.includes(q);
-    sec.querySelectorAll('.script-name').forEach(n => { if(n.textContent.toLowerCase().includes(q)) match=true; });
-    sec.style.display = (!q || match) ? 'block' : 'none';
-    if (!q || match) anyVisible = true;
+  document.querySelectorAll('#games-grid .game-card').forEach(card => {
+    const name = (card.getAttribute('data-game') || '').toLowerCase();
+    const show = !q || name.includes(q);
+    card.style.display = show ? 'block' : 'none';
+    if (show) anyVisible = true;
   });
-  const noRes = document.getElementById('noResultsMsg');
-  if (noRes) noRes.style.display = anyVisible ? 'none' : 'block';
+
+  // Se tem busca e o painel está aberto, fecha se não bater
+  if (q && currentGame && !currentGame.toLowerCase().includes(q)) {
+    closeScriptsPanel();
+  }
+
+  document.getElementById('noResultsMsg').style.display = (q && !anyVisible) ? 'block' : 'none';
 }
 
-// ===== CARREGA E RENDERIZA A LISTA DE SCRIPTS =====
-async function loadScripts() {
-  const container = document.getElementById('scripts-list');
-  try {
-    const res = await fetch('scripts-data.json', { cache: 'no-store' });
-    const scripts = await res.json();
+function openScriptsPanel(jogoNome) {
+  const entries = allGames[jogoNome];
+  if (!entries || !entries.length) return;
 
-    // agrupa por jogo
-    const byGame = {};
-    scripts.forEach(s => {
-      if (!byGame[s.jogo]) byGame[s.jogo] = [];
-      byGame[s.jogo].push(s);
-    });
+  currentGame = jogoNome;
+  const panel = document.getElementById('scripts-panel');
+  const first = entries[0];
 
-    container.innerHTML = '';
-    let delayIndex = 0;
+  // Marca card ativo
+  document.querySelectorAll('.game-card').forEach(c => {
+    c.classList.toggle('active', c.getAttribute('data-game') === jogoNome);
+  });
 
-    Object.keys(byGame).forEach(jogoNome => {
-      const entries = byGame[jogoNome];
-      const first = entries[0];
-      const delayClass = 'd' + Math.min(8, (delayIndex % 8) + 1);
-      delayIndex++;
+  const thumbHtml = first.thumbnail
+    ? `<img src="${first.thumbnail}" alt="${jogoNome}">`
+    : `<div style="width:48px;height:48px;border-radius:10px;background:rgba(139,0,255,0.15);display:flex;align-items:center;justify-content:center;font-size:1.4em;">🎮</div>`;
 
-      const section = document.createElement('div');
-      section.className = 'game-section au ' + delayClass;
-      section.setAttribute('data-game', jogoNome.toLowerCase());
+  let itemsHtml = '';
+  entries.forEach(s => {
+    const link = s.linkShrtfly || s.pastefyRaw || s.loadstringOriginal || '#';
+    const creditos = s.creditos || (s.hub || 'N/A').replace('@', '');
+    const keyless = s.keyless !== false;
+    const delta = (s.compatible || []).includes('Delta');
 
-      const thumbHtml = first.thumbnail
-        ? `<img class="game-thumb" src="${first.thumbnail}" alt="${jogoNome}" loading="lazy">`
-        : `<div class="game-thumb-fallback">🎮</div>`;
-
-      let scriptsHtml = '';
-      entries.forEach(s => {
-        const link = s.linkShrtfly || s.loadstringOriginal;
-        scriptsHtml += `
-          <div class="script-item">
-            <div class="script-info">
-              <div class="script-name">${jogoNome}</div>
-              <div class="script-feat">Créditos: ${s.hub || 'N/A'}</div>
-            </div>
-            <a href="${link}" class="get-btn" target="_blank">GET SCRIPT</a>
-          </div>`;
-      });
-
-      section.innerHTML = `
-        <div class="game-header">
-          ${thumbHtml}
-          <div class="game-header-text">
-            <div class="game-name-txt">${jogoNome}</div>
-            <div class="game-count">${entries.length} script${entries.length > 1 ? 's' : ''} disponível${entries.length > 1 ? 'is' : ''}</div>
+    itemsHtml += `
+      <div class="script-item">
+        <div class="script-info">
+          <div class="script-name">${creditos}</div>
+          <div class="script-meta">
+            ${keyless ? '<span class="badge-keyless">Keyless</span>' : '<span class="badge-keyless" style="color:#ff6b6b;border-color:rgba(255,100,100,0.3);background:rgba(255,100,100,0.1);">Key System</span>'}
+            ${delta ? '<span class="badge-delta">Delta</span>' : ''}
+            <span>Créditos: ${creditos}</span>
           </div>
         </div>
-        ${scriptsHtml}
-      `;
-      container.appendChild(section);
+        <a href="${link}" class="get-btn" target="_blank" rel="noopener">GET SCRIPT</a>
+      </div>`;
+  });
+
+  panel.innerHTML = `
+    <div class="scripts-panel-header">
+      ${thumbHtml}
+      <div class="scripts-panel-title">${jogoNome}</div>
+      <button class="scripts-panel-close" onclick="closeScriptsPanel()" title="Fechar">✕</button>
+    </div>
+    ${itemsHtml}
+  `;
+  panel.classList.add('open');
+
+  // Scroll suave até o painel
+  setTimeout(() => {
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 50);
+}
+
+function closeScriptsPanel() {
+  currentGame = null;
+  const panel = document.getElementById('scripts-panel');
+  panel.classList.remove('open');
+  panel.innerHTML = '';
+  document.querySelectorAll('.game-card').forEach(c => c.classList.remove('active'));
+}
+
+async function loadScripts() {
+  const grid = document.getElementById('games-grid');
+  const loading = document.getElementById('scriptsLoading');
+
+  try {
+    const res = await fetch('scripts-data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const scripts = await res.json();
+
+    // Agrupa por jogo (só jogos que têm pelo menos 1 script)
+    allGames = {};
+    scripts.forEach(s => {
+      if (!s.jogo) return;
+      if (!allGames[s.jogo]) allGames[s.jogo] = [];
+      allGames[s.jogo].push(s);
     });
 
-    if (Object.keys(byGame).length === 0) {
-      container.innerHTML = '<div class="no-results">Nenhum script disponível no momento.</div>';
+    const gameNames = Object.keys(allGames);
+    loading.style.display = 'none';
+
+    if (gameNames.length === 0) {
+      grid.innerHTML = '';
+      loading.style.display = 'block';
+      loading.textContent = 'Nenhum script disponível no momento.';
+      return;
     }
 
-    // mensagem de "sem resultados" pra busca (fica escondida por padrão)
-    const noResMsg = document.createElement('div');
-    noResMsg.id = 'noResultsMsg';
-    noResMsg.className = 'no-results';
-    noResMsg.style.display = 'none';
-    noResMsg.textContent = 'Nenhum script encontrado para essa busca.';
-    container.appendChild(noResMsg);
+    grid.innerHTML = '';
+    gameNames.forEach((jogoNome, idx) => {
+      const entries = allGames[jogoNome];
+      const first = entries[0];
+      const delayClass = 'd' + Math.min(8, (idx % 8) + 1);
+
+      const card = document.createElement('div');
+      card.className = 'game-card au ' + delayClass;
+      card.setAttribute('data-game', jogoNome);
+      card.onclick = () => {
+        if (currentGame === jogoNome) {
+          closeScriptsPanel();
+        } else {
+          openScriptsPanel(jogoNome);
+        }
+      };
+
+      const thumbHtml = first.thumbnail
+        ? `<img class="game-card-thumb" src="${first.thumbnail}" alt="${jogoNome}" loading="lazy">`
+        : `<div class="game-card-thumb-fallback">🎮</div>`;
+
+      card.innerHTML = `
+        ${thumbHtml}
+        <div class="game-card-info">
+          <div class="game-card-name">${jogoNome}</div>
+          <div class="game-card-count">${entries.length} script${entries.length > 1 ? 's' : ''}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
 
   } catch (err) {
-    container.innerHTML = '<div class="no-results">Não foi possível carregar os scripts agora. Tenta recarregar a página.</div>';
+    loading.textContent = 'Não foi possível carregar os scripts agora. Tenta recarregar a página.';
     console.error('Erro ao carregar scripts-data.json:', err);
   }
 }
