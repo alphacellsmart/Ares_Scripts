@@ -1,19 +1,13 @@
 /**
  * shorten-and-publish.js
  *
- * Fluxo:
- * 1. Baixa o código real do loadstringOriginal
- * 2. Sobe o código no Pastefy → pastefyRaw (conteúdo real)
- * 3. Cria uma SEGUNDA paste só com:
- *      loadstring(game:HttpGet("pastefyRaw"))()
- * 4. Encurta essa segunda paste no Shrtfly → linkShrtfly
- * 5. GET SCRIPT na página aponta pro linkShrtfly
- *    → pessoa passa pelo encurtador e no final vê só o loadstring limpo
+ * Fluxo simples (igual ao manual no Pastefy):
+ * 1. Cria UMA paste no Pastefy com conteúdo:
+ *      loadstring(game:HttpGet("URL_ORIGINAL"))()
+ * 2. Encurta o /raw dessa paste no Shrtfly
+ * 3. Salva linkShrtfly + loadstringFinal no JSON
  *
- * Uso:
- *   export PASTEFY_API_KEY="..."
- *   export SHRTFLY_API_KEY="..."
- *   node shorten-and-publish.js
+ * GET SCRIPT → Shrtfly → no final só o loadstring limpo
  */
 
 const fs = require("fs");
@@ -26,14 +20,6 @@ const SHRTFLY_API_KEY = process.env.SHRTFLY_API_KEY;
 if (!PASTEFY_API_KEY || !SHRTFLY_API_KEY) {
   console.error("❌ Faltam PASTEFY_API_KEY e/ou SHRTFLY_API_KEY");
   process.exit(1);
-}
-
-async function fetchLoadstringContent(url) {
-  const res = await fetch(url, {
-    headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" }
-  });
-  if (!res.ok) throw new Error(`Falha ao baixar conteúdo (status ${res.status})`);
-  return res.text();
 }
 
 async function uploadToPastefy(title, content) {
@@ -69,15 +55,20 @@ async function shortenWithShrtfly(longUrl) {
   const res = await fetch(apiUrl);
   const data = await res.json();
 
+  console.log("  ↳ Resposta Shrtfly:", JSON.stringify(data));
+
   const short =
     data.shortenedUrl ||
+    data.shortened_url ||
     data.short ||
     data.url ||
+    data.link ||
     data.result?.shortenedUrl ||
-    data.data?.url;
+    data.result?.url ||
+    data.data?.url ||
+    data.data?.shortenedUrl;
 
   if (!short) {
-    console.log("Resposta Shrtfly:", JSON.stringify(data, null, 2));
     throw new Error("Não consegui pegar o link encurtado do Shrtfly");
   }
 
@@ -86,7 +77,7 @@ async function shortenWithShrtfly(longUrl) {
 
 async function main() {
   if (!fs.existsSync(DATA_FILE)) {
-    console.error("❌ Arquivo scripts-data.json não encontrado!");
+    console.error("❌ scripts-data.json não encontrado!");
     process.exit(1);
   }
 
@@ -95,12 +86,10 @@ async function main() {
   let errors = 0;
   let skipped = 0;
 
-  console.log(`\n🚀 Processando ${scripts.length} scripts...\n`);
+  console.log(`\n🚀 Processando ${scripts.length} scripts (fluxo simples)...\n`);
 
   for (const script of scripts) {
-    // Se já tem o novo fluxo completo, pula
-    // Para forçar reprocessar, apague linkShrtfly do JSON
-    if (script.linkShrtfly && script.pastefyRaw && script.loadstringFinal) {
+    if (script.linkShrtfly) {
       console.log(`[pulado] ${script.jogo} — ${script.hub}`);
       skipped++;
       continue;
@@ -109,33 +98,22 @@ async function main() {
     try {
       console.log(`\n[processando] ${script.jogo} | ${script.hub}`);
 
-      // 1. Baixa o código real
-      const conteudo = await fetchLoadstringContent(script.loadstringOriginal);
-      console.log(`  ✓ Código baixado (${conteudo.length} caracteres)`);
+      // Conteúdo da paste = só o loadstring limpo apontando pro original
+      const loadstringLimpo = `loadstring(game:HttpGet("${script.loadstringOriginal}"))()`;
 
-      // 2. Sobe o código real no Pastefy
-      const pasteReal = await uploadToPastefy(
-        `${script.jogo} - ${script.hub} [CODE]`,
-        conteudo
-      );
-      console.log(`  ✓ Código no Pastefy: ${pasteReal.raw}`);
-      script.pastefyRaw = pasteReal.raw;
-
-      // 3. Cria paste SÓ com o loadstring limpo apontando pro código
-      const loadstringLimpo = `loadstring(game:HttpGet("${pasteReal.raw}"))()`;
-      const pasteLoadstring = await uploadToPastefy(
+      // 1. Sobe no Pastefy
+      const paste = await uploadToPastefy(
         `${script.jogo} - ${script.hub}`,
         loadstringLimpo
       );
-      console.log(`  ✓ Loadstring no Pastefy: ${pasteLoadstring.raw}`);
+      console.log(`  ✓ Pastefy RAW: ${paste.raw}`);
+      script.pastefyRaw = paste.raw;
+      script.loadstringFinal = loadstringLimpo;
 
-      // 4. Encurta a paste do loadstring (não a do código)
-      const shortUrl = await shortenWithShrtfly(pasteLoadstring.raw);
+      // 2. Encurta o RAW no Shrtfly
+      const shortUrl = await shortenWithShrtfly(paste.raw);
       console.log(`  ✓ Shrtfly: ${shortUrl}`);
       script.linkShrtfly = shortUrl;
-
-      // 5. Guarda o loadstring final
-      script.loadstringFinal = loadstringLimpo;
 
       processed++;
     } catch (err) {
@@ -143,7 +121,8 @@ async function main() {
       errors++;
     }
 
-    await new Promise(r => setTimeout(r, 1500));
+    // Pausa entre requests
+    await new Promise(r => setTimeout(r, 1200));
   }
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(scripts, null, 2), "utf-8");

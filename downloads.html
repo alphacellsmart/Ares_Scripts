@@ -525,7 +525,7 @@ function openScriptsPanel(jogoNome) {
 
   let itemsHtml = '';
   entries.forEach(s => {
-    const link = s.linkShrtfly || s.pastefyRaw || s.loadstringOriginal || '#';
+    const link = s.linkShrtfly || '#';
     const creditos = s.creditos || (s.hub || 'N/A').replace('@', '');
     const keyless = s.keyless !== false;
     const delta = (s.compatible || []).includes('Delta');
