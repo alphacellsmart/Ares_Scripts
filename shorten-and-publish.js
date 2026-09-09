@@ -1,13 +1,8 @@
 /**
- * shorten-and-publish.js
- *
- * Fluxo simples (igual ao manual no Pastefy):
- * 1. Cria UMA paste no Pastefy com conteúdo:
- *      loadstring(game:HttpGet("URL_ORIGINAL"))()
- * 2. Encurta o /raw dessa paste no Shrtfly
- * 3. Salva linkShrtfly + loadstringFinal no JSON
- *
- * GET SCRIPT → Shrtfly → no final só o loadstring limpo
+ * Fluxo:
+ * 1. Cria paste no Pastefy só com: loadstring(game:HttpGet("URL"))()
+ * 2. Tenta encurtar no Shrtfly
+ * 3. Se Shrtfly falhar, usa o pastefyRaw mesmo (já é o loadstring limpo)
  */
 
 const fs = require("fs");
@@ -17,8 +12,8 @@ const DATA_FILE = path.join(__dirname, "scripts-data.json");
 const PASTEFY_API_KEY = process.env.PASTEFY_API_KEY;
 const SHRTFLY_API_KEY = process.env.SHRTFLY_API_KEY;
 
-if (!PASTEFY_API_KEY || !SHRTFLY_API_KEY) {
-  console.error("❌ Faltam PASTEFY_API_KEY e/ou SHRTFLY_API_KEY");
+if (!PASTEFY_API_KEY) {
+  console.error("❌ Falta PASTEFY_API_KEY");
   process.exit(1);
 }
 
@@ -38,12 +33,10 @@ async function uploadToPastefy(title, content) {
   });
 
   const data = await res.json();
-
   if (!res.ok || !data.paste?.id) {
     console.log("Resposta Pastefy:", JSON.stringify(data, null, 2));
     throw new Error("Falha ao criar paste no Pastefy");
   }
-
   return {
     id: data.paste.id,
     raw: `https://pastefy.app/${data.paste.id}/raw`
@@ -51,69 +44,88 @@ async function uploadToPastefy(title, content) {
 }
 
 async function shortenWithShrtfly(longUrl) {
-  const apiUrl = `https://shrtfly.com/api?api=${SHRTFLY_API_KEY}&url=${encodeURIComponent(longUrl)}&format=json`;
-  const res = await fetch(apiUrl);
-  const data = await res.json();
-
-  console.log("  ↳ Resposta Shrtfly:", JSON.stringify(data));
-
-  const short =
-    data.shortenedUrl ||
-    data.shortened_url ||
-    data.short ||
-    data.url ||
-    data.link ||
-    data.result?.shortenedUrl ||
-    data.result?.url ||
-    data.data?.url ||
-    data.data?.shortenedUrl;
-
-  if (!short) {
-    throw new Error("Não consegui pegar o link encurtado do Shrtfly");
+  if (!SHRTFLY_API_KEY) {
+    console.log("  ⚠ SHRTFLY_API_KEY não definida — pulando encurtador");
+    return null;
   }
 
-  return short;
+  // Tentativa 1: format=json
+  const urlJson = `https://shrtfly.com/api?api=${encodeURIComponent(SHRTFLY_API_KEY)}&url=${encodeURIComponent(longUrl)}&format=json`;
+  console.log("  ↳ Chamando Shrtfly (json)...");
+  let res = await fetch(urlJson);
+  let text = await res.text();
+  console.log("  ↳ HTTP", res.status, "| body:", text.slice(0, 300));
+
+  try {
+    const data = JSON.parse(text);
+    const short =
+      data.shortenedUrl ||
+      data.shortened_url ||
+      data.short ||
+      data.url ||
+      data.link ||
+      (data.status === "success" && (data.shortenedUrl || data.url)) ||
+      data.result?.shortenedUrl ||
+      data.data?.url;
+
+    if (short && typeof short === "string" && short.startsWith("http")) {
+      return short;
+    }
+    console.log("  ↳ JSON parseado mas sem URL válida:", JSON.stringify(data));
+  } catch (e) {
+    // pode ser texto puro
+    if (text.startsWith("http")) {
+      return text.trim();
+    }
+  }
+
+  // Tentativa 2: format=text
+  const urlText = `https://shrtfly.com/api?api=${encodeURIComponent(SHRTFLY_API_KEY)}&url=${encodeURIComponent(longUrl)}&format=text`;
+  console.log("  ↳ Tentando Shrtfly (text)...");
+  res = await fetch(urlText);
+  text = await res.text();
+  console.log("  ↳ HTTP", res.status, "| body:", text.slice(0, 300));
+
+  if (text.startsWith("http")) {
+    return text.trim();
+  }
+
+  return null;
 }
 
 async function main() {
-  if (!fs.existsSync(DATA_FILE)) {
-    console.error("❌ scripts-data.json não encontrado!");
-    process.exit(1);
-  }
-
   const scripts = JSON.parse(fs.readFileSync(DATA_FILE, "utf-8"));
   let processed = 0;
   let errors = 0;
-  let skipped = 0;
 
-  console.log(`\n🚀 Processando ${scripts.length} scripts (fluxo simples)...\n`);
+  console.log(`\n🚀 Teste com ${scripts.length} script(s)...\n`);
 
   for (const script of scripts) {
     if (script.linkShrtfly) {
-      console.log(`[pulado] ${script.jogo} — ${script.hub}`);
-      skipped++;
+      console.log(`[pulado] já tem linkShrtfly`);
       continue;
     }
 
     try {
-      console.log(`\n[processando] ${script.jogo} | ${script.hub}`);
+      console.log(`[processando] ${script.jogo} | ${script.hub}`);
 
-      // Conteúdo da paste = só o loadstring limpo apontando pro original
       const loadstringLimpo = `loadstring(game:HttpGet("${script.loadstringOriginal}"))()`;
 
-      // 1. Sobe no Pastefy
-      const paste = await uploadToPastefy(
-        `${script.jogo} - ${script.hub}`,
-        loadstringLimpo
-      );
+      const paste = await uploadToPastefy(`${script.jogo} - ${script.hub}`, loadstringLimpo);
       console.log(`  ✓ Pastefy RAW: ${paste.raw}`);
       script.pastefyRaw = paste.raw;
       script.loadstringFinal = loadstringLimpo;
 
-      // 2. Encurta o RAW no Shrtfly
       const shortUrl = await shortenWithShrtfly(paste.raw);
-      console.log(`  ✓ Shrtfly: ${shortUrl}`);
-      script.linkShrtfly = shortUrl;
+
+      if (shortUrl) {
+        console.log(`  ✓ Shrtfly: ${shortUrl}`);
+        script.linkShrtfly = shortUrl;
+      } else {
+        // Fallback: usa o pastefyRaw (já é só o loadstring)
+        console.log(`  ⚠ Shrtfly falhou — usando pastefyRaw como link do botão`);
+        script.linkShrtfly = paste.raw;
+      }
 
       processed++;
     } catch (err) {
@@ -121,16 +133,11 @@ async function main() {
       errors++;
     }
 
-    // Pausa entre requests
-    await new Promise(r => setTimeout(r, 1200));
+    await new Promise(r => setTimeout(r, 1000));
   }
 
   fs.writeFileSync(DATA_FILE, JSON.stringify(scripts, null, 2), "utf-8");
-
-  console.log(`\n✅ Finalizado!`);
-  console.log(`   Processados: ${processed}`);
-  console.log(`   Pulados: ${skipped}`);
-  console.log(`   Erros: ${errors}`);
+  console.log(`\n✅ Processados: ${processed} | Erros: ${errors}`);
 }
 
 main().catch(err => {
