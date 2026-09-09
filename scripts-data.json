@@ -335,5 +335,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-b1a08cea783f0c8f0ed5600c0955333a/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa17eb80357474078c8bfec"
+  },
+  {
+    "jogo": "Illegal Soccer",
+    "place_id": "126987974021910",
+    "hub": "@arpg",
+    "loadstringOriginal": "https://rscripts.net/raw/illegal-soccer-script-2026-no-key_1788958742842_W11YX0SHVX.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "arpg",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa1581694c566a26374bf53"
   }
 ]
