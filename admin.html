@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARES Scripts — Painel Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --purple: #8b00ff;
+  --purple2: #6600cc;
+  --gold: #c9a84c;
+  --white: #f0eaf8;
+  --dim: #9080aa;
+  --bg: #07040f;
+  --card: rgba(18,8,30,0.95);
+  --border: rgba(139,0,255,0.25);
+  --green: #00c864;
+  --red: #ff4d6a;
+}
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  min-height: 100vh;
+}
+.bg {
+  position: fixed; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(139,0,255,0.15) 0%, transparent 60%), #07040f;
+}
+
+/* LOGIN */
+#loginScreen {
+  position: relative; z-index: 10;
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.login-box {
+  width: 100%; max-width: 360px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+}
+.login-box h1 {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg,#fff,#bf7fff,var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.login-box p { color: var(--dim); font-size: 0.85em; margin-bottom: 20px; }
+.login-box input {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 0.95em;
+  outline: none;
+  margin-bottom: 12px;
+}
+.login-box input:focus { border-color: var(--purple); }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 18px;
+  border: none; border-radius: 10px;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.65em; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; transition: all 0.25s;
+  text-decoration: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--purple2), var(--purple));
+  color: white;
+  box-shadow: 0 4px 16px rgba(139,0,255,0.35);
+  width: 100%;
+}
+.btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--dim);
+}
+.btn-ghost:hover { border-color: var(--purple); color: var(--white); }
+.btn-danger {
+  background: rgba(255,77,106,0.15);
+  border: 1px solid rgba(255,77,106,0.4);
+  color: var(--red);
+}
+.login-error { color: var(--red); font-size: 0.8em; margin-top: 10px; display: none; }
+
+/* LAYOUT */
+#app { display: none; position: relative; z-index: 10; }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(10,5,20,0.9);
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(12px);
+}
+.topbar-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+}
+.topbar-actions { display: flex; gap: 8px; align-items: center; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+
+/* TABS */
+.tabs {
+  display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap;
+}
+.tab {
+  padding: 10px 16px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--dim);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.58em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tab.active, .tab:hover {
+  background: rgba(139,0,255,0.15);
+  border-color: var(--purple);
+  color: var(--white);
+}
+
+/* CARDS / SECTIONS */
+.section { display: none; }
+.section.active { display: block; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+.card h2 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  color: var(--gold);
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+.stat {
+  background: rgba(139,0,255,0.08);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+.stat-val {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.4em;
+  font-weight: 900;
+  color: var(--white);
+}
+.stat-label {
+  font-size: 0.72em;
+  color: var(--dim);
+  margin-top: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+.form-group { margin-bottom: 12px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label {
+  display: block;
+  font-size: 0.72em;
+  color: var(--dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 0.9em;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--purple);
+}
+.form-group textarea { min-height: 70px; resize: vertical; }
+.form-actions {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;
+}
+.preview-box {
+  margin-top: 14px;
+  padding: 12px;
+  background: rgba(0,0,0,0.3);
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: var(--dim);
+  word-break: break-all;
+}
+.preview-box strong { color: var(--white); }
+
+/* LIST */
+.script-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(139,0,255,0.12);
+}
+.script-row:last-child { border-bottom: none; }
+.script-row-info { flex: 1; min-width: 0; }
+.script-row-name {
+  font-weight: 700;
+  font-size: 0.95em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.script-row-meta {
+  font-size: 0.72em;
+  color: var(--dim);
+  margin-top: 2px;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.65em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.badge-green {
+  background: rgba(0,200,100,0.12);
+  color: var(--green);
+  border: 1px solid rgba(0,200,100,0.25);
+}
+.badge-purple {
+  background: rgba(139,0,255,0.12);
+  color: #bf7fff;
+  border: 1px solid rgba(139,0,255,0.25);
+}
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: var(--dim);
+  font-size: 0.9em;
+}
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: #1a0a2e;
+  border: 1px solid var(--purple);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.3s;
+  max-width: 90%;
+  text-align: center;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.note {
+  font-size: 0.78em;
+  color: var(--dim);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+code {
+  background: rgba(139,0,255,0.15);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-box">
+    <h1>ARES ADMIN</h1>
+    <p>Painel de controle dos scripts</p>
+    <input type="password" id="passwordInput" placeholder="Senha do painel" onkeydown="if(event.key==='Enter')tryLogin()">
+    <button class="btn btn-primary" onclick="tryLogin()">Entrar</button>
+    <div class="login-error" id="loginError">Senha incorreta</div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="topbar">
+    <div class="topbar-title">ARES · PAINEL</div>
+    <div class="topbar-actions">
+      <a href="downloads.html" class="btn btn-ghost" target="_blank">Ver página</a>
+      <button class="btn btn-ghost" onclick="logout()">Sair</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-tab="dashboard" onclick="switchTab('dashboard')">Dashboard</button>
+      <button class="tab" data-tab="manual" onclick="switchTab('manual')">Postagem manual</button>
+      <button class="tab" data-tab="auto" onclick="switchTab('auto')">Automático</button>
+      <button class="tab" data-tab="history" onclick="switchTab('history')">Histórico</button>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="section active" id="tab-dashboard">
+      <div class="card">
+        <h2>Estatísticas</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-val" id="statScripts">—</div>
+            <div class="stat-label">Scripts publicados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val" id="statGames">—</div>
+            <div class="stat-label">Jogos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val" id="statVisits">—</div>
+            <div class="stat-label">Visitas (total)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val" id="statToday">—</div>
+            <div class="stat-label">Visitas hoje</div>
+          </div>
+        </div>
+        <p class="note" style="margin-top:14px;">
+          Visitas reais via contador online. O número “online” na página pública é <strong>fake</strong> (300–1200) só pra visual.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Resumo por jogo</h2>
+        <div id="gamesSummary" class="empty">Carregando...</div>
+      </div>
+    </div>
+
+    <!-- MANUAL -->
+    <div class="section" id="tab-manual">
+      <div class="card">
+        <h2>Nova postagem manual</h2>
+        <p class="note" style="margin-bottom:14px;">
+          Preenche os campos → gera a entrada. Depois você cola no <code>scripts-data.json</code> e roda o Action
+          <strong>ou</strong> usa o fluxo automático quando estiver pronto. A prévia mostra o loadstring final.
+        </p>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Nome do jogo</label>
+            <input type="text" id="mJogo" placeholder="Ex: Steal an egg">
+          </div>
+          <div class="form-group">
+            <label>Place ID (Roblox)</label>
+            <input type="text" id="mPlaceId" placeholder="Ex: 107778070777162">
+          </div>
+          <div class="form-group">
+            <label>Hub / Créditos</label>
+            <input type="text" id="mHub" placeholder="Ex: UB Hub">
+          </div>
+          <div class="form-group">
+            <label>Keyless?</label>
+            <select id="mKeyless">
+              <option value="true">Sim — Keyless</option>
+              <option value="false">Não — Key System</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>URL do script (raw / loadstring source)</label>
+            <input type="url" id="mUrl" placeholder="https://raw.githubusercontent.com/...">
+          </div>
+          <div class="form-group full">
+            <label>Descrição (opcional)</label>
+            <input type="text" id="mDesc" placeholder="Keyless • Compatible with Delta">
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" onclick="generateManual()">Gerar entrada JSON</button>
+          <button class="btn btn-ghost" onclick="clearManual()">Limpar</button>
+        </div>
+        <div class="preview-box" id="manualPreview" style="display:none;"></div>
+      </div>
+
+      <div class="card">
+        <h2>Fila local (rascunhos)</h2>
+        <p class="note">Salvos neste navegador. Não publicam sozinhos — use pra organizar antes de mandar pro Action.</p>
+        <div id="localQueue" class="empty">Nenhum rascunho ainda.</div>
+      </div>
+    </div>
+
+    <!-- AUTO -->
+    <div class="section" id="tab-auto">
+      <div class="card">
+        <h2>Postagem automática (rscripts)</h2>
+        <p class="note">
+          Em breve: o sistema puxa scripts do rscripts → mostra aqui pra você revisar (prévia + link encurtado) →
+          você clica em <strong>Autorizar postagem</strong> → vai pra página de downloads.
+        </p>
+        <p class="note" style="margin-top:10px;">
+          Status atual: <span class="badge badge-purple">Em construção</span><br>
+          Quando ligarmos, terá: ligar/desligar puxada, limite (ex. 10 scripts), filtros (sem Asus Studio, jogos em alta) e fila de aprovação.
+        </p>
+        <div style="margin-top:16px;">
+          <button class="btn btn-ghost" disabled>Ligar puxada automática</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- HISTORY -->
+    <div class="section" id="tab-history">
+      <div class="card">
+        <h2>Scripts publicados</h2>
+        <div style="margin-bottom:12px;">
+          <input type="text" id="histSearch" placeholder="Filtrar por jogo ou hub..." oninput="renderHistory()" style="width:100%;padding:10px 12px;background:rgba(0,0,0,0.35);border:1px solid var(--border);border-radius:10px;color:var(--white);font-family:inherit;">
+        </div>
+        <div id="historyList" class="empty">Carregando...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ===== CONFIG =====
+// Troque esta senha depois de subir o painel
+const ADMIN_PASSWORD = 'ares2026';
+
+const VISIT_NAMESPACE = 'ares-scripts';
+const VISIT_KEY = 'downloads';
+const VISIT_TODAY_KEY = 'downloads-today';
+
+let published = [];
+let localDrafts = JSON.parse(localStorage.getItem('ares_drafts') || '[]');
+
+// ===== AUTH =====
+function tryLogin() {
+  const pass = document.getElementById('passwordInput').value;
+  if (pass === ADMIN_PASSWORD) {
+    sessionStorage.setItem('ares_admin', '1');
+    showApp();
+  } else {
+    document.getElementById('loginError').style.display = 'block';
+  }
+}
+function logout() {
+  sessionStorage.removeItem('ares_admin');
+  location.reload();
+}
+function showApp() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  loadPublished();
+  loadVisits();
+  renderLocalQueue();
+}
+if (sessionStorage.getItem('ares_admin') === '1') showApp();
+
+// ===== TABS =====
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+  document.querySelectorAll('.section').forEach(s => s.classList.toggle('active', s.id === 'tab-' + name));
+}
+
+// ===== TOAST =====
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+// ===== LOAD PUBLISHED =====
+async function loadPublished() {
+  try {
+    const res = await fetch('scripts-data.json', { cache: 'no-store' });
+    published = await res.json();
+  } catch (e) {
+    published = [];
+  }
+  updateStats();
+  renderHistory();
+  renderGameSummary();
+}
+
+function updateStats() {
+  document.getElementById('statScripts').textContent = published.length;
+  const games = new Set(published.map(s => s.jogo));
+  document.getElementById('statGames').textContent = games.size;
+}
+
+function renderGameSummary() {
+  const by = {};
+  published.forEach(s => {
+    by[s.jogo] = (by[s.jogo] || 0) + 1;
+  });
+  const el = document.getElementById('gameSummary');
+  const keys = Object.keys(by);
+  if (!keys.length) {
+    el.innerHTML = '<div class="empty">Nenhum script publicado.</div>';
+    return;
+  }
+  el.innerHTML = keys.map(j => `
+    <div class="script-row">
+      <div class="script-row-info">
+        <div class="script-row-name">${j}</div>
+      </div>
+      <span class="badge badge-purple">${by[j]} script${by[j] > 1 ? 's' : ''}</span>
+    </div>
+  `).join('');
+}
+
+function renderHistory() {
+  const q = (document.getElementById('histSearch')?.value || '').toLowerCase();
+  const el = document.getElementById('historyList');
+  let list = published;
+  if (q) {
+    list = list.filter(s =>
+      (s.jogo || '').toLowerCase().includes(q) ||
+      (s.hub || '').toLowerCase().includes(q) ||
+      (s.creditos || '').toLowerCase().includes(q)
+    );
+  }
+  if (!list.length) {
+    el.innerHTML = '<div class="empty">Nenhum script encontrado.</div>';
+    return;
+  }
+  el.innerHTML = list.map(s => `
+    <div class="script-row">
+      <div class="script-row-info">
+        <div class="script-row-name">${s.jogo || '—'} · ${s.hub || s.creditos || '—'}</div>
+        <div class="script-row-meta">
+          ${s.keyless !== false ? '<span class="badge badge-green">Keyless</span>' : ''}
+          ${s.linkShrtfly ? ' · <a href="'+s.linkShrtfly+'" target="_blank" style="color:#bf7fff">link</a>' : ' · sem link'}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===== VISITS (CountAPI) =====
+async function loadVisits() {
+  try {
+    // total
+    const r1 = await fetch(`https://api.countapi.xyz/get/${VISIT_NAMESPACE}/${VISIT_KEY}`);
+    const d1 = await r1.json();
+    document.getElementById('statVisits').textContent = (d1.value || 0).toLocaleString('pt-BR');
+  } catch {
+    document.getElementById('statVisits').textContent = '—';
+  }
+  try {
+    const day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    const r2 = await fetch(`https://api.countapi.xyz/get/${VISIT_NAMESPACE}/${VISIT_TODAY_KEY}-${day}`);
+    const d2 = await r2.json();
+    document.getElementById('statToday').textContent = (d2.value || 0).toLocaleString('pt-BR');
+  } catch {
+    document.getElementById('statToday').textContent = '—';
+  }
+}
+
+// ===== MANUAL =====
+function generateManual() {
+  const jogo = document.getElementById('mJogo').value.trim();
+  const place_id = document.getElementById('mPlaceId').value.trim();
+  const hubRaw = document.getElementById('mHub').value.trim();
+  const hub = hubRaw.startsWith('@') ? hubRaw : '@' + hubRaw;
+  const keyless = document.getElementById('mKeyless').value === 'true';
+  const url = document.getElementById('mUrl').value.trim();
+  const desc = document.getElementById('mDesc').value.trim() || (keyless ? 'Keyless • Compatible with Delta' : 'Key System • Compatible with Delta');
+
+  if (!jogo || !url) {
+    toast('Preencha pelo menos Jogo e URL do script');
+    return;
+  }
+
+  // anti-duplicata simples
+  const exists = published.some(s =>
+    s.loadstringOriginal === url ||
+    (s.jogo === jogo && (s.hub === hub || s.creditos === hubRaw))
+  );
+  if (exists) {
+    toast('⚠ Parece que esse script já está publicado');
+  }
+
+  const entry = {
+    jogo,
+    place_id: place_id || '',
+    hub,
+    loadstringOriginal: url,
+    keyless,
+    compatible: ['Delta'],
+    descricao: desc,
+    creditos: hubRaw.replace(/^@/, ''),
+    pastefyRaw: null,
+    linkShrtfly: null,
+    loadstringFinal: null,
+    thumbnail: null
+  };
+
+  const loadstringPreview = `loadstring(game:HttpGet("${url}"))()`;
+
+  const box = document.getElementById('manualPreview');
+  box.style.display = 'block';
+  box.innerHTML = `
+    <strong>Prévia do loadstring:</strong><br>
+    <code style="display:block;margin:8px 0;color:#bf7fff;">${loadstringPreview}</code>
+    <strong>JSON pra colar / fila:</strong>
+    <pre style="margin-top:8px;white-space:pre-wrap;color:#c9b8e8;font-size:0.85em;">${JSON.stringify(entry, null, 2)}</pre>
+    <button class="btn btn-primary" style="margin-top:10px;width:auto;" onclick='saveDraft(${JSON.stringify(JSON.stringify(entry))})'>Salvar na fila local</button>
+    <button class="btn btn-ghost" style="margin-top:10px;width:auto;" onclick="copyText(\`${JSON.stringify(entry, null, 2).replace(/`/g,'')}\`)">Copiar JSON</button>
+  `;
+
+  toast('Entrada gerada');
+}
+
+function saveDraft(entryStr) {
+  const entry = JSON.parse(entryStr);
+  localDrafts.push({ ...entry, _savedAt: new Date().toISOString() });
+  localStorage.setItem('ares_drafts', JSON.stringify(localDrafts));
+  renderLocalQueue();
+  toast('Salvo na fila local');
+}
+
+function copyText(t) {
+  navigator.clipboard.writeText(t).then(() => toast('Copiado!')).catch(() => toast('Selecione e copie manualmente'));
+}
+
+function clearManual() {
+  ['mJogo','mPlaceId','mHub','mUrl','mDesc'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('mKeyless').value = 'true';
+  document.getElementById('manualPreview').style.display = 'none';
+}
+
+function renderLocalQueue() {
+  const el = document.getElementById('localQueue');
+  if (!localDrafts.length) {
+    el.innerHTML = '<div class="empty">Nenhum rascunho ainda.</div>';
+    return;
+  }
+  el.innerHTML = localDrafts.map((s, i) => `
+    <div class="script-row">
+      <div class="script-row-info">
+        <div class="script-row-name">${s.jogo} · ${s.hub}</div>
+        <div class="script-row-meta">${s._savedAt ? new Date(s._savedAt).toLocaleString('pt-BR') : ''}</div>
+      </div>
+      <button class="btn btn-danger" style="padding:8px 10px;" onclick="removeDraft(${i})">Remover</button>
+    </div>
+  `).join('') + `
+    <button class="btn btn-ghost" style="margin-top:12px;" onclick="exportDrafts()">Exportar fila (JSON)</button>
+  `;
+}
+
+function removeDraft(i) {
+  localDrafts.splice(i, 1);
+  localStorage.setItem('ares_drafts', JSON.stringify(localDrafts));
+  renderLocalQueue();
+}
+
+function exportDrafts() {
+  const blob = new Blob([JSON.stringify(localDrafts.map(({_savedAt, ...r}) => r), null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'fila-manual.json';
+  a.click();
+  toast('JSON baixado — mescle no scripts-data e rode o Action');
+}
+</script>
+</body>
+</html>

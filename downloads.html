@@ -320,6 +320,36 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
   letter-spacing: 1px;
 }
 
+
+/* ONLINE FAKE */
+.online-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0 4px;
+  font-size: 0.78em;
+  color: var(--dim);
+  letter-spacing: 1px;
+}
+.online-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00c864;
+  box-shadow: 0 0 8px #00c864;
+  animation: online-pulse 1.6s ease-in-out infinite;
+}
+@keyframes online-pulse {
+  0%,100%{ opacity:1; transform:scale(1); }
+  50%{ opacity:0.5; transform:scale(0.85); }
+}
+.online-num {
+  color: #00c864;
+  font-weight: 700;
+  font-family: 'Orbitron', monospace;
+}
+
 footer {
   text-align: center;
   padding: 24px 20px;
@@ -470,6 +500,11 @@ footer span { color: var(--purple); }
   <div id="noResultsMsg" class="no-results" style="display:none;">Nenhum script encontrado para essa busca.</div>
 
 </div>
+
+  <div class="online-bar au d8">
+    <span class="online-dot"></span>
+    <span><span class="online-num" id="onlineCount">---</span> pessoas online agora</span>
+  </div>
 
 <footer>
   <p>© 2026 <span>ARES Scripts</span> — Todos os direitos reservados</p>
@@ -631,6 +666,30 @@ async function loadScripts() {
     console.error('Erro ao carregar scripts-data.json:', err);
   }
 }
+
+
+// Contador online fake (oscila entre 300 e 1200)
+(function fakeOnline() {
+  const el = document.getElementById('onlineCount');
+  if (!el) return;
+  let n = 300 + Math.floor(Math.random() * 900);
+  el.textContent = n.toLocaleString('pt-BR');
+  setInterval(() => {
+    const delta = Math.floor(Math.random() * 80) - 40;
+    n = Math.max(300, Math.min(1200, n + delta));
+    el.textContent = n.toLocaleString('pt-BR');
+  }, 4000 + Math.random() * 4000);
+})();
+
+
+// Contador real de visitas (CountAPI)
+(function trackVisit() {
+  try {
+    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads').catch(()=>{});
+    const day = new Date().toISOString().slice(0,10).replace(/-/g,'');
+    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads-today-' + day).catch(()=>{});
+  } catch(e) {}
+})();
 
 loadScripts();
 </script>
