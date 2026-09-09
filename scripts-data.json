@@ -11,8 +11,312 @@
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "UB Hub",
     "pastefyRaw": "https://pastefy.app/3OiYBQcz/raw",
-    "linkShrtfly": "https://shrtslug.biz/95dHM",
+    "linkShrtfly": "https://shrtslug.biz/95dwm",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JualNasiRendang/loader/refs/heads/main/main.lua\"))()",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a8d9709e23979c56c38c3a/512/512/Image/Png/noFilter"
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a0d9709e23979c56c38c3a/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Potato Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/potatohub67/potatoscripts/refs/heads/main/stealaegg.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Potato Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Chiyo Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Chiyo Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Ouroboros Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Ouroboros Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Axur Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/XE3Scripts/Axur-sGamesHub/refs/heads/main/StealAnEgg",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Axur Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@Speed X Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Speed X Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Steal an egg",
+    "place_id": "107778070777162",
+    "hub": "@S0ftKills Hub",
+    "loadstringOriginal": "https://pastebin.com/raw/ZuEBwb5K",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "S0ftKills Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Metan Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Youdfff/MetanHub/refs/heads/main/moonveil.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Metan Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Heartagram Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/tontov/NewMM2/refs/heads/main/SCRIPT",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Heartagram Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Yukio Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/universal-roblox/Mm2/refs/heads/main/Murder-Mystery-2.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Yukio Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Vertex Hub",
+    "loadstringOriginal": "https://raw.smokingscripts.org/vertex.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Vertex Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@Tora Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/gumanba/Scripts/main/mm2",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Tora Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Murder Mystery 2 [Portuguese Beta!]",
+    "place_id": "142823291",
+    "hub": "@YARHM Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "YARHM Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Teste Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Lixtron/Hub/refs/heads/main/loader",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Teste Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@OMG Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "OMG Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Zee Hub",
+    "loadstringOriginal": "https://zuwz.me/Ls-Zee-Hub-KL",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Zee Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Genesis Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/mainloadergg/GenesisHub/refs/heads/main/KingLegacy.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Genesis Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "King's Legacy",
+    "place_id": "4520749081",
+    "hub": "@Omg Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/FarmingHop",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Omg Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Brookhaven 🏡 RP",
+    "place_id": "4924922222",
+    "hub": "@Hexagon x Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/nxvap/Hexagon/refs/heads/main/brookhaven",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Hexagon x Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
+  },
+  {
+    "jogo": "Brookhaven 🏡 RP",
+    "place_id": "4924922222",
+    "hub": "@Drip Client Hub",
+    "loadstringOriginal": "https://raw.githubusercontent.com/realgengar/Main/refs/heads/main/base.lua",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Drip Client Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
   }
 ]
