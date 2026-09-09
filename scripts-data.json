@@ -10,9 +10,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "UB Hub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a0d9709e23979c56c38c3a/512/512/Image/Png/noFilter"
+    "pastefyRaw": "https://pastefy.app/3OiYBQcz/raw",
+    "linkShrtfly": "https://shrtslug.biz/95dHM",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/JualNasiRendang/loader/refs/heads/main/main.lua\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a8d9709e23979c56c38c3a/512/512/Image/Png/noFilter"
   }
 ]
