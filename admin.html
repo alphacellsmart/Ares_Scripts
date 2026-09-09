@@ -437,18 +437,20 @@ code {
     <!-- AUTO -->
     <div class="section" id="tab-auto">
       <div class="card">
-        <h2>Postagem automática (rscripts)</h2>
+        <h2>Puxada do rscripts</h2>
         <p class="note">
-          Em breve: o sistema puxa scripts do rscripts → mostra aqui pra você revisar (prévia + link encurtado) →
-          você clica em <strong>Autorizar postagem</strong> → vai pra página de downloads.
+          Sem chave API. Puxa scripts free/keyless (filtra Asus Studio e duplicados).
+          Por enquanto: rode o Action/comando <code>npm run fetch:one</code> no GitHub pra buscar 1 script.
+          A fila aparece abaixo pra você revisar.
         </p>
-        <p class="note" style="margin-top:10px;">
-          Status atual: <span class="badge badge-purple">Em construção</span><br>
-          Quando ligarmos, terá: ligar/desligar puxada, limite (ex. 10 scripts), filtros (sem Asus Studio, jogos em alta) e fila de aprovação.
-        </p>
-        <div style="margin-top:16px;">
-          <button class="btn btn-ghost" disabled>Ligar puxada automática</button>
+        <div class="form-actions" style="margin-top:12px;">
+          <button class="btn btn-primary" onclick="reloadPending()">Atualizar fila</button>
+          <button class="btn btn-ghost" onclick="toast('No GitHub Actions: rode o job fetch ou: node fetch-rscripts.js --limit=1')">Como puxar 1 script</button>
         </div>
+      </div>
+      <div class="card">
+        <h2>Fila de revisão (pending)</h2>
+        <div id="pendingList" class="empty">Carregando...</div>
       </div>
     </div>
 
