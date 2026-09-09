@@ -348,6 +348,7 @@ code {
       <button class="tab" data-tab="manual" onclick="switchTab('manual')">Postagem manual</button>
       <button class="tab" data-tab="auto" onclick="switchTab('auto')">Automático</button>
       <button class="tab" data-tab="history" onclick="switchTab('history')">Histórico</button>
+      <button class="tab" data-tab="settings" onclick="switchTab('settings')">Config</button>
     </div>
 
     <!-- DASHBOARD -->
@@ -454,6 +455,36 @@ code {
       </div>
     </div>
 
+
+    <!-- SETTINGS -->
+    <div class="section" id="tab-settings">
+      <div class="card">
+        <h2>GitHub (publicar ao aprovar)</h2>
+        <p class="note">
+          Cole um <strong>Personal Access Token</strong> com permissão de escrever no repositório.
+          Assim o botão <strong>Aprovar</strong> já manda o script pro <code>scripts-data.json</code>,
+          tira da fila e dispara o Action (Pastefy + Shrtfly).
+        </p>
+        <div class="form-group">
+          <label>Dono / repositório</label>
+          <input type="text" id="ghRepo" placeholder="alphacellsmart/Ares_Scripts">
+        </div>
+        <div class="form-group">
+          <label>Token (ghp_...)</label>
+          <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxx">
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" onclick="saveGhSettings()">Salvar</button>
+          <button class="btn btn-ghost" onclick="clearGhSettings()">Apagar token</button>
+        </div>
+        <p class="note" style="margin-top:12px;">
+          Como criar o token no celular: GitHub → foto de perfil → Settings → Developer settings →
+          Personal access tokens → Tokens (classic) → Generate → marque <code>repo</code> → Generate.
+          Copie e cole aqui. O token fica só neste celular (localStorage).
+        </p>
+      </div>
+    </div>
+
     <!-- HISTORY -->
     <div class="section" id="tab-history">
       <div class="card">
@@ -534,6 +565,14 @@ function renderPending() {
 function approvePending(i) {
   const s = pendingScripts[i];
   if (!s) return;
+  const token = localStorage.getItem('ares_gh_token');
+  const repo = localStorage.getItem('ares_gh_repo') || 'alphacellsmart/Ares_Scripts';
+  if (!token) {
+    toast('Configure o token em Config antes de aprovar');
+    switchTab('settings');
+    return;
+  }
+
   const entry = {
     jogo: s.jogo,
     place_id: s.place_id || '',
@@ -549,17 +588,121 @@ function approvePending(i) {
     thumbnail: s.thumbnail || null,
     rscriptsId: s.rscriptsId || null
   };
-  localDrafts.push({ ...entry, _savedAt: new Date().toISOString() });
-  localStorage.setItem('ares_drafts', JSON.stringify(localDrafts));
-  renderLocalQueue();
-  pendingScripts.splice(i, 1);
-  renderPending();
-  toast('Aprovado → fila local. Exporte o JSON e adicione ao scripts-data + Action.');
-  const blob = new Blob([JSON.stringify(entry, null, 2)], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'aprovado-script.json';
-  a.click();
+
+  toast('Publicando...');
+  publishApproved(entry, i, token, repo);
+}
+
+async function ghGetFile(repo, path, token) {
+  const res = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept': 'application/vnd.github+json'
+    }
+  });
+  if (!res.ok) throw new Error('Ler ' + path + ' falhou: HTTP ' + res.status);
+  const data = await res.json();
+  const content = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
+  return { sha: data.sha, json: JSON.parse(content) };
+}
+
+async function ghPutFile(repo, path, token, contentObj, sha, message) {
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(contentObj, null, 2))));
+  const res = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ message, content, sha })
+  });
+  if (!res.ok) {
+    const t = await res.text();
+    throw new Error('Salvar ' + path + ': ' + res.status + ' ' + t.slice(0, 200));
+  }
+  return res.json();
+}
+
+async function ghTriggerWorkflow(repo, token) {
+  const res = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/publicar-scripts.yml/dispatches`, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + token,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ref: 'main' })
+  });
+  if (!res.ok && res.status !== 204) {
+    console.warn('Trigger workflow', res.status);
+  }
+}
+
+async function publishApproved(entry, pendingIndex, token, repo) {
+  try {
+    // 1) scripts-data.json
+    const dataFile = await ghGetFile(repo, 'scripts-data.json', token);
+    const list = Array.isArray(dataFile.json) ? dataFile.json : [];
+    const dup = list.some(x =>
+      x.loadstringOriginal === entry.loadstringOriginal ||
+      (entry.rscriptsId && x.rscriptsId === entry.rscriptsId)
+    );
+    if (dup) {
+      toast('Já está publicado — só removendo da fila');
+    } else {
+      list.push(entry);
+      await ghPutFile(repo, 'scripts-data.json', token, list, dataFile.sha,
+        'Aprova script: ' + (entry.jogo || '') + ' ' + (entry.hub || ''));
+    }
+
+    // 2) pending-scripts.json — remove este
+    try {
+      const pendFile = await ghGetFile(repo, 'pending-scripts.json', token);
+      let pend = Array.isArray(pendFile.json) ? pendFile.json : [];
+      pend = pend.filter(p => p.rscriptsId !== entry.rscriptsId &&
+        p.loadstringOriginal !== entry.loadstringOriginal);
+      await ghPutFile(repo, 'pending-scripts.json', token, pend, pendFile.sha,
+        'Remove da fila: ' + (entry.jogo || ''));
+    } catch (e) {
+      console.warn(e);
+    }
+
+    // 3) tira da tela
+    pendingScripts.splice(pendingIndex, 1);
+    renderPending();
+    published.push(entry);
+    updateStats();
+    renderHistory();
+
+    // 4) dispara Action (Pastefy + Shrtfly)
+    await ghTriggerWorkflow(repo, token);
+
+    toast('Aprovado! Action vai encurtar e publicar na página');
+  } catch (e) {
+    console.error(e);
+    toast('Erro: ' + (e.message || e));
+  }
+}
+
+function saveGhSettings() {
+  const repo = document.getElementById('ghRepo').value.trim() || 'alphacellsmart/Ares_Scripts';
+  const token = document.getElementById('ghToken').value.trim();
+  localStorage.setItem('ares_gh_repo', repo);
+  if (token) localStorage.setItem('ares_gh_token', token);
+  toast('Config salva neste celular');
+}
+
+function clearGhSettings() {
+  localStorage.removeItem('ares_gh_token');
+  document.getElementById('ghToken').value = '';
+  toast('Token apagado');
+}
+
+function loadGhSettings() {
+  const repo = localStorage.getItem('ares_gh_repo') || 'alphacellsmart/Ares_Scripts';
+  const el = document.getElementById('ghRepo');
+  if (el) el.value = repo;
 }
 
 function rejectPending(i) {
@@ -590,6 +733,7 @@ function showApp() {
   loadVisits();
   renderLocalQueue();
   reloadPending();
+  loadGhSettings();
 }
 if (sessionStorage.getItem('ares_admin') === '1') showApp();
 
