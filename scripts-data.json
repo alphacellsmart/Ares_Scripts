@@ -459,5 +459,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/riftbetagoha_1788910914261_vPYi2O2awq.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a8d9709e23979c56c38c3a/512/512/Image/Png/noFilter",
     "rscriptsId": "6a9e381e8123ef9513812340"
+  },
+  {
+    "jogo": "[💎] Sell Ores ⛏️",
+    "place_id": "122572082932179",
+    "hub": "@AuroraHubz",
+    "loadstringOriginal": "https://rscripts.net/raw/new-op-sell-ores-script-auto-roll-auto-sell_1789030430428_fEkDjd5WcY.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "AuroraHubz",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0c7f5d311cdfe3d0b1f12c3d2b7a6a27/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa2701e685c553c79ff2783"
   }
 ]
