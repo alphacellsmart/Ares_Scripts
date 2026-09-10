@@ -430,72 +430,6 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
   border-color: var(--border);
 }
 
-/* ===== PEDIR SCRIPT ===== */
-.request-box {
-  background: rgba(30, 14, 55, 0.98);
-  border: 1px solid rgba(191, 127, 255, 0.55);
-  border-radius: 14px;
-  padding: 18px 16px;
-  margin: 16px 0 8px;
-  box-shadow: 0 0 24px rgba(139, 0, 255, 0.2);
-}
-.request-box h3 {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.85em;
-  letter-spacing: 1.5px;
-  color: #ffd76a !important;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-.request-box p {
-  font-size: 0.88em;
-  color: #f0e8ff !important;
-  margin-bottom: 14px;
-  line-height: 1.5;
-  opacity: 1 !important;
-}
-.request-box input,
-.request-box textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 10px;
-  background: #1a0a2e !important;
-  border: 1px solid rgba(191, 127, 255, 0.5) !important;
-  border-radius: 10px;
-  color: #ffffff !important;
-  font-family: inherit;
-  font-size: 0.95em;
-  outline: none;
-  opacity: 1 !important;
-  -webkit-text-fill-color: #ffffff;
-}
-.request-box input::placeholder,
-.request-box textarea::placeholder {
-  color: #c4b0e0 !important;
-  opacity: 1 !important;
-  -webkit-text-fill-color: #c4b0e0;
-}
-.request-box input:focus,
-.request-box textarea:focus {
-  border-color: #bf7fff !important;
-  box-shadow: 0 0 0 2px rgba(139, 0, 255, 0.25);
-}
-.request-box textarea { min-height: 70px; resize: vertical; }
-.request-box .dl-btn {
-  color: #ffffff !important;
-  font-size: 0.7em;
-  opacity: 1 !important;
-  width: 100%;
-}
-.request-msg {
-  font-size: 0.9em;
-  margin-top: 12px;
-  color: #00ff88 !important;
-  font-weight: 700;
-  display: none;
-}
-
-
 
 footer {
   text-align: center;
@@ -533,7 +467,6 @@ footer span { color: var(--purple); }
 <nav class="drawer" id="drawer">
   <a href="#executores" onclick="closeMenu(); scrollToId('executores')">Executores</a>
   <a href="#scripts-section" onclick="closeMenu(); scrollToId('scripts-section')">Scripts</a>
-  <a href="#pedir-script" onclick="closeMenu(); scrollToId('pedir-script')">Pedir script</a>
 </nav>
 
 <div class="content">
@@ -660,15 +593,7 @@ footer span { color: var(--purple); }
 
 </div>
 
-
-  <div id="pedir-script" class="request-box">
-    <h3>Pedir um script</h3>
-    <p>Digite o jogo que você quer. Analisamos e, se possível, postamos em até 24 horas.</p>
-    <input type="text" id="reqGame" placeholder="Nome do jogo (ex: Blox Fruits)">
-    <textarea id="reqNote" placeholder="Observação opcional (hub, keyless, etc.)"></textarea>
-    <button class="dl-btn" style="width:100%;" onclick="submitRequest()">Enviar pedido</button>
-    <div class="request-msg" id="reqMsg">Pedido registrado! Em até 24h a gente analisa.</div>
-  </div>
+</div>
 
   <div class="online-bar au d8">
     <span class="online-dot"></span>
@@ -901,28 +826,6 @@ function scrollToId(id) {
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function submitRequest() {
-  const game = (document.getElementById('reqGame').value || '').trim();
-  const note = (document.getElementById('reqNote').value || '').trim();
-  if (!game) {
-    alert('Digite o nome do jogo');
-    return;
-  }
-  const req = {
-    jogo: game,
-    note: note,
-    at: new Date().toISOString(),
-    status: 'pending'
-  };
-  const list = JSON.parse(localStorage.getItem('ares_script_requests') || '[]');
-  list.unshift(req);
-  localStorage.setItem('ares_script_requests', JSON.stringify(list.slice(0, 50)));
-  document.getElementById('reqGame').value = '';
-  document.getElementById('reqNote').value = '';
-  const msg = document.getElementById('reqMsg');
-  msg.style.display = 'block';
-  setTimeout(() => { msg.style.display = 'none'; }, 4000);
-}
 
 
 loadScripts();
