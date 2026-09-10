@@ -440,35 +440,45 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 }
 .request-box h3 {
   font-family: 'Orbitron', monospace;
-  font-size: 0.72em;
+  font-size: 0.78em;
   letter-spacing: 1.5px;
-  color: var(--gold);
+  color: #e8c36a;
   margin-bottom: 8px;
 }
 .request-box p {
-  font-size: 0.78em;
-  color: var(--dim);
+  font-size: 0.82em;
+  color: #d4c8e8;
   margin-bottom: 12px;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 .request-box input, .request-box textarea {
   width: 100%;
   padding: 11px 12px;
   margin-bottom: 10px;
-  background: rgba(0,0,0,0.35);
-  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.45);
+  border: 1px solid rgba(139,0,255,0.4);
   border-radius: 10px;
-  color: var(--white);
+  color: #f5f0ff;
   font-family: inherit;
-  font-size: 0.9em;
+  font-size: 0.92em;
   outline: none;
+}
+.request-box input::placeholder,
+.request-box textarea::placeholder {
+  color: #a894c4;
+  opacity: 1;
 }
 .request-box input:focus, .request-box textarea:focus { border-color: var(--purple); }
 .request-box textarea { min-height: 70px; resize: vertical; }
+.request-box .dl-btn {
+  color: #fff;
+  font-size: 0.65em;
+}
 .request-msg {
-  font-size: 0.8em;
-  margin-top: 8px;
-  color: #00c864;
+  font-size: 0.85em;
+  margin-top: 10px;
+  color: #00e676;
+  font-weight: 600;
   display: none;
 }
 
