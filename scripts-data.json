@@ -382,10 +382,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "BitLow",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-c86b7d253016e3d58e6a91a13f62dab7/128/128/GameIcon12/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/2atljHnT/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gzT",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/wwh-hub-or-autofarm-pet-spawner-and-house-cloner-works-here_1788985636410_uJGwqbdTAK.txt\"))()",
+    "thumbnail": "https://t3.rbxcdn.com/180DAY-b7320474b7db979e5754a1b55a381d6f",
     "rscriptsId": "6aa1c124685c553c79fcc0c0"
   },
   {
@@ -400,10 +400,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "ADMlN",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-6f04369060213cc72bbec0d8dd5a47a4/128/128/GameIcon8/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/muZzOOmU/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gzV",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/echo-hub-mm2-or-pet-spawner-silent-aim-kill-all-esp-keyl_1789010226246_ULFhRMbfb9.txt\"))()",
+    "thumbnail": "https://t4.rbxcdn.com/180DAY-dc729135d7789ab11a92a9d761648577",
     "rscriptsId": "6aa22132bbc326101ec869aa"
   },
   {
@@ -418,10 +418,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Ouroboros",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-686fb788cf627aa2500bedb3dd63624b/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/AjsWRdvA/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gzW",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/keyless-fruit-zombie-survival-script_1788980118386_zK9W0Ywm3m.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c08c1394eb727187e71fe7c80eaae0d2/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa1ab962a03e85b0ee24e1e"
   }
 ]
