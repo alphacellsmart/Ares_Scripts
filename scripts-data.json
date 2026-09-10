@@ -494,5 +494,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/menhub-lite_1789035268194_xCaYsLJpan.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa28304bbc326101ec9d10b"
+  },
+  {
+    "jogo": "Haikyuu Legends ",
+    "place_id": "73956553001240",
+    "hub": "@lucatbd73851546",
+    "loadstringOriginal": "https://rscripts.net/raw/volleyball-legends-inf-stamina-speed-hack-working_1789071687202_I3m7lJpM7a.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "lucatbd73851546",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9c12ccb530c74a4d87e9ed54d6497367/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa31147abee352d6c9fb99b"
   }
 ]
