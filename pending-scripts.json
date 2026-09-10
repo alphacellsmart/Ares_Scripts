@@ -1,31 +1,5 @@
 [
   {
-    "rscriptsId": "6aa2701e685c553c79ff2783",
-    "slug": "new-op-sell-ores-script-auto-roll-auto-sell-rBnz",
-    "title": "[NEW] OP Sell Ores Script - Auto Roll Auto Sell",
-    "jogo": "[💎] Sell Ores ⛏️",
-    "place_id": "122572082932179",
-    "hub": "@AuroraHubz",
-    "creditos": "AuroraHubz",
-    "loadstringOriginal": "https://rscripts.net/raw/new-op-sell-ores-script-auto-roll-auto-sell_1789030430428_fEkDjd5WcY.txt",
-    "rawScript": "https://rscripts.net/raw/new-op-sell-ores-script-auto-roll-auto-sell_1789030430428_fEkDjd5WcY.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Features:Auto RollAuto BuyAuto SellAuto Ore LevelAuto CratesAuto FurnaceAuto Drill BoardsAuto TunnelsAuto FloorsAuto RollerAuto PedestalsAuto Growth GemsAuto RewardsAuto RewardsAuto RewardsAuto Lucky Spin",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-0c7f5d311cdfe3d0b1f12c3d2b7a6a27/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 0,
-    "views": 30,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-10T10:47:17.234Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6aa28304bbc326101ec9d10b",
     "slug": "menhub-lite-VX4u",
     "title": "Menhub lite",
