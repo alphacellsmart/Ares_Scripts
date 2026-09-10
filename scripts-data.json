@@ -441,5 +441,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/ufe-free-fe-animations-r15-and-r6_1788279567290_oE3gSB20BU.txt\"))()",
     "thumbnail": null,
     "rscriptsId": "6a5404a9ea59df0af55afd07"
+  },
+  {
+    "jogo": "Steal an Egg",
+    "place_id": "107778070777162",
+    "hub": "@goha",
+    "loadstringOriginal": "https://rscripts.net/raw/riftbetagoha_1788910914261_vPYi2O2awq.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "goha",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a9e381e8123ef9513812340"
   }
 ]
