@@ -472,10 +472,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "AuroraHubz",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-0c7f5d311cdfe3d0b1f12c3d2b7a6a27/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/6XAmH9IL/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gZT",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/new-op-sell-ores-script-auto-roll-auto-sell_1789030430428_fEkDjd5WcY.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-dd6190b59fdb45250097eeb86556639e/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa2701e685c553c79ff2783"
   },
   {
@@ -489,10 +489,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Mellow",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/eqe2ht0D/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gZV",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/menhub-lite_1789035268194_xCaYsLJpan.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-2f7bb0535e48ac3766835b44ded27a74/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa28304bbc326101ec9d10b"
   }
 ]
