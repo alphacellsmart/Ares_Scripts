@@ -432,55 +432,69 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 
 /* ===== PEDIR SCRIPT ===== */
 .request-box {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: rgba(30, 14, 55, 0.98);
+  border: 1px solid rgba(191, 127, 255, 0.55);
   border-radius: 14px;
-  padding: 16px;
+  padding: 18px 16px;
   margin: 16px 0 8px;
+  box-shadow: 0 0 24px rgba(139, 0, 255, 0.2);
 }
 .request-box h3 {
   font-family: 'Orbitron', monospace;
-  font-size: 0.78em;
+  font-size: 0.85em;
   letter-spacing: 1.5px;
-  color: #e8c36a;
-  margin-bottom: 8px;
+  color: #ffd76a !important;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 .request-box p {
-  font-size: 0.82em;
-  color: #d4c8e8;
-  margin-bottom: 12px;
-  line-height: 1.45;
+  font-size: 0.88em;
+  color: #f0e8ff !important;
+  margin-bottom: 14px;
+  line-height: 1.5;
+  opacity: 1 !important;
 }
-.request-box input, .request-box textarea {
+.request-box input,
+.request-box textarea {
   width: 100%;
-  padding: 11px 12px;
+  padding: 12px 14px;
   margin-bottom: 10px;
-  background: rgba(0,0,0,0.45);
-  border: 1px solid rgba(139,0,255,0.4);
+  background: #1a0a2e !important;
+  border: 1px solid rgba(191, 127, 255, 0.5) !important;
   border-radius: 10px;
-  color: #f5f0ff;
+  color: #ffffff !important;
   font-family: inherit;
-  font-size: 0.92em;
+  font-size: 0.95em;
   outline: none;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff;
 }
 .request-box input::placeholder,
 .request-box textarea::placeholder {
-  color: #a894c4;
-  opacity: 1;
+  color: #c4b0e0 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #c4b0e0;
 }
-.request-box input:focus, .request-box textarea:focus { border-color: var(--purple); }
+.request-box input:focus,
+.request-box textarea:focus {
+  border-color: #bf7fff !important;
+  box-shadow: 0 0 0 2px rgba(139, 0, 255, 0.25);
+}
 .request-box textarea { min-height: 70px; resize: vertical; }
 .request-box .dl-btn {
-  color: #fff;
-  font-size: 0.65em;
+  color: #ffffff !important;
+  font-size: 0.7em;
+  opacity: 1 !important;
+  width: 100%;
 }
 .request-msg {
-  font-size: 0.85em;
-  margin-top: 10px;
-  color: #00e676;
-  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 12px;
+  color: #00ff88 !important;
+  font-weight: 700;
   display: none;
 }
+
 
 
 footer {
@@ -647,7 +661,7 @@ footer span { color: var(--purple); }
 </div>
 
 
-  <div id="pedir-script" class="request-box au d8">
+  <div id="pedir-script" class="request-box">
     <h3>Pedir um script</h3>
     <p>Digite o jogo que você quer. Analisamos e, se possível, postamos em até 24 horas.</p>
     <input type="text" id="reqGame" placeholder="Nome do jogo (ex: Blox Fruits)">
