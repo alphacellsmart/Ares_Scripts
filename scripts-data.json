@@ -405,5 +405,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-6f04369060213cc72bbec0d8dd5a47a4/128/128/GameIcon8/Webp/noFilter",
     "rscriptsId": "6aa22132bbc326101ec869aa"
+  },
+  {
+    "jogo": "Fruit Zombie Survival 🍇",
+    "place_id": "75290583112878",
+    "hub": "@Ouroboros",
+    "loadstringOriginal": "https://rscripts.net/raw/keyless-fruit-zombie-survival-script_1788980118386_zK9W0Ywm3m.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Ouroboros",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-686fb788cf627aa2500bedb3dd63624b/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa1ab962a03e85b0ee24e1e"
   }
 ]
