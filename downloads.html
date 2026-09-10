@@ -350,6 +350,129 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
   font-family: 'Orbitron', monospace;
 }
 
+
+/* ===== HAMBURGER / DRAWER ===== */
+.menu-btn {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 200;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(18,8,30,0.92);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+.menu-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: 0.25s;
+}
+.menu-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-btn.open span:nth-child(2) { opacity: 0; }
+.menu-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.drawer-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 180;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s;
+}
+.drawer-overlay.open { opacity: 1; pointer-events: auto; }
+
+.drawer {
+  position: fixed;
+  top: 0; left: 0;
+  width: min(280px, 82vw);
+  height: 100%;
+  background: #0c0618;
+  border-right: 1px solid var(--border);
+  z-index: 190;
+  transform: translateX(-105%);
+  transition: transform 0.28s ease;
+  padding: 70px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.drawer.open { transform: translateX(0); }
+.drawer a, .drawer button.drawer-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--white);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.drawer a:hover, .drawer button.drawer-link:hover {
+  background: rgba(139,0,255,0.12);
+  border-color: var(--border);
+}
+
+/* ===== PEDIR SCRIPT ===== */
+.request-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 16px 0 8px;
+}
+.request-box h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72em;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.request-box p {
+  font-size: 0.78em;
+  color: var(--dim);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.request-box input, .request-box textarea {
+  width: 100%;
+  padding: 11px 12px;
+  margin-bottom: 10px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: inherit;
+  font-size: 0.9em;
+  outline: none;
+}
+.request-box input:focus, .request-box textarea:focus { border-color: var(--purple); }
+.request-box textarea { min-height: 70px; resize: vertical; }
+.request-msg {
+  font-size: 0.8em;
+  margin-top: 8px;
+  color: #00c864;
+  display: none;
+}
+
+
 footer {
   text-align: center;
   padding: 24px 20px;
@@ -377,6 +500,17 @@ footer span { color: var(--purple); }
 <div class="bg-overlay"></div>
 <div class="scan"></div>
 <div class="glow-bar"></div>
+
+
+<button class="menu-btn" id="menuBtn" aria-label="Menu" onclick="toggleMenu()">
+  <span></span><span></span><span></span>
+</button>
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeMenu()"></div>
+<nav class="drawer" id="drawer">
+  <a href="#executores" onclick="closeMenu(); scrollToId('executores')">Executores</a>
+  <a href="#scripts-section" onclick="closeMenu(); scrollToId('scripts-section')">Scripts</a>
+  <a href="#pedir-script" onclick="closeMenu(); scrollToId('pedir-script')">Pedir script</a>
+</nav>
 
 <div class="content">
 
@@ -490,6 +624,7 @@ footer span { color: var(--purple); }
     <span class="big-title-line"></span>
   </div>
 
+  <div id="scripts-section"></div>
   <!-- Grid de jogos (thumbnails) -->
   <div id="games-grid" class="games-grid au d7"></div>
 
@@ -500,6 +635,16 @@ footer span { color: var(--purple); }
   <div id="noResultsMsg" class="no-results" style="display:none;">Nenhum script encontrado para essa busca.</div>
 
 </div>
+
+
+  <div id="pedir-script" class="request-box au d8">
+    <h3>Pedir um script</h3>
+    <p>Digite o jogo que você quer. Analisamos e, se possível, postamos em até 24 horas.</p>
+    <input type="text" id="reqGame" placeholder="Nome do jogo (ex: Blox Fruits)">
+    <textarea id="reqNote" placeholder="Observação opcional (hub, keyless, etc.)"></textarea>
+    <button class="dl-btn" style="width:100%;" onclick="submitRequest()">Enviar pedido</button>
+    <div class="request-msg" id="reqMsg">Pedido registrado! Em até 24h a gente analisa.</div>
+  </div>
 
   <div class="online-bar au d8">
     <span class="online-dot"></span>
@@ -614,13 +759,34 @@ async function loadScripts() {
 
     // Agrupa por jogo (só jogos que têm pelo menos 1 script)
     allGames = {};
+    // Agrupa por place_id (se existir) ou nome normalizado — evita "Steal an egg" vs "Steal an Egg"
+    const keyToDisplay = {};
     scripts.forEach(s => {
       if (!s.jogo) return;
-      if (!allGames[s.jogo]) allGames[s.jogo] = [];
-      allGames[s.jogo].push(s);
+      const pid = (s.place_id || '').toString().trim();
+      const norm = s.jogo.trim().toLowerCase().replace(/\s+/g, ' ');
+      const key = pid || norm;
+      if (!allGames[key]) {
+        allGames[key] = [];
+        keyToDisplay[key] = s.jogo.trim();
+      } else {
+        // prefira o nome mais "bonito" / mais longo com capitalização
+        const cur = keyToDisplay[key];
+        if (s.jogo.trim().length > cur.length) keyToDisplay[key] = s.jogo.trim();
+      }
+      allGames[key].push(s);
     });
 
-    const gameNames = Object.keys(allGames);
+    // mapa interno: displayName -> scripts (para o painel)
+    const grouped = {};
+    Object.keys(allGames).forEach(key => {
+      const display = keyToDisplay[key];
+      if (!grouped[display]) grouped[display] = [];
+      grouped[display] = grouped[display].concat(allGames[key]);
+    });
+    allGames = grouped;
+
+    const gameNames = Object.keys(allGames).sort((a,b) => a.localeCompare(b));
     loading.style.display = 'none';
 
     if (gameNames.length === 0) {
@@ -690,6 +856,50 @@ async function loadScripts() {
     fetch('https://api.countapi.xyz/hit/ares-scripts/downloads-today-' + day).catch(()=>{});
   } catch(e) {}
 })();
+
+
+function toggleMenu() {
+  const btn = document.getElementById('menuBtn');
+  const drawer = document.getElementById('drawer');
+  const overlay = document.getElementById('drawerOverlay');
+  const open = !drawer.classList.contains('open');
+  btn.classList.toggle('open', open);
+  drawer.classList.toggle('open', open);
+  overlay.classList.toggle('open', open);
+}
+function closeMenu() {
+  document.getElementById('menuBtn').classList.remove('open');
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
+}
+function scrollToId(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function submitRequest() {
+  const game = (document.getElementById('reqGame').value || '').trim();
+  const note = (document.getElementById('reqNote').value || '').trim();
+  if (!game) {
+    alert('Digite o nome do jogo');
+    return;
+  }
+  const req = {
+    jogo: game,
+    note: note,
+    at: new Date().toISOString(),
+    status: 'pending'
+  };
+  const list = JSON.parse(localStorage.getItem('ares_script_requests') || '[]');
+  list.unshift(req);
+  localStorage.setItem('ares_script_requests', JSON.stringify(list.slice(0, 50)));
+  document.getElementById('reqGame').value = '';
+  document.getElementById('reqNote').value = '';
+  const msg = document.getElementById('reqMsg');
+  msg.style.display = 'block';
+  setTimeout(() => { msg.style.display = 'none'; }, 4000);
+}
+
 
 loadScripts();
 </script>
