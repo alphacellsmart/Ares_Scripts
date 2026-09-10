@@ -436,9 +436,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "benomat",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
+    "pastefyRaw": "https://pastefy.app/vbITa4uD/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gXf",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/ufe-free-fe-animations-r15-and-r6_1788279567290_oE3gSB20BU.txt\"))()",
     "thumbnail": null,
     "rscriptsId": "6a5404a9ea59df0af55afd07"
   }

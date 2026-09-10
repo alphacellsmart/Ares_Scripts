@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "rscriptsId": "6a9e381e8123ef9513812340",
+    "slug": "riftbetagoha-psNV",
+    "title": "[RIFT][BETA][Goha]",
+    "jogo": "Steal an Egg",
+    "place_id": "107778070777162",
+    "hub": "@goha",
+    "creditos": "goha",
+    "loadstringOriginal": "https://rscripts.net/raw/riftbetagoha_1788910914261_vPYi2O2awq.txt",
+    "rawScript": "https://rscripts.net/raw/riftbetagoha_1788910914261_vPYi2O2awq.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "09/09/26[XENO AND WEAK EXECUTORS ARE NOT SUPPORTED][THE RIFT TAB REQUIRES A KEY, EVERYTHING ELSE IS FREE]For information, bug reports and suggestions:https://discord.gg/NMtvPCkycQhttps://goha.dev--------------------------------------------------------[Steal an Egg] -&gt; BETA[New]  [Hub]  -&gt; Hop ",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 5,
+    "views": 5493,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-10T10:26:08.080Z",
+    "status": "pending"
+  }
+]
