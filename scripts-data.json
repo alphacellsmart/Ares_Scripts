@@ -454,10 +454,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "goha",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/5jXSZahH/raw",
+    "linkShrtfly": "https://shrtslug.biz/95gYC",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/riftbetagoha_1788910914261_vPYi2O2awq.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-856231c847a8d9709e23979c56c38c3a/512/512/Image/Png/noFilter",
     "rscriptsId": "6a9e381e8123ef9513812340"
   }
 ]
