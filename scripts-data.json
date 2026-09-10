@@ -387,5 +387,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-c86b7d253016e3d58e6a91a13f62dab7/128/128/GameIcon12/Webp/noFilter",
     "rscriptsId": "6aa1c124685c553c79fcc0c0"
+  },
+  {
+    "jogo": "Мurder Мystery 2",
+    "place_id": "140473742772877",
+    "hub": "@ADMlN",
+    "loadstringOriginal": "https://rscripts.net/raw/echo-hub-mm2-or-pet-spawner-silent-aim-kill-all-esp-keyl_1789010226246_ULFhRMbfb9.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "ADMlN",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-6f04369060213cc72bbec0d8dd5a47a4/128/128/GameIcon8/Webp/noFilter",
+    "rscriptsId": "6aa22132bbc326101ec869aa"
   }
 ]
