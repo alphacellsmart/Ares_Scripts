@@ -1,5 +1,31 @@
 [
   {
+    "rscriptsId": "6a8ff402a5b08596aeb1f5e0",
+    "slug": "luware-murder-mystery-2-auto-farm-silent-aim-grab-gun-jq4O",
+    "title": "LuWare - Murder Mystery 2 (Auto Farm, Silent Aim, Grab Gun)",
+    "jogo": "Murder Mystery 2",
+    "place_id": "142823291",
+    "hub": "@Abdullahpro20",
+    "creditos": "Abdullahpro20",
+    "loadstringOriginal": "https://rscripts.net/raw/luware-murder-mystery-2-auto-farm-silent-aim-grab-gun_1787825684679_nZy7HtIPMz.txt",
+    "rawScript": "https://rscripts.net/raw/luware-murder-mystery-2-auto-farm-silent-aim-grab-gun_1787825684679_nZy7HtIPMz.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Official LuWare Loadstring.Join Discord for Infomation and Support!",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 7,
+    "views": 1873,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-11T10:44:12.162Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa372c7abee352d6ca0086f",
     "slug": "gtvz-hub-or-keyboard-slide-1-speed-BLSS",
     "title": "GTVZ HUB | KEYBOARD SLIDE +1 SPEED",
