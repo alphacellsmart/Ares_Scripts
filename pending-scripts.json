@@ -1,5 +1,30 @@
 [
   {
+    "rscriptsId": "6aa40e2c8e78304edf240000",
+    "slug": "klevorx-hub-1-tongue-escape-open-source-code-0p4p",
+    "title": "Klevorx Hub (+1 Tongue Escape) Open Source Code",
+    "jogo": "+1 Tongue Escape 😛",
+    "place_id": "122245938604556",
+    "hub": "@mewzking",
+    "creditos": "mewzking",
+    "loadstringOriginal": "https://rscripts.net/raw/klevorx-hub-1-tongue-escape-open-source-code_1789136428641_8VyjUhAVFY.txt",
+    "rawScript": "https://rscripts.net/raw/klevorx-hub-1-tongue-escape-open-source-code_1789136428641_8VyjUhAVFY.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "An open-source, high-performance automation suite for Roblox's +1 Tongue Escape. Engineered with a custom, sleek dark-themed UI featuring real-time status dashboards, minimize/close window controls, and an integrated Discord community popup modal. Fully optimized to run smoothly in the background wh",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-87f18e7614e25c19671b6c2c84211114/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 1,
+    "views": 2,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-11T14:23:28.828Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa40c704a254d38dc3e0d4d",
     "slug": "jujutsu-shenanigan-script-or-blackflash-chain-camlock-and-more-khj4",
     "title": "Jujutsu Shenanigan Script | BlackFlash Chain, Camlock & More",
