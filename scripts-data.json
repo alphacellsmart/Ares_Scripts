@@ -783,5 +783,23 @@
     "linkShrtfly": "https://shrtslug.biz/95kwJ",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/clover-hub-sailor-piece-script-auto-farm-undetected-no-key_1776358401249_LU0a0yAkup.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d0c5d3ada3a912ae6671e068ff1516d1/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Grow a Garden 2",
+    "place_id": "97598239454123",
+    "hub": "@vyxurz",
+    "loadstringOriginal": "https://rscripts.net/raw/kyo-scripts-or-op-hub-40-features_1783301859682_mxlqfnpxkY.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "vyxurz",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a4b06e307c16d341784de15"
   }
 ]
