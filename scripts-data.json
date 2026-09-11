@@ -698,10 +698,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "vexium1",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-40884ecbf2fafe47e78befbff75cdef8/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/blrXrDec/raw",
+    "linkShrtfly": "https://shrtslug.biz/95kvs",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/auto-farm-auto-collect-auto-eggs-auto-feed_1789134605827_nkgEUxZyN7.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9077ef7125946cb2ca17c387e43730a6/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa4070d1a8a89faef15dead"
   }
 ]
