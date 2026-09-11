@@ -835,5 +835,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-87f18e7614e25c19671b6c2c84211114/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa40e2c8e78304edf240000"
+  },
+  {
+    "jogo": "Jujutsu Shenanigans [THROWABLES]",
+    "place_id": "9391468976",
+    "hub": "@ScriptFarmer",
+    "loadstringOriginal": "https://rscripts.net/raw/jujutsu-shenanigan-script-or-blackflash-chain-camlock-and-more_1789135984606_6BFFmUqGS6.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "ScriptFarmer",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa40c704a254d38dc3e0d4d"
   }
 ]
