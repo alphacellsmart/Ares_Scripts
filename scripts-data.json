@@ -600,5 +600,22 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/timebomb-auto-chasing-and-escaping-players-automaticall_1789029532233_AylFAVfOLf.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-f22851498a8e97540c52a3606851c5c7/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa26c9c6ad770b033f51e8c"
+  },
+  {
+    "jogo": "TECHY",
+    "place_id": "99881445915767",
+    "hub": "@DewzaCSharp",
+    "loadstringOriginal": "https://rscripts.net/raw/techy-aimbot-and-esp_1789126179957_j8QwMybHvW.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "DewzaCSharp",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-b58a6e2ca17a25083aa145be78cec940/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa3e6238e78304edf23cbdf"
   }
 ]
