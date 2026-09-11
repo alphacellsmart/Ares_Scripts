@@ -667,5 +667,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/karinderya-script-nyxen-hub-no-key-auto-serve-loop_1789126097634_cqmnVuEHPB.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-57a916807f5f2908d68898871f00accc/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa3e5d1abee352d6ca05c5c"
+  },
+  {
+    "jogo": "DOORS 👁️",
+    "place_id": "6516141723",
+    "hub": "@ar0sla",
+    "loadstringOriginal": "https://rscripts.net/raw/doors-rushhub_1789134372586_HTN08ot7cj.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "ar0sla",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14df5c19faa7ad5d5b14ddd49720eaed/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa4041858fadabf23371746"
   }
 ]
