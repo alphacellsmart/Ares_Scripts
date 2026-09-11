@@ -530,5 +530,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/the-best-the-veil-farm-script-or-anti-cheat-bypass-op_1789055286274_6iIkWcZj3Z.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-e5ab0a19f54e326b44b356a26769eac2/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa2d1360357474078cd802c"
+  },
+  {
+    "jogo": "Murder Mystery 2",
+    "place_id": "142823291",
+    "hub": "@Abdullahpro20",
+    "loadstringOriginal": "https://rscripts.net/raw/luware-murder-mystery-2-auto-farm-silent-aim-grab-gun_1787825684679_nZy7HtIPMz.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Abdullahpro20",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a8ff402a5b08596aeb1f5e0"
   }
 ]
