@@ -389,8 +389,9 @@ code {
       <div class="card">
         <h2>Nova postagem manual</h2>
         <p class="note" style="margin-bottom:14px;">
-          Preenche os campos → gera a entrada. Depois você cola no <code>scripts-data.json</code> e roda o Action
-          <strong>ou</strong> usa o fluxo automático quando estiver pronto. A prévia mostra o loadstring final.
+          Preenche os campos e clica em <strong>Publicar agora</strong>.
+          O script entra no <code>scripts-data.json</code> e o Action faz Pastefy + Shrtfly sozinho.
+          (Precisa do token salvo na aba <strong>Config</strong>.)
         </p>
         <div class="form-grid">
           <div class="form-group">
@@ -422,7 +423,8 @@ code {
           </div>
         </div>
         <div class="form-actions">
-          <button class="btn btn-primary" onclick="generateManual()">Gerar entrada JSON</button>
+          <button class="btn btn-primary" onclick="publishManual()">Publicar agora</button>
+          <button class="btn btn-ghost" onclick="previewManual()">Só prévia</button>
           <button class="btn btn-ghost" onclick="clearManual()">Limpar</button>
         </div>
         <div class="preview-box" id="manualPreview" style="display:none;"></div>
@@ -840,30 +842,21 @@ async function loadVisits() {
 }
 
 // ===== MANUAL =====
-function generateManual() {
+function buildManualEntry() {
   const jogo = document.getElementById('mJogo').value.trim();
   const place_id = document.getElementById('mPlaceId').value.trim();
   const hubRaw = document.getElementById('mHub').value.trim();
-  const hub = hubRaw.startsWith('@') ? hubRaw : '@' + hubRaw;
+  const hub = hubRaw.startsWith('@') ? hubRaw : (hubRaw ? '@' + hubRaw : '@Manual');
   const keyless = document.getElementById('mKeyless').value === 'true';
   const url = document.getElementById('mUrl').value.trim();
   const desc = document.getElementById('mDesc').value.trim() || (keyless ? 'Keyless • Compatible with Delta' : 'Key System • Compatible with Delta');
 
   if (!jogo || !url) {
     toast('Preencha pelo menos Jogo e URL do script');
-    return;
+    return null;
   }
 
-  // anti-duplicata simples
-  const exists = published.some(s =>
-    s.loadstringOriginal === url ||
-    (s.jogo === jogo && (s.hub === hub || s.creditos === hubRaw))
-  );
-  if (exists) {
-    toast('⚠ Parece que esse script já está publicado');
-  }
-
-  const entry = {
+  return {
     jogo,
     place_id: place_id || '',
     hub,
@@ -871,30 +864,82 @@ function generateManual() {
     keyless,
     compatible: ['Delta'],
     descricao: desc,
-    creditos: hubRaw.replace(/^@/, ''),
+    creditos: hubRaw.replace(/^@/, '') || 'Manual',
     pastefyRaw: null,
     linkShrtfly: null,
     loadstringFinal: null,
     thumbnail: null
   };
+}
 
-  const loadstringPreview = `loadstring(game:HttpGet("${url}"))()`;
-
+function previewManual() {
+  const entry = buildManualEntry();
+  if (!entry) return;
+  const loadstringPreview = `loadstring(game:HttpGet("${entry.loadstringOriginal}"))()`;
   const box = document.getElementById('manualPreview');
   box.style.display = 'block';
   box.innerHTML = `
     <strong>Prévia do loadstring:</strong><br>
     <code style="display:block;margin:8px 0;color:#bf7fff;">${loadstringPreview}</code>
-    <strong>JSON pra colar / fila:</strong>
     <pre style="margin-top:8px;white-space:pre-wrap;color:#c9b8e8;font-size:0.85em;">${JSON.stringify(entry, null, 2)}</pre>
-    <button class="btn btn-primary" style="margin-top:10px;width:auto;" onclick='saveDraft(${JSON.stringify(JSON.stringify(entry))})'>Salvar na fila local</button>
-    <button class="btn btn-ghost" style="margin-top:10px;width:auto;" onclick="copyText(\`${JSON.stringify(entry, null, 2).replace(/`/g,'')}\`)">Copiar JSON</button>
   `;
-
-  toast('Entrada gerada');
+  toast('Prévia gerada');
 }
 
-function saveDraft(entryStr) {
+async function publishManual() {
+  const entry = buildManualEntry();
+  if (!entry) return;
+
+  const token = localStorage.getItem('ares_gh_token');
+  const repo = localStorage.getItem('ares_gh_repo') || 'alphacellsmart/Ares_Scripts';
+  if (!token) {
+    toast('Configure o token em Config antes de publicar');
+    switchTab('settings');
+    return;
+  }
+
+  // anti-duplicata
+  const exists = published.some(s =>
+    s.loadstringOriginal === entry.loadstringOriginal ||
+    (s.jogo === entry.jogo && (s.hub === entry.hub || s.creditos === entry.creditos))
+  );
+  if (exists) {
+    const ok = confirm('Parece que esse script já está publicado. Publicar mesmo assim?');
+    if (!ok) return;
+  }
+
+  const box = document.getElementById('manualPreview');
+  box.style.display = 'block';
+  box.innerHTML = '<strong>Publicando...</strong>';
+  toast('Publicando...');
+
+  try {
+    const dataFile = await ghGetFile(repo, 'scripts-data.json', token);
+    const list = Array.isArray(dataFile.json) ? dataFile.json : [];
+    list.push(entry);
+    await ghPutFile(repo, 'scripts-data.json', token, list, dataFile.sha,
+      'Postagem manual: ' + entry.jogo + ' ' + entry.hub);
+
+    published.push(entry);
+    updateStats();
+    renderHistory();
+    renderGameSummary();
+
+    await ghTriggerWorkflow(repo, token);
+
+    box.innerHTML = '<strong style="color:#00c864;">Publicado!</strong><br>O Action vai encurtar e colocar na página de downloads em 1–2 min.';
+    toast('Publicado! Action em andamento');
+    clearManual();
+    document.getElementById('manualPreview').style.display = 'block';
+    document.getElementById('manualPreview').innerHTML = box.innerHTML;
+  } catch (e) {
+    console.error(e);
+    box.innerHTML = '<strong style="color:#ff4d6a;">Erro:</strong> ' + (e.message || e);
+    toast('Erro: ' + (e.message || e));
+  }
+}
+
+function saveDraftfunction saveDraft(entryStr) {
   const entry = JSON.parse(entryStr);
   localDrafts.push({ ...entry, _savedAt: new Date().toISOString() });
   localStorage.setItem('ares_drafts', JSON.stringify(localDrafts));
