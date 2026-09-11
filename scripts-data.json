@@ -548,5 +548,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a8ff402a5b08596aeb1f5e0"
+  },
+  {
+    "jogo": "[UP] Keyboard Slide +1 Speed",
+    "place_id": "74581423482101",
+    "hub": "@Quicks",
+    "loadstringOriginal": "https://rscripts.net/raw/gtvz-hub-or-keyboard-slide-1-speed_1789096647026_w8ZDbDB0yc.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Quicks",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-50183027c4a4de0540b9b6c2c66671bb/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa372c7abee352d6ca0086f"
   }
 ]
