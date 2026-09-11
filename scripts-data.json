@@ -731,9 +731,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Axonic",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": null
+    "pastefyRaw": "https://pastefy.app/HgXB42EX/raw",
+    "linkShrtfly": "https://shrtslug.biz/95kw6",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/axonic-blox-fruits-keyless-xeno-supported_1781485647622_UW04vZNmlr.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
   }
 ]
