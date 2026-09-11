@@ -680,10 +680,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "ar0sla",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-14df5c19faa7ad5d5b14ddd49720eaed/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/zvgoAvbn/raw",
+    "linkShrtfly": "https://shrtslug.biz/95kvj",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/doors-rushhub_1789134372586_HTN08ot7cj.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-beb40b4f9cda17a98616d85b2c242e68/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa4041858fadabf23371746"
   }
 ]
