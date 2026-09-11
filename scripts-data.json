@@ -633,5 +633,22 @@
     "linkShrtfly": "https://shrtslug.biz/95kng",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Fling Things and People",
+    "place_id": "6961824067",
+    "hub": "@ChioreanMarius",
+    "loadstringOriginal": "https://rscripts.net/raw/fling-things-and-people-scripts-no-key_1789125912837_iAvwcl5R6v.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "ChioreanMarius",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9ceb24935041a588b60d214884597291/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa3e51858fadabf2336f4c5"
   }
 ]
