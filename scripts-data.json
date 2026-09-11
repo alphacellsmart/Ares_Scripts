@@ -685,5 +685,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/doors-rushhub_1789134372586_HTN08ot7cj.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-beb40b4f9cda17a98616d85b2c242e68/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa4041858fadabf23371746"
+  },
+  {
+    "jogo": "Chicken Farm 🐣",
+    "place_id": "137233438285284",
+    "hub": "@vexium1",
+    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-auto-collect-auto-eggs-auto-feed_1789134605827_nkgEUxZyN7.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "vexium1",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-40884ecbf2fafe47e78befbff75cdef8/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa4070d1a8a89faef15dead"
   }
 ]
