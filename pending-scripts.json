@@ -1,5 +1,30 @@
 [
   {
+    "rscriptsId": "6aa3e51858fadabf2336f4c5",
+    "slug": "fling-things-and-people-scripts-no-key-CRQS",
+    "title": "Fling Things and People scripts – NO KEY",
+    "jogo": "Fling Things and People",
+    "place_id": "6961824067",
+    "hub": "@ChioreanMarius",
+    "creditos": "ChioreanMarius",
+    "loadstringOriginal": "https://rscripts.net/raw/fling-things-and-people-scripts-no-key_1789125912837_iAvwcl5R6v.txt",
+    "rawScript": "https://rscripts.net/raw/fling-things-and-people-scripts-no-key_1789125912837_iAvwcl5R6v.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Script functions:Anti Fling – Prevents other players from flinging you.Super Power and Far Fling – Greatly increases your fling strength and distance.ESP players – Shows the location of all players through obstacles.Walkspeed modifier – Adjusts your movement speed for faster navigation.Jump Power Mo",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9ceb24935041a588b60d214884597291/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 8,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-11T11:56:40.739Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa3e5d1abee352d6ca05c5c",
     "slug": "karinderya-script-nyxen-hub-no-key-auto-serve-loop-sTTJ",
     "title": "Karinderya Script Nyxen Hub [No Key] – Auto Serve Loop",
