@@ -767,5 +767,21 @@
     "linkShrtfly": "https://shrtslug.biz/95kwy",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/blox-fruits-or-speed-hub-x-keyless_1765128448793_bvWVQsq4k6.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Sailor peace",
+    "place_id": "77747658251236",
+    "hub": "@Clover Hub/Xsalii",
+    "loadstringOriginal": "https://rscripts.net/raw/clover-hub-sailor-piece-script-auto-farm-undetected-no-key_1776358401249_LU0a0yAkup.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Clover Hub/Xsalii",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null
   }
 ]
