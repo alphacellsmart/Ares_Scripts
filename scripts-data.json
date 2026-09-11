@@ -747,9 +747,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Spiritual Hub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": null
+    "pastefyRaw": "https://pastefy.app/S9bTluES/raw",
+    "linkShrtfly": "https://shrtslug.biz/95kwn",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/blox-fruits-easter-egg-hunt-script-keyless-2026_1774721309094_gOzrktIywn.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
   }
 ]
