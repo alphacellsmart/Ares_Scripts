@@ -949,7 +949,7 @@ async function publishManual() {
   }
 }
 
-function saveDraftfunction saveDraft(entryStr) {
+function saveDraft(entryStr) {
   const entry = JSON.parse(entryStr);
   localDrafts.push({ ...entry, _savedAt: new Date().toISOString() });
   localStorage.setItem('ares_drafts', JSON.stringify(localDrafts));
