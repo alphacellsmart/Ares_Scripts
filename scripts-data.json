@@ -612,10 +612,10 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "DewzaCSharp",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-b58a6e2ca17a25083aa145be78cec940/768/432/Image/Webp/noFilter",
+    "pastefyRaw": "https://pastefy.app/bZR8PUgB/raw",
+    "linkShrtfly": "https://shrtslug.biz/95kmv",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/techy-aimbot-and-esp_1789126179957_j8QwMybHvW.txt\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d9768fc3d79f1bb778a14afcc908f386/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa3e6238e78304edf23cbdf"
   }
 ]
