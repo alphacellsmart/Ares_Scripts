@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "rscriptsId": "6aa4041858fadabf23371746",
+    "slug": "autofarm-knobs-espbypass-monster-9ZPO",
+    "title": "Doors RushHub",
+    "jogo": "DOORS 👁️",
+    "place_id": "6516141723",
+    "hub": "@ar0sla",
+    "creditos": "ar0sla",
+    "loadstringOriginal": "https://rscripts.net/raw/doors-rushhub_1789134372586_HTN08ot7cj.txt",
+    "rawScript": "https://rscripts.net/raw/doors-rushhub_1789134372586_HTN08ot7cj.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "This might be the best script for place doors. This might be the best script for PlaceDoors, as it has all the features of the previous top script abyssal And there are also functions from archives",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14df5c19faa7ad5d5b14ddd49720eaed/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 1,
+    "views": 18,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-11T13:51:53.031Z",
+    "status": "pending"
+  }
+]
