@@ -939,5 +939,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-7a58b44c3d6126cc27abf65cf85bbbf8/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa524c01a8a89faef171abb"
+  },
+  {
+    "jogo": "[FPS] One Tap",
+    "place_id": "90568084448279",
+    "hub": "@lego1234",
+    "loadstringOriginal": "https://rscripts.net/raw/one-tap-keyless-script-or-aimbot-esp-triggerbot_1789183425311_cUb3GiloI2.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "lego1234",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-543a42ab2e0070ff5ad674157cc7493d/480/270/Image/Webp/noFilter",
+    "rscriptsId": "6aa4c5c11a8a89faef16ab03"
   }
 ]
