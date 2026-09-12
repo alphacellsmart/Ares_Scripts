@@ -990,5 +990,22 @@
     "linkShrtfly": "https://shrtslug.biz/95mLC",
     "loadstringFinal": "loadstring(game:HttpGet(\"getgenv().Version = \"V4\" getgenv().Team = \"Marines\" loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua\"))()\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Ear Game",
+    "place_id": "84487474244896",
+    "hub": "@Common0x",
+    "loadstringOriginal": "https://rscripts.net/raw/ear-game-cheat_1789210133324_OiGAKBz9Kd.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Common0x",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c3891571bbfc8d25c876edeec5276af7/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa52e155f20db91669cfa16"
   }
 ]
