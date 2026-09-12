@@ -1,5 +1,30 @@
 [
   {
+    "rscriptsId": "6a9f07b66dd93561491c6b63",
+    "slug": "tomtamx-hub-or-auto-unlock-classes-aimbot-esp-and-boss-hunter-2XMK",
+    "title": "TomTamX Hub | Auto Unlock Classes, Aimbot, ESP & Boss Hunter",
+    "jogo": "Examination ",
+    "place_id": "10165583746",
+    "hub": "@TomTamX",
+    "creditos": "TomTamX",
+    "loadstringOriginal": "https://rscripts.net/raw/tomtamx-hub-or-auto-unlock-classes-aimbot-esp-and-boss-hunter_1788807094250_xAEjfTWXMp.txt",
+    "rawScript": "https://rscripts.net/raw/tomtamx-hub-or-auto-unlock-classes-aimbot-esp-and-boss-hunter_1788807094250_xAEjfTWXMp.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "[ Visuals &amp; ESP ]• Enemy &amp; Boss ESP (Distance &amp; Health Display)• Item &amp; Loot ESP (Documents, Meds, Contraband)• Generator &amp; Door ESP• Fullbright &amp; No Fog (Removes all dark fog &amp; shadows)[ Combat &amp; Weapons ]• Smart Aimbot (Wall Check &amp; Locked to ESP only)• 100% No ",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-637af792d61d8aaa790cdcf744ce8179/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 1483,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-12T15:07:47.242Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa566c2300f055f6f3cde0f",
     "slug": "auto-face-enemieauto-slaphitbox-expander-kexQ",
     "title": "Auto face Enemie,Auto slap,Hitbox Expander",
