@@ -922,5 +922,22 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/aimbot-silent-aim-esp-wallhack-fly-mode-no-clip_1789133660449_uwybHY5dkl.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-29023c3f115f5eac513c836ef674fd42/512/512/Image/Png/noFilter",
     "rscriptsId": "6aa4035c9b4dbc3263067252"
+  },
+  {
+    "jogo": "Steal a Chicken",
+    "place_id": "76503495566299",
+    "hub": "@9lb",
+    "loadstringOriginal": "https://rscripts.net/raw/steal-a-chicken-keyless-script-or-auto-steal-auto-collect_1789207748510_nMwSWvf5Ht.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "9lb",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-7a58b44c3d6126cc27abf65cf85bbbf8/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa524c01a8a89faef171abb"
   }
 ]
