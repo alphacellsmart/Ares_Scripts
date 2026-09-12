@@ -986,9 +986,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Xeter Hub/@xeter hub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": null
+    "pastefyRaw": "https://pastefy.app/rYsVdQpj/raw",
+    "linkShrtfly": "https://shrtslug.biz/95mLC",
+    "loadstringFinal": "loadstring(game:HttpGet(\"getgenv().Version = \"V4\" getgenv().Team = \"Marines\" loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua\"))()\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
   }
 ]
