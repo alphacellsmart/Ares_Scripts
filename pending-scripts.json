@@ -1,5 +1,30 @@
 [
   {
+    "rscriptsId": "6aa618ae72e26874f5e503b8",
+    "slug": "auto-farm-kinda-WzxZ",
+    "title": "auto farm kinda",
+    "jogo": "Needle In A Haystack",
+    "place_id": "110954432401277",
+    "hub": "@kkars",
+    "creditos": "kkars",
+    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-kinda_1789270190740_IpQatLPVCM.txt",
+    "rawScript": "https://rscripts.net/raw/auto-farm-kinda_1789270190740_IpQatLPVCM.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "bare bones ai coded autofarm that you can use to make a real autofarm",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-62fe55156b54d64d3e0e76b0228a05d9/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 3,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-13T03:34:50.083Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa5b24d3ef30c8cdc6894e0",
     "slug": "free-clean-all-the-leaves-script-or-instant-win-auto-play-nzWs",
     "title": "Free Clean all the leaves Script | Instant Win, Auto Play",
