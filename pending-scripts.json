@@ -1,5 +1,31 @@
 [
   {
+    "rscriptsId": "6aa6840f300f055f6f3e3db5",
+    "slug": "fruit-dupe-or-insta-kill-mobs-and-more-6JMt",
+    "title": "FRUIT DUPE | INSTA KILL MOBS & MORE",
+    "jogo": "Grand Blue [Early Access]",
+    "place_id": "18335956021",
+    "hub": "@zeekero",
+    "creditos": "zeekero",
+    "loadstringOriginal": "https://rscripts.net/raw/fruit-dupe-or-insta-kill-mobs-and-more_1789297679600_NAcN2wT9kA.txt",
+    "rawScript": "https://rscripts.net/raw/fruit-dupe-or-insta-kill-mobs-and-more_1789297679600_NAcN2wT9kA.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Farm — BossBoss FarmBoss WebhooksCell of Life FarmFarm PositionX OffsetY OffsetDistanceFarm — PlayersTarget PlayerRefresh PlayersFarm PlayersFarm — MobsTarget MobRefresh MobsFarm MobsFarm — CombatKill AuraAnti RagdollFarm ModeX OffsetY OffsetZ OffsetFarm — Insta KillInsta KillHP ThresholdRangeRarity",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-fcac4ddc6c26a98039532c12164f9e69/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 0,
+    "views": 1,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-13T11:13:24.111Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa618ae72e26874f5e503b8",
     "slug": "auto-farm-kinda-WzxZ",
     "title": "auto farm kinda",
