@@ -1287,5 +1287,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a60f2dc95c2263bbbc87ea2"
+  },
+  {
+    "jogo": "99 Nights in the Forest",
+    "place_id": "79546208627805",
+    "hub": "@Voidware",
+    "loadstringOriginal": "https://rscripts.net/raw/keyless-best-99-nights-in-the-forest-script-voidware_1781195861597_uNPHQoIbGO.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Voidware",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-65eebaac747ed81ff9dfdc85643a1e12/768/432/Image/Webp/noFilter",
+    "rscriptsId": "688e593aa52af8f441819664"
   }
 ]
