@@ -1,31 +1,5 @@
 [
   {
-    "rscriptsId": "66a39bace9ed653de5c5126b",
-    "slug": "new-brookhaven-ice-hub-KB1E",
-    "title": "New Brookhaven Ice Hub",
-    "jogo": "Brookhaven RP",
-    "place_id": "4924922222",
-    "hub": "@Florian",
-    "creditos": "Florian",
-    "loadstringOriginal": "https://rscripts.net/raw/new-brookhaven-ice-hub_1722249737516_D1LfIw2rLa.txt",
-    "rawScript": "https://rscripts.net/raw/new-brookhaven-ice-hub_1722249737516_D1LfIw2rLa.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "This is an Brookhaven script with a lot of features, If you want to use it go ahead and execute this script.",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 34,
-    "views": 60506,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T18:02:57.898Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "69e7ed1a8e5a71dad8481376",
     "slug": "blox-fruits-script-or-lunaris-hub-vwWc",
     "title": "Blox Fruits Script | Lunaris Hub",
