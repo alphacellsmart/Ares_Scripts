@@ -1322,5 +1322,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-369b4c16d281bf74dc7a9683f79b9df0/768/432/Image/Webp/noFilter",
     "rscriptsId": "694c7d99b56d79ab90ad9222"
+  },
+  {
+    "jogo": "Fish It",
+    "place_id": "121864768012064",
+    "hub": "@NEEX420",
+    "loadstringOriginal": "https://rscripts.net/raw/keyless-auto-level-auto-mastery-auto-bosses-auto-chests-op_1765937644285_uD7DxuwQ1t.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "NEEX420",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "69420e2cb6dfe46458381ded"
   }
 ]
