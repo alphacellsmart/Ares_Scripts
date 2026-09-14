@@ -257,32 +257,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a80c0112de4eba469622e28",
-    "slug": "ajjans-roblox-steal-a-egg-auto-farm-script-v3vO",
-    "title": "Ajjans - Roblox Steal a Egg Auto Farm Script",
-    "jogo": "Steal An Egg",
-    "place_id": "107778070777162",
-    "hub": "@AjjansHub",
-    "creditos": "AjjansHub",
-    "loadstringOriginal": "https://rscripts.net/raw/ajjans-roblox-steal-a-egg-auto-farm-script_1786822673899_WHdyT8qyh0.txt",
-    "rawScript": "https://rscripts.net/raw/ajjans-roblox-steal-a-egg-auto-farm-script_1786822673899_WHdyT8qyh0.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Auto-steals eggs by area, rarity, and mutation with big-egg targeting, server hop, and safezone return. Bat Kill Aura combat, auto-equip best pet/trail/gear, auto-buy trails, and treadmill auto-train with auto-upgrade. Auto place, auto hatch, auto sell/fuse pets with rarity sync, and auto claim inde",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 29,
-    "views": 15428,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T12:00:12.803Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "67a6a9a32a8d8972fad96f6c",
     "slug": "sp-hub-new-script-Rmvt",
     "title": "SP Hub New Script",
