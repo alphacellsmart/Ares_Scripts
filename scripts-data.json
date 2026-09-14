@@ -1799,5 +1799,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-aa4c79d32be85b7a85bfc4ac97d4a9a2/768/432/Image/Webp/noFilter",
     "rscriptsId": "6928524cc0adac0d5a022236"
+  },
+  {
+    "jogo": "Murder Mystery 2",
+    "place_id": "142823291",
+    "hub": "@m2_zm",
+    "loadstringOriginal": "https://rscripts.net/raw/aevryx-or-keyless-and-premium-experience_1789185694624_nbCU0u6RTQ.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "m2_zm",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa4cadef704a3cb6f7666da"
   }
 ]
