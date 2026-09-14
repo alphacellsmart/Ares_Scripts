@@ -1902,5 +1902,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-65eebaac747ed81ff9dfdc85643a1e12/768/432/Image/Webp/noFilter",
     "rscriptsId": "698cd6090f658c4431ad69ed"
+  },
+  {
+    "jogo": "Jujutsu Shenanigans",
+    "place_id": "9391468976",
+    "hub": "@xVOIDx",
+    "loadstringOriginal": "https://rscripts.net/raw/op-script-jjs-best-script_1782032517381_KF6m6aj8tL.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "xVOIDx",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a37a88574b052736ef22048"
   }
 ]
