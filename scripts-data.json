@@ -1640,5 +1640,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a8d53620af99c3155c1880f"
+  },
+  {
+    "jogo": "Brookhaven RP",
+    "place_id": "4924922222",
+    "hub": "@Florian",
+    "loadstringOriginal": "https://rscripts.net/raw/new-brookhaven-ice-hub_1722249737516_D1LfIw2rLa.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Florian",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "66a39bace9ed653de5c5126b"
   }
 ]
