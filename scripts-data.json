@@ -1569,5 +1569,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
     "rscriptsId": "698b23873f883f0932f7056f"
+  },
+  {
+    "jogo": "Pet Simulator 99",
+    "place_id": "8737899170",
+    "hub": "@benomat",
+    "loadstringOriginal": "https://rscripts.net/raw/kitty-hub-190-games-keyless_1723323186468_Gak3vicgC5.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "benomat",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null,
+    "rscriptsId": "668f0c1be9ed653de581a0e7"
   }
 ]
