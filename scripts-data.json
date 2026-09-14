@@ -1604,5 +1604,23 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/esp-inf-sanity-speed-and-more-oror-porweful-keyless-menu_1782855981812_zXWwpop8Mj.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3e496d8fe414b9b4d9fef8a28a42aeb9/512/512/Image/Png/noFilter",
     "rscriptsId": "6a3b56e26969e5197fe03536"
+  },
+  {
+    "jogo": "RIVALS [❄️FREEZE RAY❄️]",
+    "place_id": "17625359962",
+    "hub": "@TrueScripter",
+    "loadstringOriginal": "https://rscripts.net/raw/rivals-script-updated-aimbot-esp-skin-changer_1789408657619_7j1gkF22Sv.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "TrueScripter",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa8359150dd3960f9e90e8b"
   }
 ]
