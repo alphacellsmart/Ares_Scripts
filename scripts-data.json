@@ -1215,5 +1215,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a9574fd4e75aa4193210acb"
+  },
+  {
+    "jogo": "Blox Fruits",
+    "place_id": "2753915549",
+    "hub": "@s4bb4c",
+    "loadstringOriginal": "https://rscripts.net/raw/twice-more-luck-on-the-spin_1755290139844_v9DKR6svr4.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "s4bb4c",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "689f9a1ba52af8f441839721"
   }
 ]
