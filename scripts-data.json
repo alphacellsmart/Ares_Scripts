@@ -1163,5 +1163,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-824636b18a8e11f045109235f8a0335d/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa5b24d3ef30c8cdc6894e0"
+  },
+  {
+    "jogo": "Guts & Blackpowder",
+    "place_id": "12334109280",
+    "hub": "@Arceus_X",
+    "loadstringOriginal": "https://rscripts.net/raw/arcane-hub_1789228543151_eVaprTqYrN.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Arceus_X",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-7f55462871d47f0ca4e533afaf86351f/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa575ff72e26874f5e42f4d"
   }
 ]
