@@ -1305,5 +1305,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-65eebaac747ed81ff9dfdc85643a1e12/768/432/Image/Webp/noFilter",
     "rscriptsId": "688e593aa52af8f441819664"
+  },
+  {
+    "jogo": "Adopt Me",
+    "place_id": "920587237",
+    "hub": "@RINGTA",
+    "loadstringOriginal": "https://rscripts.net/raw/keyless-free-pet-farm-ringta_1767934381088_UJw7Ahqth7.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "RINGTA",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-369b4c16d281bf74dc7a9683f79b9df0/768/432/Image/Webp/noFilter",
+    "rscriptsId": "694c7d99b56d79ab90ad9222"
   }
 ]
