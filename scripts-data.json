@@ -1251,5 +1251,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
     "rscriptsId": "66c034959ded84022dbc5bb5"
+  },
+  {
+    "jogo": "RIVALS",
+    "place_id": "17625359962",
+    "hub": "@shrak",
+    "loadstringOriginal": "https://rscripts.net/raw/korax-rivals-or-keyless-or-silent-aim-or-menu_1788280113990_Z6n74Yme3T.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "shrak",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a788d1102665394e7da29ef"
   }
 ]
