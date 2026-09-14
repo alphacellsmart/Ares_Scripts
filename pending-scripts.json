@@ -360,31 +360,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a3b56e26969e5197fe03536",
-    "slug": "esp-auto-grab-and-more-TNpr",
-    "title": "Esp, inf sanity, speed and more || PORWEFUL KEYLESS MENU",
-    "jogo": "Animal Hospital Anomaly",
-    "place_id": "78515283254292",
-    "hub": "@NoxScripts",
-    "creditos": "NoxScripts",
-    "loadstringOriginal": "https://rscripts.net/raw/esp-inf-sanity-speed-and-more-oror-porweful-keyless-menu_1782855981812_zXWwpop8Mj.txt",
-    "rawScript": "https://rscripts.net/raw/esp-inf-sanity-speed-and-more-oror-porweful-keyless-menu_1782855981812_zXWwpop8Mj.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "(NEW UPDATE!! ⬇⬇⬇⬇) version 0.0.4 KEYLESS MENU(Some features are in beta!)Made by Nox (Press z to free mouse in-game!!)Here is a showcase of the menu:|||||||||||||||||||||||||||||||||||||||||||||| MENU ||||||||||||||||||||||||||||||||||||||||||||||- - - - - - - - - - - - - - - - - - ESP - - - - - - ",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/768/432/Image/Webp/noFilter",
-    "mobileReady": false,
-    "paid": false,
-    "likes": 28,
-    "views": 39132,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T10:26:47.421Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a3b2c73e9d40275a54bde6d",
     "slug": "keyless-auto-fish-auto-pop-webhook-notifications-more-01NH",
     "title": "KEYLESS Auto Fish, Auto Pop, Webhook Notifications, More...",
