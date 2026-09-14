@@ -1711,5 +1711,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-65eebaac747ed81ff9dfdc85643a1e12/768/432/Image/Webp/noFilter",
     "rscriptsId": "686eb51f4b0bba4072b3650c"
+  },
+  {
+    "jogo": "Adopt Me",
+    "place_id": "920587237",
+    "hub": "@Draig",
+    "loadstringOriginal": "https://rscripts.net/raw/best-op-auto-trade-auto-task-esp-pets-insta-tp-speed_1784234537793_0U1wD6ysxx.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "Draig",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-369b4c16d281bf74dc7a9683f79b9df0/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a1bf9e564791880e49c75fc"
   }
 ]
