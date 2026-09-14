@@ -1482,5 +1482,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
     "rscriptsId": "69d3f5fb42d11c08069996ee"
+  },
+  {
+    "jogo": "Brookhaven RP",
+    "place_id": "4924922222",
+    "hub": "@Unknown",
+    "loadstringOriginal": "https://rscripts.net/raw/icehub-brookhaven-rp_63fd478ad9bb6.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Unknown",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "65c7c91cd7dfa5be4dae68c2"
   }
 ]
