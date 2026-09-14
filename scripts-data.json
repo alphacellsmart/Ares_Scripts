@@ -1269,5 +1269,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a788d1102665394e7da29ef"
+  },
+  {
+    "jogo": "Murder Mystery 2",
+    "place_id": "142823291",
+    "hub": "@SP_Hub",
+    "loadstringOriginal": "https://rscripts.net/raw/sp-hub-murder-mystery-2-v13-smart-aim-auto-throw-knife_1784738524557_b4w3ANk3VI.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "SP_Hub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a60f2dc95c2263bbbc87ea2"
   }
 ]
