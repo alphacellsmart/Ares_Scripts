@@ -1110,5 +1110,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-70efd2d646b531a42432cc37df5d18cc/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa6c41d10a17829b0a54e4b"
+  },
+  {
+    "jogo": "Grand Blue [Early Access]",
+    "place_id": "18335956021",
+    "hub": "@zeekero",
+    "loadstringOriginal": "https://rscripts.net/raw/fruit-dupe-or-insta-kill-mobs-and-more_1789297679600_NAcN2wT9kA.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "zeekero",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-fcac4ddc6c26a98039532c12164f9e69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa6840f300f055f6f3e3db5"
   }
 ]
