@@ -1658,5 +1658,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
     "rscriptsId": "66a39bace9ed653de5c5126b"
+  },
+  {
+    "jogo": "Blox Fruits",
+    "place_id": "2753915549",
+    "hub": "@LunarisHub",
+    "loadstringOriginal": "https://rscripts.net/raw/blox-fruits-script-or-lunaris-hub_1779903980206_ssbNMr4zdU.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "LunarisHub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "69e7ed1a8e5a71dad8481376"
   }
 ]
