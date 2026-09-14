@@ -1233,5 +1233,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
     "rscriptsId": "689f9a1ba52af8f441839721"
+  },
+  {
+    "jogo": "Brookhaven RP",
+    "place_id": "4924922222",
+    "hub": "@Z4TROXh",
+    "loadstringOriginal": "https://rscripts.net/raw/script-open-audio-brookhaven-rp_1723872405805_BUBvs1txdU.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Z4TROXh",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "66c034959ded84022dbc5bb5"
   }
 ]
