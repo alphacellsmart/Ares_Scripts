@@ -1197,5 +1197,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa7ca35ab81d0dbb327da9b"
+  },
+  {
+    "jogo": "Steal An Egg",
+    "place_id": "107778070777162",
+    "hub": "@Sigma_Scripts",
+    "loadstringOriginal": "https://rscripts.net/raw/new-keyless-steal-an-egg-script-free-private-server_1788320792603_PRWpUm1PfA.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Sigma_Scripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a9574fd4e75aa4193210acb"
   }
 ]
