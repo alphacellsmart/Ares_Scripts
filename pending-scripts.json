@@ -205,32 +205,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a2197c6b5b1e51ea4b5172a",
-    "slug": "adopt-me-pet-spawner-visual-keyless-Ftul",
-    "title": "Adopt Me Pet Spawner ( Visual, Keyless.)",
-    "jogo": "Adopt Me",
-    "place_id": "920587237",
-    "hub": "@MJackson",
-    "creditos": "MJackson",
-    "loadstringOriginal": "https://rscripts.net/raw/adopt-me-pet-spawner-visual-keyless_1782040956089_qcWbg5m23r.txt",
-    "rawScript": "https://rscripts.net/raw/adopt-me-pet-spawner-visual-keyless_1782040956089_qcWbg5m23r.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Keyless visual Adopt me spawner. (open src) dont write me about bugs fix it yourself.",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-369b4c16d281bf74dc7a9683f79b9df0/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 22,
-    "views": 53604,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T10:26:29.155Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a3dfe1513990c26286524ab",
     "slug": "luxy-hub-or-1-speed-keyboard-escape-no-key-3WeV",
     "title": "Luxy Hub | +1 Speed Keyboard Escape NO KEY!",
