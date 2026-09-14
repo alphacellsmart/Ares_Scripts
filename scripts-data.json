@@ -1781,5 +1781,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
     "rscriptsId": "69c42f716e46e227e976a1c8"
+  },
+  {
+    "jogo": "Steal a Brainrot",
+    "place_id": "109983668079237",
+    "hub": "@Brenno2321",
+    "loadstringOriginal": "https://rscripts.net/raw/vs-hub-steal-a-brainrot_1766197306043_QSXaI9Ncdj.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Brenno2321",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-aa4c79d32be85b7a85bfc4ac97d4a9a2/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6928524cc0adac0d5a022236"
   }
 ]
