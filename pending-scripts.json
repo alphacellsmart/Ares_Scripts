@@ -205,32 +205,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a02232daa4d1ea273cba4f5",
-    "slug": "axonic-blox-fruits-keyless-xeno-supported-GQnm",
-    "title": "Axonic Blox Fruits ",
-    "jogo": "Blox Fruits",
-    "place_id": "2753915549",
-    "hub": "@Axonic",
-    "creditos": "Axonic",
-    "loadstringOriginal": "https://rscripts.net/raw/axonic-blox-fruits_1788291262302_m7TYpp1YQx.txt",
-    "rawScript": "https://rscripts.net/raw/axonic-blox-fruits_1788291262302_m7TYpp1YQx.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Blox Fruits Update 1.5  – 5/11/26New Features &amp; Improvements[+] Added Kill Aura For Blox Fruits Functionalities[+] Improved Farm Tweening Stability[+] Fixed Max Sea NPC Not Farming[+] Fixed Auto Skills Not Working[+] Code Clean Up &amp; Improvements",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 46,
-    "views": 60976,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T10:26:18.689Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "65c7c91cd7dfa5be4dae68c2",
     "slug": "icehub-brookhaven-rp-3474",
     "title": "IceHub - Brookhaven RP",
