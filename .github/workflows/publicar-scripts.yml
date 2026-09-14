@@ -25,26 +25,29 @@ jobs:
         run: npm install
         working-directory: ./
 
-      # 1) Puxa 1 script novo do rscripts → pending-scripts.json
-      - name: Puxar 1 script do rscripts
-        run: node fetch-rscripts.js --limit=1
+      # Top 20 Rolimons → 1 script/jogo no rscripts → pending
+      - name: Puxar scripts dos jogos mais jogados
+        run: node fetch-top-games.js --limit=20 --per-game=1
+        continue-on-error: true
 
-      # 2) Thumbnails dos que já estão no scripts-data
+      # Puxada extra genérica (1 script recente keyless)
+      - name: Puxar 1 script extra do rscripts
+        run: node fetch-rscripts.js --limit=1
+        continue-on-error: true
+
       - name: Resolver thumbnails dos jogos
         run: node resolve-thumbnails.js
 
-      # 3) Pastefy + Shrtfly nos que ainda não têm link
       - name: Subir no Pastefy e encurtar no Shrtfly
         run: node shorten-and-publish.js
         env:
           PASTEFY_API_KEY: ${{ secrets.PASTEFY_API_KEY }}
           SHRTFLY_API_KEY: ${{ secrets.SHRTFLY_API_KEY }}
 
-      # 4) Salva scripts-data + pending no repo
       - name: Salvar mudanças no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add scripts-data.json pending-scripts.json
-          git diff --staged --quiet || git commit -m "Atualiza scripts (rscripts + publish)"
+          git diff --staged --quiet || git commit -m "Atualiza scripts (top games + publish)"
           git push
