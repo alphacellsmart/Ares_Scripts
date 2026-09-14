@@ -792,32 +792,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6976b138ca308979786cfb9a",
-    "slug": "jujutsuerv2-t3uk",
-    "title": "JujutsuerV2",
-    "jogo": "Jujutsu Shenanigans",
-    "place_id": "9391468976",
-    "hub": "@sigmaguyfr123",
-    "creditos": "sigmaguyfr123",
-    "loadstringOriginal": "https://rscripts.net/raw/jujutsuerv2_1769386296202_5fcyYO6wEj.txt",
-    "rawScript": "https://rscripts.net/raw/jujutsuerv2_1769386296202_5fcyYO6wEj.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "• Invisibility• Hitbox Expander• No Dash Cooldowns• Velocity Multiplier• Knockback Multiplier• Auto Block• Auto Black Flash• Item Esp• No Stun• Domain No Clip supports pc and mobile  will add LOT more features",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 11,
-    "views": 48914,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T10:34:26.118Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6749a799d1951a6b941667bf",
     "slug": "native-ui-8KDQ",
     "title": "native ui",
