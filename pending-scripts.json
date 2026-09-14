@@ -1,5 +1,31 @@
 [
   {
+    "rscriptsId": "6aa769dc368e7da334ea725c",
+    "slug": "mm2-blaze-hub-or-pet-spawner-godly-spawner-autofarm-v10-j6Gu",
+    "title": "M‍M‍2 Blaze Hub | Pet Spawner, Godly Spawner, AUTOFARM v1.0!",
+    "jogo": "Murder Mystery 2",
+    "place_id": "124872108662455",
+    "hub": "@Iegendary",
+    "creditos": "Iegendary",
+    "loadstringOriginal": "https://rscripts.net/raw/mm2-blaze-hub-or-pet-spawner-godly-spawner-autofarm-v10_1789356508171_acEXFZ0S27.txt",
+    "rawScript": "https://rscripts.net/raw/mm2-blaze-hub-or-pet-spawner-godly-spawner-autofarm-v10_1789356508171_acEXFZ0S27.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Auto Grab CoinsAuto Grab PistolSilent AimShoot MrdrAuto Knife ThrowAuto Kill AllRole ESPCoin ESPDropped Gun ESPTrap ESPFullbrightSpeedInfinite JumpNoclipAnti AFK",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-ae2200f83d0ce548cad38e9796907712/128/128/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 0,
+    "views": 8,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-14T03:44:39.545Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6aa705d71f0af8a417d71bec",
     "slug": "rivals-cheats-n6xg",
     "title": "RIVALS CHEATS",
