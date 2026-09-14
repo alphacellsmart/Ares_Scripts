@@ -538,31 +538,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "69e11446c3822ebe4c6400f8",
-    "slug": "forsaken-new-script-skysaken-op-autofarm-autoblock-esp-Ejz8",
-    "title": "Forsaken new script \"Skysaken\" OP autofarm, autoblock, esp",
-    "jogo": "Forsaken",
-    "place_id": "18687417158",
-    "hub": "@SkysakenOfficial",
-    "creditos": "SkysakenOfficial",
-    "loadstringOriginal": "https://rscripts.net/raw/forsaken-new-script-skysaken-op-autofarm-autoblock-esp_1776358470342_a4rBXbPXFc.txt",
-    "rawScript": "https://rscripts.net/raw/forsaken-new-script-skysaken-op-autofarm-autoblock-esp_1776358470342_a4rBXbPXFc.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "A multi-functional automation and enhancement tool designed for the Roblox game Forsaken, providing extensive control over gameplay systems, player behavior, and in-game interactions.The system includes automated generator handling, allowing full progression without manual input through autofarming,",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-8670259e7d3d5e2665db3b76443d626d/768/432/Image/Webp/noFilter",
-    "mobileReady": false,
-    "paid": false,
-    "likes": 494,
-    "views": 42346,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-14T12:00:41.842Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "69ec35309a6c45b3ecfc2639",
     "slug": "dti-hub-dress-to-impress-autofarm-and-more-no-key-sPE4",
     "title": "DTI Hub - Dress To Impress (AutoFarm & More) NO KEY!",
