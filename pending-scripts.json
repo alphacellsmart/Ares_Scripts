@@ -257,31 +257,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6aa4cadef704a3cb6f7666da",
-    "slug": "aevryx-or-keyless-and-premium-experience-owS8",
-    "title": "Aevryx | Keyless & Premium Experience",
-    "jogo": "Murder Mystery 2",
-    "place_id": "142823291",
-    "hub": "@m2_zm",
-    "creditos": "m2_zm",
-    "loadstringOriginal": "https://rscripts.net/raw/aevryx-or-keyless-and-premium-experience_1789185694624_nbCU0u6RTQ.txt",
-    "rawScript": "https://rscripts.net/raw/aevryx-or-keyless-and-premium-experience_1789185694624_nbCU0u6RTQ.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Aevryx ScriptEveryone should have access to good script without needing a key or pay.Currently the executors with which the script works best are Xeno and Solara Executor.Notice: First beta version of the script, Report bugs on Discord.",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
-    "mobileReady": false,
-    "paid": false,
-    "likes": 2,
-    "views": 572,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-14T12:00:45.954Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a80c0112de4eba469622e28",
     "slug": "ajjans-roblox-steal-a-egg-auto-farm-script-v3vO",
     "title": "Ajjans - Roblox Steal a Egg Auto Farm Script",
