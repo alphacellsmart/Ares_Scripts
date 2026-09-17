@@ -2329,5 +2329,23 @@
     "loadstringFinal": null,
     "thumbnail": null,
     "rscriptsId": "6866799194a9fb8c81c55bb7"
+  },
+  {
+    "jogo": "Brookhaven RP",
+    "place_id": "4924922222",
+    "hub": "@wawaHUB",
+    "loadstringOriginal": "https://rscripts.net/raw/new-script-brookhaven-rp_1780783141130_F0Bm8fg97S.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "wawaHUB",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a2381df8403e502c1017898"
   }
 ]
