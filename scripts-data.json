@@ -2490,5 +2490,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a1bfabf3cd52195101c9630"
+  },
+  {
+    "jogo": "Jujutsu Shenanigans",
+    "place_id": "9391468976",
+    "hub": "@marvinn",
+    "loadstringOriginal": "https://rscripts.net/raw/aureva-op-or-8-games-silent-aim-automation-and-more_1784774527761_tgTbgPrRFt.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "marvinn",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null,
+    "rscriptsId": "6a617f7f55a66f81b475ccd2"
   }
 ]
