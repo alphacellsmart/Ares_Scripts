@@ -2293,5 +2293,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a5656abc9e4371bd2e99cd0"
+  },
+  {
+    "jogo": "Steal An Anime Egg",
+    "place_id": "76377501906469",
+    "hub": "@TopG_Scripts",
+    "loadstringOriginal": "https://rscripts.net/raw/new-best-steal-and-hatch-anime-eggs_1789556012872_McsBijAHXd.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "TopG_Scripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0af4feee65555ac804be37fe53cd6027/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aaa752ca90b660970691620"
   }
 ]
