@@ -2187,5 +2187,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa600033ef30c8cdc68eae0"
+  },
+  {
+    "jogo": "Steal An Egg",
+    "place_id": "107778070777162",
+    "hub": "@187",
+    "loadstringOriginal": "https://rscripts.net/raw/grow-a-garden-2-or-advanced-farm-steal-mobilepc_1783878238430_LV0h43gF2x.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "187",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a3089a339c6a16cab385c47"
   }
 ]
