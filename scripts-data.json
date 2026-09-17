@@ -2062,5 +2062,23 @@
     "loadstringFinal": null,
     "thumbnail": null,
     "rscriptsId": "695d173c0e4ad6453daa7fb9"
+  },
+  {
+    "jogo": "Jujutsu Shenanigans [THROWABLES]",
+    "place_id": "9391468976",
+    "hub": "@RyuHub",
+    "loadstringOriginal": "https://rscripts.net/raw/open-source-jujutsu-shenigans-script-op-or-ryuhub_1789661943889_5mkS3SRyMf.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "RyuHub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aac12f700fa377cc2249bf7"
   }
 ]
