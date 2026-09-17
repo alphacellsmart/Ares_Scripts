@@ -2401,5 +2401,23 @@
     "loadstringFinal": null,
     "thumbnail": null,
     "rscriptsId": "696acbded2d79ba08c2ed6c3"
+  },
+  {
+    "jogo": "99 Nights in the Forest",
+    "place_id": "79546208627805",
+    "hub": "@H4xScripts",
+    "loadstringOriginal": "https://rscripts.net/raw/inf-sapling-god-mod_1768682659660_kKWJaibK4Q.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "H4xScripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-65eebaac747ed81ff9dfdc85643a1e12/768/432/Image/Webp/noFilter",
+    "rscriptsId": "685580ab94a9fb8c81776d28"
   }
 ]
