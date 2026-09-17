@@ -2240,5 +2240,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa88c6356383caba00c52a8"
+  },
+  {
+    "jogo": "Steal An Egg",
+    "place_id": "107778070777162",
+    "hub": "@cccccccccc",
+    "loadstringOriginal": "https://rscripts.net/raw/free-steal-an-egg-script-or-pet-spawner-and-godmode-auto-steal_1787228984588_U6G6V9JtI6.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "cccccccccc",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a86f33848050435fc28feab"
   }
 ]
