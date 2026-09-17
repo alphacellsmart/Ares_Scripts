@@ -2190,31 +2190,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a9b4adda0c11c089919a78a",
-    "slug": "auto-farm-opensource-XChC",
-    "title": "Auto farm Opensource NEW UPDATE",
-    "jogo": "Steal an Egg",
-    "place_id": "107778070777162",
-    "hub": "@l10scripts",
-    "creditos": "l10scripts",
-    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-opensource-new-update_1789505149554_CjzYMs711O.txt",
-    "rawScript": "https://rscripts.net/raw/auto-farm-opensource-new-update_1789505149554_CjzYMs711O.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "autofarm eggs by default it is only the last 2 stages and also no mutation check however there is scale check. to make it get eggs from the worse stages look at source.",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
-    "mobileReady": false,
-    "paid": false,
-    "likes": 8,
-    "views": 4172,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-15T20:56:51.072Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a81071ba393147655d0bd6a",
     "slug": "steal-an-egg-pet-spawner-and-spawn-any-pet-ingame-YRWs",
     "title": "Steal An Egg - Pet Spawner & Spawn any pet ingame!",
