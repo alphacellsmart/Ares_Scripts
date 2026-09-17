@@ -2170,5 +2170,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-7244e828acc7ae1bff22633d680a76a9/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a663a61ff6977b26bf38e87"
+  },
+  {
+    "jogo": "Illegal Soccer",
+    "place_id": "126987974021910",
+    "hub": "@slap",
+    "loadstringOriginal": "https://rscripts.net/raw/op-illegal-soccer-script-inf-stamina-or-perfect-shoot_1789263875308_wZnRxgaGL3.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "slap",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa600033ef30c8cdc68eae0"
   }
 ]
