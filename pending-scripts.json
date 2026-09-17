@@ -1776,32 +1776,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a90eb76c929b145b5740b88",
-    "slug": "steal-an-egg-autosteal-ItHB",
-    "title": "Steal An Egg AutoSteal",
-    "jogo": "Steal An Egg",
-    "place_id": "107778070777162",
-    "hub": "@Lyxs",
-    "creditos": "Lyxs",
-    "loadstringOriginal": "https://rscripts.net/raw/steal-an-egg-autosteal_1788932476489_oglgDSg9oY.txt",
-    "rawScript": "https://rscripts.net/raw/steal-an-egg-autosteal_1788932476489_oglgDSg9oY.txt",
-    "keyless": false,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Key System • Compatible with Delta",
-    "description": "🥚 Steal &amp; Farm — Engine &amp; Protections  Auto Steal / Steal Once (buttons)  Tween Speed (slider) / Save Home Position  Infinite HP / Speed Boost Gain  🥚 Steal &amp; Farm — Filters &amp; Automation  Filter Mode (Rarity / Zone / Rare Hunter)  Steal ALL Rarities / Steal Rarities (dropdown)  Ste",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 22,
-    "views": 5257,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-16T03:42:07.716Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a299bb79a7e0b21f570bd8f",
     "slug": "new-script-brookhaven-rp-VEly",
     "title": "*NEW* SCRIPT Brookhaven 🏡RP",
