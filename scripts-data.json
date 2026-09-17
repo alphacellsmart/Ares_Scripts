@@ -2223,5 +2223,22 @@
     "loadstringFinal": null,
     "thumbnail": null,
     "rscriptsId": "67c7b3413cd401024b7733f3"
+  },
+  {
+    "jogo": "Illegal Soccer",
+    "place_id": "126987974021910",
+    "hub": "@l10scripts",
+    "loadstringOriginal": "https://rscripts.net/raw/infinite-stamina-opensource_1789430883140_XNOU2XC0ai.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "l10scripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa88c6356383caba00c52a8"
   }
 ]
