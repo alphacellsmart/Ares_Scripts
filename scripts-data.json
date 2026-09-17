@@ -2508,5 +2508,23 @@
     "loadstringFinal": null,
     "thumbnail": null,
     "rscriptsId": "6a617f7f55a66f81b475ccd2"
+  },
+  {
+    "jogo": "Blox Fruits",
+    "place_id": "2753915549",
+    "hub": "@gensis",
+    "loadstringOriginal": "https://rscripts.net/raw/blox-fruits-dungoens-sea-events-auto-farm-anti-ban_1782870892599_3jTAO9yEsa.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "gensis",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "699fb8193f143b49d196a527"
   }
 ]
