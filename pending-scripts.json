@@ -388,32 +388,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6aa30533472947ddd0030831",
-    "slug": "keyless-esptp-and-more-5KuU",
-    "title": "[Keyless] Esp,TP and more V2",
-    "jogo": "Ride A Pet",
-    "place_id": "124216119978534",
-    "hub": "@ThiAez",
-    "creditos": "ThiAez",
-    "loadstringOriginal": "https://rscripts.net/raw/keyless-esptp-and-more-v2_1789444622086_Rqjyygplzp.txt",
-    "rawScript": "https://rscripts.net/raw/keyless-esptp-and-more-v2_1789444622086_Rqjyygplzp.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "......Keyless.....-Esp eggs-TP egssand moreBy ThiAez",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 7,
-    "views": 7525,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-17T11:07:45.428Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a3e98e8982f41ee5e89f834",
     "slug": "beta-auto-pallet-auto-skillcheck-custom-chase-theme-5CQE",
     "title": "(BETA) Auto Pallet, Auto Skillcheck , Custom Sounds",
