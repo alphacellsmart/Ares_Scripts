@@ -2044,5 +2044,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-c3ec25fce48261bc3ab7a0b9e3955dfb/768/432/Image/Webp/noFilter",
     "rscriptsId": "69cbcfd5cc67fdb7375a9934"
+  },
+  {
+    "jogo": "Catalog Avatar Creator",
+    "place_id": "7041939546",
+    "hub": "@jonhdoues",
+    "loadstringOriginal": "https://rscripts.net/raw/jonhdoues-huborgames-and-fe-or-with-search-function_1767708476466_h4MtYx2ULW.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "jonhdoues",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": null,
+    "rscriptsId": "695d173c0e4ad6453daa7fb9"
   }
 ]
