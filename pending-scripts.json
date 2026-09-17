@@ -800,32 +800,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "67c7b3413cd401024b7733f3",
-    "slug": "syphix-v3-hub-KKv1",
-    "title": "SYPHIX V3 HUB",
-    "jogo": "Adopt Me",
-    "place_id": "920587237",
-    "hub": "@SYPHIX",
-    "creditos": "SYPHIX",
-    "loadstringOriginal": "https://rscripts.net/raw/syphix-v3-hub_1741317444008_ljnWhAZLYi.txt",
-    "rawScript": "https://rscripts.net/raw/syphix-v3-hub_1741317444008_ljnWhAZLYi.txt",
-    "keyless": false,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Key System • Compatible with Delta",
-    "description": "Featured:Mobile Fly: Fly v2, Fly v3, Vehicle Fly v2.Tools: Building Tool/BTool, Teleport Tool/Tptool, Bypass Chat.Aimbot Mobile/Pc: Owl Hub, Fates,Platinum.Hubs: Ez Hub Fe script, VHub Fe script, Pendulum script Fe hub.Other: Shift lock,Remote event scanner, Fps Boost,Hydroxide.Admin Scripts: CMD X,",
-    "thumbnail": null,
-    "mobileReady": true,
-    "paid": false,
-    "likes": 10,
-    "views": 56422,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-16T20:57:33.949Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "68834c9aa52af8f4419d15d4",
     "slug": "murderers-vs-sheriffs-2-Rob0",
     "title": "Murderers vs Sheriffs 2",
