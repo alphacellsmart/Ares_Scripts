@@ -1,31 +1,5 @@
 [
   {
-    "rscriptsId": "6aac4e0800fa377cc224f439",
-    "slug": "ride-a-pet-or-esp-all-eggs-or-auto-best-egg-or-auto-farm-Z7Xs",
-    "title": "Ride A Pet | Esp All Eggs | Auto Best egg | Auto farm",
-    "jogo": "Ride A Pet",
-    "place_id": "124216119978534",
-    "hub": "@HeyPanjul",
-    "creditos": "HeyPanjul",
-    "loadstringOriginal": "https://rscripts.net/raw/ride-a-pet-or-esp-all-eggs-or-auto-best-egg-or-auto-farm_1789677064038_Xbf0qcRUjd.txt",
-    "rawScript": "https://rscripts.net/raw/ride-a-pet-or-esp-all-eggs-or-auto-best-egg-or-auto-farm_1789677064038_Xbf0qcRUjd.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "[ + ] ESP All Eggs - Highlights eggs with customizable color and transparency[ + ] Auto Best Egg - Targets a specific egg type from dropdown[ + ] Auto Farm - Multi-select eggs, farm each one sequentially",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 0,
-    "views": 20,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-17T21:01:03.531Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a40e8ad7d7069f16bee59d1",
     "slug": "acro-hub-or-easy-key-system-hE7y",
     "title": "Acro Hub | Easy Key System",
