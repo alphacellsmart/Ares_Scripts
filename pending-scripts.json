@@ -181,32 +181,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "69c7cbb5dfce20a4fe3c4901",
-    "slug": "adopt-me-echo-hub-s7jD",
-    "title": "Adopt me Echo hub",
-    "jogo": "Ride A Pet",
-    "place_id": "124216119978534",
-    "hub": "@Pearl_scripts",
-    "creditos": "Pearl_scripts",
-    "loadstringOriginal": "https://rscripts.net/raw/adopt-me-echo-hub_1776423946698_QTa6Z7CjUR.txt",
-    "rawScript": "https://rscripts.net/raw/adopt-me-echo-hub_1776423946698_QTa6Z7CjUR.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "​🚀 Enhanced Feature List​🛠️ Core &amp; Settings​Config System – Create, Load, Delete, and Autoload your favorite setups.​Webhook Integration – Send detailed Discord logs (Stats, Inventory, Earnings).​Anti-AFK – Stay connected 24/7 without being kicked for inactivity.​Performance Mode – Disable 3D ",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-369b4c16d281bf74dc7a9683f79b9df0/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 9,
-    "views": 42629,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-17T16:24:47.803Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a636afd16ba08beb5269adb",
     "slug": "wayout-auto-farm-wins-stop-at-wins-stage-touch-delay-loopdd-RBxO",
     "title": "sable | Auto Farm Wins Stop At Wins Stage Touch Delay Loopdd",
