@@ -1409,7 +1409,7 @@
     "pastefyRaw": "https://pastefy.app/1SQiG8uj/raw",
     "linkShrtfly": "https://shrtslug.biz/95tQm",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/newroblox-steal-a-brainrot-script_1752974302967_v5IUiMJZ5Z.txt\"))()",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3667d0771df111ea4c7f81a2d221713d/512/512/Image/Png/noFilter",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-fc2384be25655c2f0cca1f22691e8e98/512/512/Image/Png/noFilter",
     "rscriptsId": "6871063a4b0bba40728d5683"
   },
   {
@@ -1797,7 +1797,7 @@
     "pastefyRaw": "https://pastefy.app/dUFSP7vR/raw",
     "linkShrtfly": "https://shrtslug.biz/95vwX",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/vs-hub-steal-a-brainrot_1766197306043_QSXaI9Ncdj.txt\"))()",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3667d0771df111ea4c7f81a2d221713d/512/512/Image/Png/noFilter",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-fc2384be25655c2f0cca1f22691e8e98/512/512/Image/Png/noFilter",
     "rscriptsId": "6928524cc0adac0d5a022236"
   },
   {
@@ -2555,9 +2555,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Zeroin Hub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
+    "pastefyRaw": "https://pastefy.app/fkAYVvWw/raw",
+    "linkShrtfly": "https://shrtslug.biz/964F6",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://zeroinhub.com/api/script\"))()",
     "thumbnail": null
   }
 ]
