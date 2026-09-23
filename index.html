@@ -115,6 +115,12 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 .task-name { font-family:'Rajdhani',sans-serif; font-size:1em; font-weight:700; letter-spacing:0.5px; }
 .task-hint { font-size:0.78em; color:var(--dim); margin-top:2px; }
 .task-arr { font-size:1em; transition:all 0.3s; }
+
+.task.loading { opacity: 0.85; pointer-events: none; }
+.task.loading .task-arr { animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.task-hint a { color: #bf7fff; text-decoration: none; }
+
 .task:hover .task-arr { transform:translateX(3px); }
 
 .progress-box { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; margin:14px 0; backdrop-filter:blur(8px); }
@@ -193,7 +199,7 @@ footer span { color:var(--purple); }
 
     <p class="sec-label au d2">⚡ &nbsp;Complete as missões</p>
 
-    <a href="https://youtube.com/@ares_script?si=6eofLBJieJhorFXN" target="_blank" class="task au d3" id="t1" onclick="completeTask('t1')">
+    <a href="https://youtube.com/@ares_script" target="_blank" class="task au d3" id="t1">
       <div class="task-ico" style="background:rgba(139,0,255,0.15);border:1px solid rgba(139,0,255,0.4);">
         ▶
       </div>
@@ -204,7 +210,18 @@ footer span { color:var(--purple); }
       <div class="task-arr" style="color:var(--purple);">→</div>
     </a>
 
-    <a href="https://www.instagram.com/ares_scripts?igsh=b2N0cnU5bThvMGJv" target="_blank" class="task au d5" id="t3" onclick="completeTask('t3')">
+    <a href="#" target="_blank" class="task au d4" id="t2">
+      <div class="task-ico" style="background:rgba(255,0,60,0.12);border:1px solid rgba(255,0,60,0.35);">
+        ♥
+      </div>
+      <div class="task-txt">
+        <div class="task-name">Curtir e comentar o vídeo</div>
+        <div class="task-hint" id="video-hint">Carregando último vídeo...</div>
+      </div>
+      <div class="task-arr" style="color:var(--purple);" id="t2-arr">→</div>
+    </a>
+
+    <a href="https://www.instagram.com/ares_scripts?igsh=b2N0cnU5bThvMGJv" target="_blank" class="task au d5" id="t3">
       <div class="task-ico" style="background:rgba(139,0,255,0.15);border:1px solid rgba(139,0,255,0.4);">
         ▶
       </div>
@@ -218,7 +235,7 @@ footer span { color:var(--purple); }
     <div class="progress-box au d5">
       <div class="progress-top">
         <span class="progress-label">🛡 &nbsp;Progresso</span>
-        <span class="progress-count" id="prog-count">0 / 2</span>
+        <span class="progress-count" id="prog-count">0 / 3</span>
       </div>
       <div class="progress-track">
         <div class="progress-fill" id="prog-fill"></div>
@@ -244,41 +261,134 @@ function enterSite() {
   }, 750);
 }
 
-let done={t1:false,t3:false};
+const YT_CHANNEL_ID = 'UCX2N85bLl1JwWsb9wQ1NxHg';
+const TOTAL_TASKS = 3;
 
-// Missões — só conclui com clique real (não scroll)
-['t1','t3'].forEach(function(id){
+let done = {
+  t1: localStorage.getItem('ares_t1') === '1',
+  t2: localStorage.getItem('ares_t2') === '1',
+  t3: localStorage.getItem('ares_t3') === '1'
+};
+
+let latestVideoUrl = 'https://www.youtube.com/@ares_script/videos';
+
+function markDone(id) {
+  if (done[id]) return;
+  done[id] = true;
+  localStorage.setItem('ares_' + id, '1');
   const el = document.getElementById(id);
+  if (!el) return;
+  el.classList.remove('loading');
+  el.classList.add('done');
+  const arr = el.querySelector('.task-arr');
+  if (arr) arr.innerHTML = '✓';
+  updateProgress();
+}
 
-  el.addEventListener('click', function(){
-    setTimeout(function(){
-      if(!done[id]){
-        done[id]=true;
-        el.classList.add('done');
-        el.querySelector('.task-arr').innerHTML='✓';
-        updateProgress();
-      }
-    }, 300);
-  });
-});
-
-function completeTask(id){} // mantido para não dar erro
-
-function updateProgress(){
-  const c=Object.values(done).filter(Boolean).length;
-  document.getElementById('prog-fill').style.width=(c/2*100)+'%';
-  document.getElementById('prog-count').textContent=c+' / 2';
-  if(c===2){
-    const b=document.getElementById('unlock-btn');
+function updateProgress() {
+  const c = Object.values(done).filter(Boolean).length;
+  document.getElementById('prog-fill').style.width = (c / TOTAL_TASKS * 100) + '%';
+  document.getElementById('prog-count').textContent = c + ' / ' + TOTAL_TASKS;
+  if (c === TOTAL_TASKS) {
+    const b = document.getElementById('unlock-btn');
     b.classList.remove('locked');
     b.classList.remove('au');
     b.classList.add('unlocked');
-    b.style.opacity='1';
-    b.style.animationName='unlockglow';
-    b.innerHTML='✅ &nbsp;LINK DESBLOQUEADO — ACESSAR DOWNLOADS';
-    b.scrollIntoView({behavior:'smooth', block:'center'});
+    b.style.opacity = '1';
+    b.style.animationName = 'unlockglow';
+    b.innerHTML = '✅ &nbsp;LINK DESBLOQUEADO — ACESSAR DOWNLOADS';
   }
 }
+
+// Restaura missões já feitas
+['t1', 't2', 't3'].forEach(function (id) {
+  if (done[id]) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.add('done');
+      const arr = el.querySelector('.task-arr');
+      if (arr) arr.innerHTML = '✓';
+    }
+  }
+});
+updateProgress();
+
+// YouTube / Instagram — completa ao clicar (abre o link)
+['t1', 't3'].forEach(function (id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('click', function () {
+    setTimeout(function () {
+      markDone(id);
+    }, 400);
+  });
+});
+
+// Vídeo: abre último vídeo; ao voltar, 5s carregando e completa
+const t2 = document.getElementById('t2');
+if (t2) {
+  t2.addEventListener('click', function (e) {
+    if (done.t2) return;
+    e.preventDefault();
+    localStorage.setItem('ares_t2_pending', String(Date.now()));
+    window.open(latestVideoUrl, '_blank');
+    // marca pending visual
+    t2.classList.add('loading');
+    const arr = document.getElementById('t2-arr');
+    if (arr) arr.textContent = '…';
+  });
+}
+
+// Se voltou da missão do vídeo → espera 5s e confirma
+(function checkVideoReturn() {
+  const pending = localStorage.getItem('ares_t2_pending');
+  if (!pending || done.t2) return;
+  const el = document.getElementById('t2');
+  if (!el) return;
+  el.classList.add('loading');
+  const arr = document.getElementById('t2-arr');
+  if (arr) arr.textContent = '…';
+  const hint = document.getElementById('video-hint');
+  if (hint) hint.textContent = 'Confirmando missão...';
+  setTimeout(function () {
+    localStorage.removeItem('ares_t2_pending');
+    markDone('t2');
+    if (hint && latestVideoUrl) {
+      hint.textContent = 'Último vídeo do canal';
+    }
+  }, 5000);
+})();
+
+// Busca último vídeo do canal (RSS via rss2json — sem API key)
+async function loadLatestVideo() {
+  const hint = document.getElementById('video-hint');
+  const link = document.getElementById('t2');
+  const rss = encodeURIComponent(
+    'https://www.youtube.com/feeds/videos.xml?channel_id=' + YT_CHANNEL_ID
+  );
+  try {
+    const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + rss);
+    const data = await res.json();
+    if (data && data.items && data.items.length) {
+      const item = data.items[0];
+      latestVideoUrl = item.link || latestVideoUrl;
+      if (link) link.href = latestVideoUrl;
+      if (hint && !done.t2 && !localStorage.getItem('ares_t2_pending')) {
+        const title = (item.title || 'Último vídeo').slice(0, 42);
+        hint.textContent = title + (item.title && item.title.length > 42 ? '…' : '');
+      }
+      return;
+    }
+  } catch (e) {
+    console.warn('RSS vídeo:', e);
+  }
+  // fallback: página de vídeos do canal
+  latestVideoUrl = 'https://www.youtube.com/@ares_script/videos';
+  if (link) link.href = latestVideoUrl;
+  if (hint && !done.t2) hint.textContent = 'Abrir último vídeo do canal';
+}
+loadLatestVideo();
+
 </script>
 </body>
 </html>
