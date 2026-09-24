@@ -264,7 +264,7 @@ function enterSite() {
 const YT_CHANNEL_ID = 'UCX2N85bLl1JwWsb9wQ1NxHg';
 const TOTAL_TASKS = 3;
 // Missões expiram a cada 10 minutos (volta a pedir ao entrar de novo depois disso)
-const MISSION_TTL_MS = 10 * 60 * 1000;
+const MISSION_TTL_MS = 5 * 60 * 1000;
 
 function readMissions() {
   try {
@@ -366,40 +366,20 @@ updateProgress();
   });
 });
 
-// Vídeo: abre último vídeo; ao voltar, 5s carregando e completa
+// Vídeo: abre último vídeo e marca na hora (igual YT/IG)
 const t2 = document.getElementById('t2');
 if (t2) {
   t2.addEventListener('click', function (e) {
     if (done.t2) return;
-    e.preventDefault();
-    localStorage.setItem('ares_t2_pending', String(Date.now()));
-    window.open(latestVideoUrl, '_blank');
-    // marca pending visual
-    t2.classList.add('loading');
-    const arr = document.getElementById('t2-arr');
-    if (arr) arr.textContent = '…';
+    // garante href atualizado
+    if (latestVideoUrl) t2.href = latestVideoUrl;
+    setTimeout(function () {
+      markDone('t2');
+    }, 400);
   });
 }
-
-// Se voltou da missão do vídeo → espera 5s e confirma
-(function checkVideoReturn() {
-  const pending = localStorage.getItem('ares_t2_pending');
-  if (!pending || done.t2) return;
-  const el = document.getElementById('t2');
-  if (!el) return;
-  el.classList.add('loading');
-  const arr = document.getElementById('t2-arr');
-  if (arr) arr.textContent = '…';
-  const hint = document.getElementById('video-hint');
-  if (hint) hint.textContent = 'Confirmando missão...';
-  setTimeout(function () {
-    localStorage.removeItem('ares_t2_pending');
-    markDone('t2');
-    if (hint && latestVideoUrl) {
-      hint.textContent = 'Último vídeo do canal';
-    }
-  }, 5000);
-})();
+// limpa pending antigo se existir
+localStorage.removeItem('ares_t2_pending');
 
 // Busca último vídeo do canal (RSS via rss2json — sem API key)
 async function loadLatestVideo() {
@@ -415,7 +395,7 @@ async function loadLatestVideo() {
       const item = data.items[0];
       latestVideoUrl = item.link || latestVideoUrl;
       if (link) link.href = latestVideoUrl;
-      if (hint && !done.t2 && !localStorage.getItem('ares_t2_pending')) {
+      if (hint && !done.t2) {
         const title = (item.title || 'Último vídeo').slice(0, 42);
         hint.textContent = title + (item.title && item.title.length > 42 ? '…' : '');
       }
