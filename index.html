@@ -263,11 +263,51 @@ function enterSite() {
 
 const YT_CHANNEL_ID = 'UCX2N85bLl1JwWsb9wQ1NxHg';
 const TOTAL_TASKS = 3;
+// Missões expiram a cada 10 minutos (volta a pedir ao entrar de novo depois disso)
+const MISSION_TTL_MS = 10 * 60 * 1000;
+
+function readMissions() {
+  try {
+    return JSON.parse(localStorage.getItem('ares_missions') || '{}') || {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function isMissionDone(id) {
+  const data = readMissions();
+  const ts = data[id];
+  if (!ts) return false;
+  if (Date.now() - Number(ts) > MISSION_TTL_MS) return false;
+  return true;
+}
+
+function clearExpiredMissions() {
+  const data = readMissions();
+  let changed = false;
+  Object.keys(data).forEach(function (k) {
+    if (Date.now() - Number(data[k]) > MISSION_TTL_MS) {
+      delete data[k];
+      changed = true;
+    }
+  });
+  if (changed) localStorage.setItem('ares_missions', JSON.stringify(data));
+  // limpa chaves antigas da versão anterior
+  ['ares_t1', 'ares_t2', 'ares_t3'].forEach(function (k) {
+    localStorage.removeItem(k);
+  });
+  const pending = localStorage.getItem('ares_t2_pending');
+  if (pending && Date.now() - Number(pending) > MISSION_TTL_MS) {
+    localStorage.removeItem('ares_t2_pending');
+  }
+}
+
+clearExpiredMissions();
 
 let done = {
-  t1: localStorage.getItem('ares_t1') === '1',
-  t2: localStorage.getItem('ares_t2') === '1',
-  t3: localStorage.getItem('ares_t3') === '1'
+  t1: isMissionDone('t1'),
+  t2: isMissionDone('t2'),
+  t3: isMissionDone('t3')
 };
 
 let latestVideoUrl = 'https://www.youtube.com/@ares_script/videos';
@@ -275,7 +315,9 @@ let latestVideoUrl = 'https://www.youtube.com/@ares_script/videos';
 function markDone(id) {
   if (done[id]) return;
   done[id] = true;
-  localStorage.setItem('ares_' + id, '1');
+  const data = readMissions();
+  data[id] = Date.now();
+  localStorage.setItem('ares_missions', JSON.stringify(data));
   const el = document.getElementById(id);
   if (!el) return;
   el.classList.remove('loading');
