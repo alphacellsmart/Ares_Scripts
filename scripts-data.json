@@ -2628,5 +2628,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-53903b9fa6925770b03936370ac37002/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ab3b390e32cf2f4995a5bfe"
+  },
+  {
+    "jogo": "Violence District",
+    "place_id": "93978595733734",
+    "hub": "@elite_original",
+    "loadstringOriginal": "https://rscripts.net/raw/violent-district-generatoresp-esp-and-walkspeed_1780070993221_v33LmfAJfH.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "elite_original",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a19b95fd9e874a3ec9e6c91"
   }
 ]
