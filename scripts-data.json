@@ -2575,5 +2575,22 @@
     "linkShrtfly": null,
     "loadstringFinal": null,
     "thumbnail": null
+  },
+  {
+    "jogo": "[将] Shogun's Reign",
+    "place_id": "106568491289620",
+    "hub": "@Questy",
+    "loadstringOriginal": "https://rscripts.net/raw/script-request_1790219944797_L2oZgJwWd5.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Questy",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-caba4e8c48d8441708649b201ecb8e1c/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ab496a8256a32be1a7455dd"
   }
 ]
