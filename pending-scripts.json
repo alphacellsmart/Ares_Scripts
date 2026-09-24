@@ -1,5 +1,56 @@
 [
   {
+    "rscriptsId": "6999e5bc80077dc9cb0281a5",
+    "slug": "fps-counter-v161-pJ1H",
+    "title": "FPS Counter V1.7.3",
+    "jogo": "FPS Counter V1.7.3",
+    "place_id": "",
+    "hub": "@aabbaaii13",
+    "creditos": "aabbaaii13",
+    "loadstringOriginal": "https://rscripts.net/raw/fps-counter-v173_1788339376707_AzlOQjvKXa.txt",
+    "rawScript": "https://rscripts.net/raw/fps-counter-v173_1788339376707_AzlOQjvKXa.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "This Script Was Made For Mobile Users",
+    "thumbnail": null,
+    "mobileReady": true,
+    "paid": false,
+    "likes": 4,
+    "views": 47191,
+    "source": "rscripts",
+    "fetchedAt": "2026-09-24T21:14:16.715Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "68fa5c35b4387bf9b900bd62",
+    "slug": "rebirth-champions-ultimate-aROt",
+    "title": "Rebirth Champions: Ultimate",
+    "jogo": "Anime Dice",
+    "place_id": "113290951185459",
+    "hub": "@DuckyScripts",
+    "creditos": "DuckyScripts",
+    "loadstringOriginal": "https://rscripts.net/raw/rebirth-champions-ultimate_1767287840772_LqdVYYLrDV.txt",
+    "rawScript": "https://rscripts.net/raw/rebirth-champions-ultimate_1767287840772_LqdVYYLrDV.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "UPDATED FOR HALLOWEEN EVENTAuto FarmAuto ClickAuto Rebirth (with amount selection)Auto Buy Player UpgradesEggsAuto Hatch (with egg and amount selection)Use Lucky EggsHide Hatch AnimationAxe/TreeAuto Cut Trees (select trees)Reduce Cutting CooldownAxe Strength BypassAuto Equip Best AxeAuto Upgrade Axe",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-97084dd1fb8735189f71281617add992/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 4,
+    "views": 49347,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-09-24T21:14:16.059Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6ab55087460075e6e6f29a8d",
     "slug": "aimbot-esp-Hmgt",
     "title": "Aimbot  ESP ",
