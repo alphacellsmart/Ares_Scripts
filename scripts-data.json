@@ -2981,5 +2981,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ab525e6b46c1c2846864db5"
+  },
+  {
+    "jogo": "RIVALS [❄️FREEZE RAY❄️]",
+    "place_id": "17625359962",
+    "hub": "@Skeleton_Scripts",
+    "loadstringOriginal": "https://rscripts.net/raw/rivals-purple-ghost-hub-script_1790237793484_MZOJKH08a2.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Skeleton_Scripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-d411296d27eea245f0b4bb9a6647b241/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ab4dc618e8577fbc2c09c64"
   }
 ]
