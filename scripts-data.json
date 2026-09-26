@@ -2715,5 +2715,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-be9d5d290a36d5a45f8296338b1c6a78/768/432/Image/Webp/noFilter",
     "rscriptsId": "69d6c5cda9983e486f06bc02"
+  },
+  {
+    "jogo": "The Strongest Battlegrounds",
+    "place_id": "10449761463",
+    "hub": "@SparkHub",
+    "loadstringOriginal": "https://rscripts.net/raw/auto-techs-auto-block-auto-counter-and-much-more_1779237161060_WwPHsLDIKZ.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "SparkHub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-ccd8bcf9f66dc37834534d2cb3cfd1b9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a0480de4d23568761acc2cc"
   }
 ]
