@@ -2946,5 +2946,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a431bf4bc525af678aadaad"
+  },
+  {
+    "jogo": "Animal Hospital Anomaly",
+    "place_id": "78515283254292",
+    "hub": "@Zeny",
+    "loadstringOriginal": "https://rscripts.net/raw/simple-esp_1782989370884_GlR8sRiurh.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Zeny",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a46423a456ebbcce5b2247b"
   }
 ]
