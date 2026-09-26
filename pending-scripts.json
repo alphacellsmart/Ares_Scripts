@@ -180,32 +180,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "673d54629a294a194aa7cce3",
-    "slug": "vess-hub-beta-v1-DQdv",
-    "title": "Vess Hub Beta V1",
-    "jogo": "Fisch",
-    "place_id": "16732694052",
-    "hub": "@Vess",
-    "creditos": "Vess",
-    "loadstringOriginal": "https://rscripts.net/raw/vess-hub-beta-v1_1732072546305_RQtTtYcAZK.txt",
-    "rawScript": "https://rscripts.net/raw/vess-hub-beta-v1_1732072546305_RQtTtYcAZK.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "FREE - OPENSOURCE - KEYLESSA new exploit hub, with an easy-to-use UI, mobile-friendly, and free.Supported games: Murder Mystery 2, Fisch, PETS GO!. There will be more soon.Doesnt work on every executor",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 1,
-    "views": 49360,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-26T15:56:00.065Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6ab7a29b601a00bd8d943a82",
     "slug": "free-flee-the-facility-script-esp-weMW",
     "title": "(FREE) Flee The Facility Script - ESP!!!",
