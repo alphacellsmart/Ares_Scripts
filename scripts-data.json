@@ -2858,5 +2858,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-8875403517405f3dc958d4f229c6a8b1/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a723e0ca8a5a270ba218145"
+  },
+  {
+    "jogo": "Steal An Egg",
+    "place_id": "107778070777162",
+    "hub": "@_LSS",
+    "loadstringOriginal": "https://rscripts.net/raw/opensource-auto-steal-auto-plant-auto-hatch-etc_1789999467754_ooOdWeV528.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "_LSS",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa80dbea5185ed62c47a04c"
   }
 ]
