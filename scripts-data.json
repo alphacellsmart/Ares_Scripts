@@ -2663,5 +2663,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-9c12ccb530c74a4d87e9ed54d6497367/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a744b033cbb8bb71581b228"
+  },
+  {
+    "jogo": "Adopt Me",
+    "place_id": "920587237",
+    "hub": "@soulth",
+    "loadstringOriginal": "https://rscripts.net/raw/sendayhub-10-games-supported_1720879327147_N64T1iZXdC.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "soulth",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "669288dfe9ed653de5d2ad02"
   }
 ]
