@@ -2892,5 +2892,23 @@
     "linkShrtfly": "https://shrtslug.biz/96gyn",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/duczsitink/DUCKHUB/refs/heads/main/main.lua\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "Fisch",
+    "place_id": "16732694052",
+    "hub": "@Vess",
+    "loadstringOriginal": "https://rscripts.net/raw/vess-hub-beta-v1_1732072546305_RQtTtYcAZK.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Vess",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-c929c9ba9069190914f60bbfe47b6cb9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "673d54629a294a194aa7cce3"
   }
 ]
