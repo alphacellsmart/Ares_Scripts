@@ -2768,5 +2768,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a94f35d6509792b4b19a696"
+  },
+  {
+    "jogo": "Violence District",
+    "place_id": "93978595733734",
+    "hub": "@Valinc_Official",
+    "loadstringOriginal": "https://rscripts.net/raw/valinc-syndicate-or-op-feature-new-update_1784049724074_x0JD1J6Zkt.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "Valinc_Official",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a530b82b590ec2c5ecf9724"
   }
 ]
