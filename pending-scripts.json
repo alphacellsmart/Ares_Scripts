@@ -1180,32 +1180,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6aa80dbea5185ed62c47a04c",
-    "slug": "opensource-auto-steal-auto-plant-auto-hatch-etc-VI3D",
-    "title": "[OPENSOURCE] Auto Steal, Auto Plant, Auto Hatch, etc",
-    "jogo": "Steal An Egg",
-    "place_id": "107778070777162",
-    "hub": "@_LSS",
-    "creditos": "_LSS",
-    "loadstringOriginal": "https://rscripts.net/raw/opensource-auto-steal-auto-plant-auto-hatch-etc_1789999467754_ooOdWeV528.txt",
-    "rawScript": "https://rscripts.net/raw/opensource-auto-steal-auto-plant-auto-hatch-etc_1789999467754_ooOdWeV528.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "All functions:Auto Steal (Tween, Teleport)Auto Place EggsAuto Hatch EggsAuto ReturnAuto ThreadmillAuto Upgrade ThreadmillAuto Buy &amp; Equip TrailsAuto Egg Selection (Selected Zones, Selected Rarities)God ModeGet UnstuckAdjust Flight SpeedAnti-AFK, Rejoin Server, Unload ScriptFPS Boost",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 17,
-    "views": 3671,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-22T16:25:37.434Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6aabfc512053bbda6f42fc2c",
     "slug": "new-anime-dice-best-script-auto-roll-auto-play-tower-5men",
     "title": "[NEW] Anime Dice Best Script Auto Roll, Auto Play Tower",
