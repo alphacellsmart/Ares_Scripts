@@ -385,7 +385,7 @@
     "pastefyRaw": "https://pastefy.app/2atljHnT/raw",
     "linkShrtfly": "https://shrtslug.biz/95gzT",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/wwh-hub-or-autofarm-pet-spawner-and-house-cloner-works-here_1788985636410_uJGwqbdTAK.txt\"))()",
-    "thumbnail": "https://t1.rbxcdn.com/180DAY-a038981e00b7aade214b4352fc2c97fd",
+    "thumbnail": "https://t3.rbxcdn.com/180DAY-b7320474b7db979e5754a1b55a381d6f",
     "rscriptsId": "6aa1c124685c553c79fcc0c0"
   },
   {
@@ -1056,7 +1056,7 @@
     "pastefyRaw": "https://pastefy.app/9xtoxryy/raw",
     "linkShrtfly": "https://shrtslug.biz/95n2V",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/auto-face-enemieauto-slaphitbox-expander_1789224642488_NkbtQtnd1s.txt\"))()",
-    "thumbnail": "https://t4.rbxcdn.com/180DAY-6f04369060213cc72bbec0d8dd5a47a4",
+    "thumbnail": "https://t7.rbxcdn.com/180DAY-d6fd59ad64bb4b7652be71f25f0212d0",
     "rscriptsId": "6aa566c2300f055f6f3cde0f"
   },
   {
@@ -2888,9 +2888,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "Duck Hub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": null
+    "pastefyRaw": "https://pastefy.app/nIqqcKfq/raw",
+    "linkShrtfly": "https://shrtslug.biz/96gyn",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/duczsitink/DUCKHUB/refs/heads/main/main.lua\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-774ec14539b264f85fdb6e8a34dfa344/512/512/Image/Png/noFilter"
   }
 ]
