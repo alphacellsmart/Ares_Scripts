@@ -2804,5 +2804,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-3ee1b99c587d8e7ca52fd99ad87d4c46/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a909d88c929b145b573ed3b"
+  },
+  {
+    "jogo": "Anime Dice",
+    "place_id": "113290951185459",
+    "hub": "@Aerlro",
+    "loadstringOriginal": "https://rscripts.net/raw/otc-script-or-anime-dice_1790104706352_GtkJcoQ2Au.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Aerlro",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0f94a2d3d0b8991744905f6686bf2bc8/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ab2d482cbdc6af485c16b16"
   }
 ]
