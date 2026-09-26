@@ -1002,32 +1002,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6ab348ede32cf2f4995a0c4d",
-    "slug": "auto-farm-insta-kill-boss-only-auto-loot-auto-skills-nxtN",
-    "title": "Auto Farm Insta Kill Boss Only Auto Loot Auto Skills",
-    "jogo": "Slayers 2",
-    "place_id": "16205713724",
-    "hub": "@Alfredo_scripter",
-    "creditos": "Alfredo_scripter",
-    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-insta-kill-boss-only-auto-loot-auto-skills_1790134509047_GnAGrUH8BW.txt",
-    "rawScript": "https://rscripts.net/raw/auto-farm-insta-kill-boss-only-auto-loot-auto-skills_1790134509047_GnAGrUH8BW.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Slayers 2 SupportAuto FarmInsta KillMob Type SelectorRegion SelectorBoss OnlyQuest PriorityAttack Position (Front / Above / Below)Attack DistanceMove Method (Tween / Teleport)Noclip While FarmingAuto LootAuto SkillsRedeem CodeRedeem Known CodesLive StatsTeleport to LocationTeleport to PlayerMenu / W",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 0,
-    "views": 5,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-23T03:40:40.901Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a03985f4a492796ed06973d",
     "slug": "stanislas-hub-keyless-script-slime-rng-no-key-MQSS",
     "title": "Stanislas Hub Keyless (Script Slime RNG No Key)",
