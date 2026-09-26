@@ -3017,5 +3017,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ab4f4a15eef2bf4d6b36628"
+  },
+  {
+    "jogo": "Blox Fruits",
+    "place_id": "2753915549",
+    "hub": "@readtos",
+    "loadstringOriginal": "https://rscripts.net/raw/redz-hub-v2_1781029662160_e8JxfS1JE3.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "readtos",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a285b1e70c99325b5c98965"
   }
 ]
