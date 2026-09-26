@@ -667,32 +667,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6ab4f4a15eef2bf4d6b36628",
-    "slug": "slayers-script-auto-max-lvl-auto-dungeon-auto-parry-LUCP",
-    "title": "Slayers Script - Auto Max LVL, Auto Dungeon, Auto Parry",
-    "jogo": "Slayers 2",
-    "place_id": "16205713724",
-    "hub": "@leeintokyo",
-    "creditos": "leeintokyo",
-    "loadstringOriginal": "https://rscripts.net/raw/slayers-script-auto-max-lvl-auto-dungeon-auto-parry_1790244001258_okKukko1zX.txt",
-    "rawScript": "https://rscripts.net/raw/slayers-script-auto-max-lvl-auto-dungeon-auto-parry_1790244001258_okKukko1zX.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "slayers 2 script by sho hub it levels you to max, blocks boss attacks for you, clears the dungeon and keeps farming while you sleep :3",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 0,
-    "views": 9,
-    "source": "rscripts",
-    "fetchedAt": "2026-09-24T10:58:26.649Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6a285b1e70c99325b5c98965",
     "slug": "redz-hub-v2-lOag",
     "title": "Redz Hub ( v2 )",
