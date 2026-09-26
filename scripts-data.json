@@ -2822,5 +2822,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-0f94a2d3d0b8991744905f6686bf2bc8/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ab2d482cbdc6af485c16b16"
+  },
+  {
+    "jogo": "Slayers 2",
+    "place_id": "16205713724",
+    "hub": "@Alfredo_scripter",
+    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-insta-kill-boss-only-auto-loot-auto-skills_1790134509047_GnAGrUH8BW.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Alfredo_scripter",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ab348ede32cf2f4995a0c4d"
   }
 ]
