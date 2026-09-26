@@ -333,31 +333,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a46423a456ebbcce5b2247b",
-    "slug": "simple-esp-dR8h",
-    "title": "simple esp",
-    "jogo": "Animal Hospital Anomaly",
-    "place_id": "78515283254292",
-    "hub": "@Zeny",
-    "creditos": "Zeny",
-    "loadstringOriginal": "https://rscripts.net/raw/simple-esp_1782989370884_GlR8sRiurh.txt",
-    "rawScript": "https://rscripts.net/raw/simple-esp_1782989370884_GlR8sRiurh.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "tbh just a simple ass esp i tottaly made myself",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/768/432/Image/Webp/noFilter",
-    "mobileReady": false,
-    "paid": false,
-    "likes": 7,
-    "views": 22714,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-25T16:44:33.987Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6aa205440357474078ca98e6",
     "slug": "dungeon-lootr-auto-farm-auto-forge-auto-buy-more-uVZK",
     "title": "Dungeon Lootr - Auto Farm, Auto Forge, Auto Buy + more!",
