@@ -3051,5 +3051,22 @@
     "linkShrtfly": "https://shrtslug.biz/96qZb",
     "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrustyCoding/slopix-hub/refs/heads/main/loader.lua\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/512/512/Image/Png/noFilter"
+  },
+  {
+    "jogo": "[RELEASE] Ability Arena 💥",
+    "place_id": "110175021189594",
+    "hub": "@key_card51",
+    "loadstringOriginal": "https://rscripts.net/raw/ability-arena-auto-farm-esp-speed_1790741932280_KCeUzgR1Qv.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "key_card51",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-6abd41812fa1b722d7b2e9c66db0c676/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6abc8dac7136803086df9842"
   }
 ]
