@@ -615,32 +615,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6a9a5da69d6d26c78807541d",
-    "slug": "jujutsu-shenanigans-auto-play-script-YHAh",
-    "title": "Jujutsu Shenanigans Auto Play Script",
-    "jogo": "Jujutsu Shenanigans",
-    "place_id": "9391468976",
-    "hub": "@Sigma_Scripts",
-    "creditos": "Sigma_Scripts",
-    "loadstringOriginal": "https://rscripts.net/raw/jujutsu-shenanigans-auto-play-script_1788501414353_GTt2G3yM3t.txt",
-    "rawScript": "https://rscripts.net/raw/jujutsu-shenanigans-auto-play-script_1788501414353_GTt2G3yM3t.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Jujutsu Shenanigans Auto Play Bot Script Farm Infinite kill ",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 7,
-    "views": 2013,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-28T22:59:55.003Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6ab9fd2d274757e7fd7d0a75",
     "slug": "upd-6-new-anime-dice-script-or-autofarm-autorolls-more-vfrh",
     "title": "[UPD 6 New] Anime dice script | autofarm, autorolls, more",
