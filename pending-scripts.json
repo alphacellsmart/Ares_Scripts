@@ -436,32 +436,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6aaaeb67ff89458451e34b86",
-    "slug": "keyless-ride-a-pet-script-by-zanjihub-LD0Y",
-    "title": "[ KEYLESS ] Ride a Pet Script by ZanjiHub",
-    "jogo": "Ride A Pet",
-    "place_id": "124216119978534",
-    "hub": "@ZanjiHub",
-    "creditos": "ZanjiHub",
-    "loadstringOriginal": "https://rscripts.net/raw/keyless-ride-a-pet-script-by-zanjihub_1789586279074_FChAe3fz0i.txt",
-    "rawScript": "https://rscripts.net/raw/keyless-ride-a-pet-script-by-zanjihub_1789586279074_FChAe3fz0i.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Advanced egg automation with Auto Pickup, Auto Place, Auto Hatch, Egg ESP, pet management, server hopping, movement tools, and Discord webhook support",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 7,
-    "views": 12396,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-09-29T12:16:17.739Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6ab9a531274757e7fd7cb159",
     "slug": "fast-roll-auto-spin-auto-buy-best-dupe-auto-rebirthmore-Rxae",
     "title": "FAST ROLL, AUTO SPIN, AUTO BUY, BEST DUPE, AUTO REBIRTH+MORE",
