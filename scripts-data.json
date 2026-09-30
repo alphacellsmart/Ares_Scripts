@@ -3158,5 +3158,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aaaeb67ff89458451e34b86"
+  },
+  {
+    "jogo": "Violence District",
+    "place_id": "93978595733734",
+    "hub": "@DeltaVoid",
+    "loadstringOriginal": "https://rscripts.net/raw/teleport-god-mode-auto-kill-aimbot-keyless-violence-district_1789237618127_WXxIOHZLQO.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "DeltaVoid",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6aa59902419c27db4c3bd6cd"
   }
 ]
