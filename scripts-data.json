@@ -3122,5 +3122,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-4241c6db7e937372a71aff9779587018/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a8a01ae2c6a8c4519a49218"
+  },
+  {
+    "jogo": "Anime Dice",
+    "place_id": "113290951185459",
+    "hub": "@TREXET",
+    "loadstringOriginal": "https://rscripts.net/raw/anime-dice-script-full-autofarm-unit-tower-selux-hub_1790689808583_Z4D6dBK5y2.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "TREXET",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0f94a2d3d0b8991744905f6686bf2bc8/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6abbc210efec73611397fd95"
   }
 ]
