@@ -3193,5 +3193,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
     "rscriptsId": "6a287a9ae1b3c640f1915e1c"
+  },
+  {
+    "jogo": "Jujutsu Shenanigans",
+    "place_id": "9391468976",
+    "hub": "@Sigma_Scripts",
+    "loadstringOriginal": "https://rscripts.net/raw/jujutsu-shenanigans-auto-play-script_1788501414353_GTt2G3yM3t.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Sigma_Scripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a9a5da69d6d26c78807541d"
   }
 ]
