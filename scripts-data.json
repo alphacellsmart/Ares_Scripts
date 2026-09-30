@@ -3047,9 +3047,9 @@
     ],
     "descricao": "Keyless • Compatible with Delta",
     "creditos": "SlopixHub",
-    "pastefyRaw": null,
-    "linkShrtfly": null,
-    "loadstringFinal": null,
-    "thumbnail": null
+    "pastefyRaw": "https://pastefy.app/t9T89hsM/raw",
+    "linkShrtfly": "https://shrtslug.biz/96qZb",
+    "loadstringFinal": "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/TrustyCoding/slopix-hub/refs/heads/main/loader.lua\"))()",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-8f6e03e81105f9c8f310b91758896236/512/512/Image/Png/noFilter"
   }
 ]
