@@ -3176,5 +3176,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
     "rscriptsId": "6aa59902419c27db4c3bd6cd"
+  },
+  {
+    "jogo": "Blox Fruits",
+    "place_id": "2753915549",
+    "hub": "@JacobsScripts",
+    "loadstringOriginal": "https://rscripts.net/raw/jacobs-hub-blox-fruits-or-auto-farm_1782938944992_qPP0Icz4Cr.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "JacobsScripts",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-11317876063dea24a4abe47d4dbb6237/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a287a9ae1b3c640f1915e1c"
   }
 ]
