@@ -3264,5 +3264,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ac1216d418a7b42dd12b867"
+  },
+  {
+    "jogo": "Volleyball Legends",
+    "place_id": "73956553001240",
+    "hub": "@offline404",
+    "loadstringOriginal": "https://rscripts.net/raw/dp-hub-dupe-script_1768117593968_uE6WmTM05S.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "offline404",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9c12ccb530c74a4d87e9ed54d6497367/768/432/Image/Webp/noFilter",
+    "rscriptsId": "69635559d04eb7ed28ffbae1"
   }
 ]
