@@ -3335,5 +3335,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-cd785841e87b3374a098b13ef7038417/768/432/Image/Webp/noFilter",
     "rscriptsId": "6abdf8cbfd9d7b9f127239f4"
+  },
+  {
+    "jogo": "Brookhaven RP",
+    "place_id": "4924922222",
+    "hub": "@Draig",
+    "loadstringOriginal": "https://rscripts.net/raw/best-op-admin-panel-teleport-speed-noclip-insta-tp-player_1782781964061_EjHYiAq85g.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "Draig",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-4fa9c5cc66deb2a2573f1c203be42d69/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6a43180c54f5648df7819b45"
   }
 ]
