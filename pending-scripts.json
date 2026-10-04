@@ -128,32 +128,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "69635559d04eb7ed28ffbae1",
-    "slug": "dp-hub-dupe-script-Paqt",
-    "title": "DP HUB – Dupe Script",
-    "jogo": "Volleyball Legends",
-    "place_id": "73956553001240",
-    "hub": "@offline404",
-    "creditos": "offline404",
-    "loadstringOriginal": "https://rscripts.net/raw/dp-hub-dupe-script_1768117593968_uE6WmTM05S.txt",
-    "rawScript": "https://rscripts.net/raw/dp-hub-dupe-script_1768117593968_uE6WmTM05S.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "DP HUB is an advanced all-in-one hub for Volleyball Legends, featuring smart hitboxes, auto gameplay assists, ESP systems, movement enhancements, and server utilities with a clean Rayfield UI. Built for both PC and mobile users.Features:Dynamic &amp; adjustable ball hitboxes (size, color, transparen",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-9c12ccb530c74a4d87e9ed54d6497367/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 9,
-    "views": 44118,
-    "source": "rscripts-top-games",
-    "fetchedAt": "2026-10-03T15:50:39.327Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "6ac0e07d5c537c2a4f5ddd40",
     "slug": "sell-ores-script-auto-roll-auto-ores-gUuG",
     "title": "Sell Ores Script - Auto Roll, Auto Ores",
