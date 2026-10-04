@@ -3246,5 +3246,23 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-fbf9cbaec24f63b6f5c294f33634b70d/768/432/Image/Webp/noFilter",
     "rscriptsId": "670bd3d91e168ebb609fbaeb"
+  },
+  {
+    "jogo": "Ride A Pet",
+    "place_id": "124216119978534",
+    "hub": "@Battman",
+    "loadstringOriginal": "https://rscripts.net/raw/ride-a-pet-auto-farm_1791041901754_S9689nocZQ.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "Battman",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ac1216d418a7b42dd12b867"
   }
 ]
