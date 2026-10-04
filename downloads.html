@@ -453,6 +453,10 @@ footer span { color: var(--purple); }
 .d7{animation-delay:0.35s}.d8{animation-delay:0.4s}
 </style>
 
+
+<!-- Linkvertise -->
+<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+<script>linkvertise(5595773, {whitelist: ["pastefy.app"], blacklist: []});</script>
 </head>
 <body>
 <div class="bg-fixed"></div>
@@ -637,6 +641,25 @@ function filterAll(q) {
 }
 
 
+
+// Linkvertise dynamic (conta 5595773)
+const LV_ID = 5595773;
+function toLinkvertise(url) {
+  if (!url || url === '#') return '#';
+  if (/linkvertise\.com|link-to\.net/i.test(url)) return url;
+  // protege Pastefy (e raw)
+  if (!/pastefy\.app/i.test(url) && !/\/raw/i.test(url)) {
+    return url;
+  }
+  try {
+    const encoded = btoa(unescape(encodeURIComponent(url)));
+    const rnd = Math.floor(Math.random() * 1e9);
+    return 'https://link-to.net/' + LV_ID + '/' + rnd + '/dynamic?r=' + encoded;
+  } catch (e) {
+    return url;
+  }
+}
+
 function openScriptsPanel(jogoNome) {
   const entries = allGames[jogoNome];
   if (!entries || !entries.length) return;
@@ -657,7 +680,8 @@ function openScriptsPanel(jogoNome) {
   let itemsHtml = '';
   entries.forEach(s => {
     // Direto: Pastefy raw (sem encurtador / Linkvertise)
-    const link = s.pastefyRaw || s.linkShrtfly || s.loadstringOriginal || '#';
+    const raw = s.pastefyRaw || s.linkShrtfly || s.loadstringOriginal || '#';
+    const link = toLinkvertise(raw);
     const creditos = s.creditos || (s.hub || 'N/A').replace('@', '');
     const keyless = s.keyless !== false;
     const delta = (s.compatible || []).includes('Delta');
