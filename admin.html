@@ -171,10 +171,10 @@ body {
   text-align: center;
 }
 .stat-val {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.4em;
+  font-size: 1.8em !important;
   font-weight: 900;
-  color: var(--white);
+  color: #e8c36a;
+  text-shadow: 0 0 20px rgba(201,168,76,0.35);
 }
 .stat-label {
   font-size: 0.72em;
@@ -316,6 +316,44 @@ code {
   border-radius: 4px;
   font-size: 0.9em;
 }
+
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.stat {
+  background: rgba(139,0,255,0.12);
+  border: 1px solid rgba(139,0,255,0.45);
+  border-radius: 14px;
+  padding: 18px 14px;
+  text-align: center;
+}
+.stat-val {
+  font-family: Orbitron, monospace;
+  font-size: 1.85em;
+  font-weight: 900;
+  color: #ffd76a;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.stat-label {
+  margin-top: 8px;
+  font-size: 0.78em;
+  color: #d4c8e8;
+  letter-spacing: 0.5px;
+}
+.visits-box {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(0,200,100,0.08);
+  border: 1px solid rgba(0,200,100,0.3);
+  text-align: center;
+}
+.visits-box .big {
+  font-family: Orbitron, monospace;
+  font-size: 1.4em;
+  color: #00e676;
+  font-weight: 800;
+}
+
 </style>
 </head>
 <body>
@@ -373,8 +411,14 @@ code {
             <div class="stat-label">Visitas hoje</div>
           </div>
         </div>
+        <div class="visits-box">
+          <div style="font-size:0.75em;color:#a894c4;margin-bottom:6px;">ACESSOS À PÁGINA DE DOWNLOADS</div>
+          <div class="big"><span id="statVisitsBig">—</span> total</div>
+          <div style="margin-top:6px;color:#c9b8e8;font-size:0.9em;">Hoje: <strong id="statTodayBig" style="color:#00e676;">—</strong></div>
+          <button class="btn btn-ghost" style="margin-top:10px;width:auto;padding:8px 14px;" onclick="loadVisits()">Atualizar visitas</button>
+        </div>
         <p class="note" style="margin-top:14px;">
-          Visitas reais via contador online. O número “online” na página pública é <strong>fake</strong> (300–1200) só pra visual.
+          Contador real de acessos à downloads. O “online” na página pública é visual (300–1200).
         </p>
       </div>
 
@@ -453,6 +497,11 @@ code {
       </div>
       <div class="card">
         <h2>Fila de revisão (pending)</h2>
+        <div class="form-actions" style="margin-bottom:12px;">
+          <button class="btn btn-primary" onclick="approveAllPending()">Aprovar todos e postar</button>
+          <button class="btn btn-ghost" onclick="reloadPending()">Atualizar fila</button>
+        </div>
+        <p class="note" style="margin-bottom:10px;">Aprovar todos: manda a fila inteira pro scripts-data e dispara o Action (Pastefy).</p>
         <div id="pendingList" class="empty">Carregando...</div>
       </div>
     </div>
@@ -707,6 +756,80 @@ function loadGhSettings() {
   if (el) el.value = repo;
 }
 
+
+async function approveAllPending() {
+  if (!pendingScripts.length) {
+    toast('Fila vazia');
+    return;
+  }
+  const token = localStorage.getItem('ares_gh_token');
+  const repo = localStorage.getItem('ares_gh_repo') || 'alphacellsmart/Ares_Scripts';
+  if (!token) {
+    toast('Configure o token em Config');
+    switchTab('settings');
+    return;
+  }
+  if (!confirm('Aprovar e postar ' + pendingScripts.length + ' script(s)?')) return;
+
+  toast('Publicando ' + pendingScripts.length + '...');
+  try {
+    const dataFile = await ghGetFile(repo, 'scripts-data.json', token);
+    let list = Array.isArray(dataFile.json) ? dataFile.json : [];
+    let added = 0;
+    const toAdd = [];
+
+    for (const s of pendingScripts) {
+      const entry = {
+        jogo: s.jogo,
+        place_id: s.place_id || '',
+        hub: s.hub,
+        loadstringOriginal: s.loadstringOriginal || s.rawScript,
+        keyless: !!s.keyless,
+        compatible: s.compatible || ['Delta'],
+        descricao: s.descricao || (s.keyless ? 'Keyless • Compatible with Delta' : 'Key System'),
+        creditos: s.creditos,
+        pastefyRaw: null,
+        linkShrtfly: null,
+        loadstringFinal: null,
+        thumbnail: s.thumbnail || null,
+        rscriptsId: s.rscriptsId || null
+      };
+      const dup = list.some(x =>
+        x.loadstringOriginal === entry.loadstringOriginal ||
+        (entry.rscriptsId && x.rscriptsId === entry.rscriptsId)
+      );
+      if (!dup) {
+        list.push(entry);
+        toAdd.push(entry);
+        added++;
+      }
+    }
+
+    if (added > 0) {
+      await ghPutFile(repo, 'scripts-data.json', token, list, dataFile.sha,
+        'Aprova em massa: ' + added + ' scripts');
+    }
+
+    // limpa pending
+    try {
+      const pendFile = await ghGetFile(repo, 'pending-scripts.json', token);
+      await ghPutFile(repo, 'pending-scripts.json', token, [], pendFile.sha, 'Limpa fila pending (aprovados)');
+    } catch (e) { console.warn(e); }
+
+    pendingScripts = [];
+    renderPending();
+    published = list;
+    updateStats();
+    renderHistory();
+
+    await ghTriggerWorkflow(repo, token);
+    toast(added + ' aprovados! Action vai processar Pastefy');
+  } catch (e) {
+    console.error(e);
+    toast('Erro: ' + (e.message || e));
+  }
+}
+
 function rejectPending(i) {
   pendingScripts.splice(i, 1);
   renderPending();
@@ -833,22 +956,55 @@ function renderHistory() {
 
 // ===== VISITS (CountAPI) =====
 async function loadVisits() {
-  try {
-    // total
-    const r1 = await fetch(`https://api.countapi.xyz/get/${VISIT_NAMESPACE}/${VISIT_KEY}`);
-    const d1 = await r1.json();
-    document.getElementById('statVisits').textContent = (d1.value || 0).toLocaleString('pt-BR');
-  } catch {
-    document.getElementById('statVisits').textContent = '—';
+  function setVisits(total, today) {
+    const fmt = n => (n == null || n === '—') ? '—' : Number(n).toLocaleString('pt-BR');
+    const a = document.getElementById('statVisits');
+    const b = document.getElementById('statToday');
+    const c = document.getElementById('statVisitsBig');
+    const d = document.getElementById('statTodayBig');
+    if (a) a.textContent = fmt(total);
+    if (b) b.textContent = fmt(today);
+    if (c) c.textContent = fmt(total);
+    if (d) d.textContent = fmt(today);
   }
+
+  // 1) tenta CountAPI
+  let total = null, today = null;
+  try {
+    const r1 = await fetch(`https://api.countapi.xyz/get/${VISIT_NAMESPACE}/${VISIT_KEY}`);
+    if (r1.ok) {
+      const d1 = await r1.json();
+      if (typeof d1.value === 'number') total = d1.value;
+    }
+  } catch (e) {}
   try {
     const day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
     const r2 = await fetch(`https://api.countapi.xyz/get/${VISIT_NAMESPACE}/${VISIT_TODAY_KEY}-${day}`);
-    const d2 = await r2.json();
-    document.getElementById('statToday').textContent = (d2.value || 0).toLocaleString('pt-BR');
-  } catch {
-    document.getElementById('statToday').textContent = '—';
+    if (r2.ok) {
+      const d2 = await r2.json();
+      if (typeof d2.value === 'number') today = d2.value;
+    }
+  } catch (e) {}
+
+  // 2) fallback: visitas.json no repo (se existir)
+  if (total == null) {
+    try {
+      const r = await fetch('visits.json?t=' + Date.now(), { cache: 'no-store' });
+      if (r.ok) {
+        const v = await r.json();
+        total = v.total || 0;
+        today = v.today || 0;
+      }
+    } catch (e) {}
   }
+
+  // 3) último fallback: localStorage acumulado neste aparelho
+  if (total == null) {
+    total = parseInt(localStorage.getItem('ares_visits_total') || '0', 10);
+    today = parseInt(localStorage.getItem('ares_visits_today') || '0', 10);
+  }
+
+  setVisits(total, today);
 }
 
 // ===== MANUAL =====

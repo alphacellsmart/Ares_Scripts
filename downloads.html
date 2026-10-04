@@ -453,9 +453,6 @@ footer span { color: var(--purple); }
 .d7{animation-delay:0.35s}.d8{animation-delay:0.4s}
 </style>
 
-<!-- Linkvertise Fullscript: só links pastefy.app passam pelos ads -->
-<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-<script>linkvertise(5595773, {whitelist: ["pastefy.app"], blacklist: []});</script>
 </head>
 <body>
 <div class="bg-fixed"></div>
@@ -640,25 +637,6 @@ function filterAll(q) {
 }
 
 
-// Linkvertise dynamic (funciona com links criados no JS)
-const LV_ID = 5595773;
-function toLinkvertise(url) {
-  if (!url || url === '#') return '#';
-  // já é linkvertise / link-to
-  if (/linkvertise\.com|link-to\.net/i.test(url)) return url;
-  // só protege Pastefy (e raw em geral)
-  if (!/pastefy\.app/i.test(url) && !url.includes('/raw')) {
-    return url; // shrtfly ou outros: deixa como está
-  }
-  try {
-    const encoded = btoa(unescape(encodeURIComponent(url)));
-    const rnd = Math.floor(Math.random() * 1e9);
-    return 'https://link-to.net/' + LV_ID + '/' + rnd + '/dynamic?r=' + encoded;
-  } catch (e) {
-    return url;
-  }
-}
-
 function openScriptsPanel(jogoNome) {
   const entries = allGames[jogoNome];
   if (!entries || !entries.length) return;
@@ -678,8 +656,8 @@ function openScriptsPanel(jogoNome) {
 
   let itemsHtml = '';
   entries.forEach(s => {
-    const raw = s.pastefyRaw || s.linkShrtfly || '#';
-    const link = toLinkvertise(raw);
+    // Direto: Pastefy raw (sem encurtador / Linkvertise)
+    const link = s.pastefyRaw || s.linkShrtfly || s.loadstringOriginal || '#';
     const creditos = s.creditos || (s.hub || 'N/A').replace('@', '');
     const keyless = s.keyless !== false;
     const delta = (s.compatible || []).includes('Delta');
@@ -822,12 +800,22 @@ async function loadScripts() {
 })();
 
 
-// Contador real de visitas (CountAPI)
+// Contador de visitas (CountAPI + fallback local)
 (function trackVisit() {
   try {
-    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads').catch(()=>{});
+    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads').catch(function(){});
     const day = new Date().toISOString().slice(0,10).replace(/-/g,'');
-    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads-today-' + day).catch(()=>{});
+    fetch('https://api.countapi.xyz/hit/ares-scripts/downloads-today-' + day).catch(function(){});
+  } catch(e) {}
+  try {
+    const day = new Date().toISOString().slice(0,10);
+    const lastDay = localStorage.getItem('ares_visit_day');
+    let total = parseInt(localStorage.getItem('ares_visits_total') || '0', 10) + 1;
+    let today = parseInt(localStorage.getItem('ares_visits_today') || '0', 10);
+    if (lastDay !== day) { today = 1; localStorage.setItem('ares_visit_day', day); }
+    else today += 1;
+    localStorage.setItem('ares_visits_total', String(total));
+    localStorage.setItem('ares_visits_today', String(today));
   } catch(e) {}
 })();
 
