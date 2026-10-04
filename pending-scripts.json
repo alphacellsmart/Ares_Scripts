@@ -76,32 +76,6 @@
     "status": "pending"
   },
   {
-    "rscriptsId": "6ac1216d418a7b42dd12b867",
-    "slug": "ride-a-pet-auto-farm-fckE",
-    "title": "Ride a pet auto farm",
-    "jogo": "Ride A Pet",
-    "place_id": "124216119978534",
-    "hub": "@Battman",
-    "creditos": "Battman",
-    "loadstringOriginal": "https://rscripts.net/raw/ride-a-pet-auto-farm_1791041901754_S9689nocZQ.txt",
-    "rawScript": "https://rscripts.net/raw/ride-a-pet-auto-farm_1791041901754_S9689nocZQ.txt",
-    "keyless": true,
-    "compatible": [
-      "Delta",
-      "Mobile"
-    ],
-    "descricao": "Keyless • Compatible with Delta",
-    "description": "Auto Collect EggsChoose Tween or Instant stealUnder Map, Over Map or Normal approachEgg rarity filterTarget specific eggsCollect priorityAdjustable travel and return speedAuto Plant EggsAuto Hatch EggsAuto Place Best PetsAuto Swap Weaker PetsAuto Feed PetsAuto Buy FoodAuto Buy RadarsKeep Cash reserv",
-    "thumbnail": "https://tr.rbxcdn.com/180DAY-5b27f9f98a53e4dbe42ddcb139f17d0d/768/432/Image/Webp/noFilter",
-    "mobileReady": true,
-    "paid": false,
-    "likes": 0,
-    "views": 11,
-    "source": "rscripts",
-    "fetchedAt": "2026-10-03T15:50:49.752Z",
-    "status": "pending"
-  },
-  {
     "rscriptsId": "695e2ee70aa178033601fda3",
     "slug": "souls-hub-29-games-supported-3lRF",
     "title": "SOULS HUB (29 GAMES SUPPORTED)",
