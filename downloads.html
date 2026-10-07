@@ -50,6 +50,47 @@ body { font-family:'Rajdhani',sans-serif; background:var(--bg); color:var(--whit
 .div-gem { width:7px; height:7px; background:var(--purple); transform:rotate(45deg); box-shadow:0 0 10px var(--purple); }
 
 /* PREMIUM BADGE */
+
+.cyrus-hub-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 4px 0 16px;
+  text-decoration: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6600cc 0%, #8b00ff 50%, #a020f0 100%);
+  border: 1px solid rgba(191,127,255,0.5);
+  box-shadow: 0 6px 28px rgba(139,0,255,0.45), inset 0 1px 0 rgba(255,255,255,0.12);
+  transition: all 0.3s ease;
+  animation: fadeUp 0.5s ease forwards;
+}
+.cyrus-hub-btn:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 36px rgba(139,0,255,0.6);
+}
+.cyrus-hub-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.15em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 0 16px rgba(255,255,255,0.35);
+}
+.cyrus-hub-sub {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
 .premium-badge {
   display:flex; align-items:center; justify-content:center; gap:8px;
   text-align:center; text-decoration:none;
@@ -498,8 +539,9 @@ footer span { color: var(--purple); }
   <!-- ===== EXECUTORES ===== -->
   <div class="divider au d4"><div class="div-line"></div><div class="div-gem"></div><div class="div-line"></div></div>
 
-  <a href="https://snet.blog/88xqao6" target="_blank" class="premium-badge au d4">
-    <span>⭐</span> Os Melhores Scripts Aqui <span>⭐</span>
+  <a href="https://pastefy.app/tptyvW53/raw" target="_blank" rel="noopener" class="cyrus-hub-btn au d4" id="cyrusHubBtn">
+    <span class="cyrus-hub-name">Cyrus Hub</span>
+    <span class="cyrus-hub-sub">Universal</span>
   </a>
 
   <div class="big-title au d4">
