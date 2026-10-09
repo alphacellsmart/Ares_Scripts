@@ -1,5 +1,56 @@
 [
   {
+    "rscriptsId": "6ac968453fd7d42e68228d99",
+    "slug": "100-days-on-chunk-autofarm-autocollect-iCUh",
+    "title": "100 Days on Chunk: AutoFarm + AutoCollect",
+    "jogo": "100 Days on Chunk ",
+    "place_id": "121780816998126",
+    "hub": "@nikofinch",
+    "creditos": "nikofinch",
+    "loadstringOriginal": "https://rscripts.net/raw/100-days-on-chunk-autofarm-autocollect_1791584325040_G4tBX2BRMT.txt",
+    "rawScript": "https://rscripts.net/raw/100-days-on-chunk-autofarm-autocollect_1791584325040_G4tBX2BRMT.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Focused on the game's progression loop, with AutoFarm handling repeated farming and AutoCollect picking up rewards.",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-45a0aa7b46dc114fa67e1f043a0c0f3c/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 1,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-09T22:22:04.771Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6ac501925708399c2c51f89c",
+    "slug": "slash-hub-auto-chase-auto-cross-y5bq",
+    "title": "Slash Hub auto chase auto cross",
+    "jogo": "Huss Valley",
+    "place_id": "107535308163741",
+    "hub": "@Slashlol",
+    "creditos": "Slashlol",
+    "loadstringOriginal": "https://rscripts.net/raw/slash-hub-auto-chase-auto-cross_1791295890320_j4XBsk79G4.txt",
+    "rawScript": "https://rscripts.net/raw/slash-hub-auto-chase-auto-cross_1791295890320_j4XBsk79G4.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Auto chase Auto cross Auto gemAuto revive Anti afk",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9072087675dec25afa0886edde7d85e8/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 2,
+    "views": 303,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-09T22:21:48.366Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6ac8e06c3fd7d42e6821edb6",
     "slug": "motorcycle-for-animals-script-no-key-CSF9",
     "title": "Motorcycle For Animals Script [No Key]",
