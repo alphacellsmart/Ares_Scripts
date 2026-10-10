@@ -1,5 +1,57 @@
 [
   {
+    "rscriptsId": "6aca280ce3eece0b1dda35f2",
+    "slug": "antpocalypse-or-somecheats-6bcs",
+    "title": "Antpocalypse | SomeCheats",
+    "jogo": "Antpocalypse",
+    "place_id": "116666795477778",
+    "hub": "@UnknownSquad",
+    "creditos": "UnknownSquad",
+    "loadstringOriginal": "https://rscripts.net/raw/antpocalypse-or-somecheats_1791633420512_alASikNR9g.txt",
+    "rawScript": "https://rscripts.net/raw/antpocalypse-or-somecheats_1791633420512_alASikNR9g.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "KIll all, Instant heal hp and more...",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-be1db7d3f8f6add2bd7f2aa4456c57a7/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 1,
+    "views": 2,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-10T12:01:47.085Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6aca1eed92d24c962db2f195",
+    "slug": "open-source-huss-valley-script-keyless-Ymrw",
+    "title": "[Open Source] Huss Valley Script Keyless",
+    "jogo": "Huss Valley",
+    "place_id": "107535308163741",
+    "hub": "@OzionHub",
+    "creditos": "OzionHub",
+    "loadstringOriginal": "https://rscripts.net/raw/open-source-huss-valley-script-keyless_1791631085185_dtIlzQj5hH.txt",
+    "rawScript": "https://rscripts.net/raw/open-source-huss-valley-script-keyless_1791631085185_dtIlzQj5hH.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "The script link https://raw.githubusercontent.com/JMY12970/Unknown/refs/heads/main/HussValley.lua",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-9072087675dec25afa0886edde7d85e8/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 1,
+    "views": 31,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-10T12:01:34.904Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6abdae997136803086e09ac4",
     "slug": "keyless-anime-zero-script-mdv5",
     "title": "[ KEYLESS ]  Anime Zero Script",
