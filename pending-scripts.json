@@ -1,5 +1,55 @@
 [
   {
+    "rscriptsId": "6ad24c879138d8aa97f38cd0",
+    "slug": "treasure-hunt-sim-or-autodig-or-autosell-or-chest-esp-lOrk",
+    "title": "Treasure Hunt Sim | AutoDig | AutoSell | Chest ESP",
+    "jogo": "Treasure Hunt Simulator",
+    "place_id": "1345139196",
+    "hub": "@layla94",
+    "creditos": "layla94",
+    "loadstringOriginal": "https://rscripts.net/raw/treasure-hunt-sim-or-autodig-or-autosell-or-chest-esp_1792167047308_A8pR0xFTYm.txt",
+    "rawScript": "https://rscripts.net/raw/treasure-hunt-sim-or-autodig-or-autosell-or-chest-esp_1792167047308_A8pR0xFTYm.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Dig through new layers and upgrade your gear with AutoDig, AutoSell, AutoCollect, Chest ESP and upgrade tracking. Focused on speeding up the treasure loop and finding useful loot.",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-b266bc254c82a82cab33efaf5a15561c/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 3,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-16T16:12:53.525Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6ad2448d9138d8aa97f37ac6",
+    "slug": "op-sell-fries-autofarm-collect-serve-pEER",
+    "title": "OP Sell Fries! - Autofarm · Collect · Serve",
+    "jogo": "Sell Fries",
+    "place_id": "94891079210424",
+    "hub": "@objectvoid57",
+    "creditos": "objectvoid57",
+    "loadstringOriginal": "https://rscripts.net/raw/op-sell-fries-autofarm-collect-serve_1792165005187_qm1l30KHzb.txt",
+    "rawScript": "https://rscripts.net/raw/op-sell-fries-autofarm-collect-serve_1792165005187_qm1l30KHzb.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Mod style features for collecting potatoes, cooking fries, serving customers, and earning cash faster.",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-1b4250c40a63fa862a56fbf37ada5e60/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 18,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-16T16:12:48.511Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6ad2018f04d81343370cbc28",
     "slug": "clean-all-the-leaves-or-all-unlocks-Cwix",
     "title": "Clean All The Leaves | All Unlocks",
