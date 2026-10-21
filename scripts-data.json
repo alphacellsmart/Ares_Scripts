@@ -3423,5 +3423,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-717484006e83a24085a9cdbc1a5db322/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ad8d144162178f2d3216eef"
+  },
+  {
+    "jogo": "Violence District",
+    "place_id": "93978595733734",
+    "hub": "@SerenityHub",
+    "loadstringOriginal": "https://rscripts.net/raw/violence-district-survival-script_1792594248471_hdc144Bv97.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "SerenityHub",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ad8d148281dd807193d873f"
   }
 ]
