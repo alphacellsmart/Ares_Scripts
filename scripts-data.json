@@ -3440,5 +3440,22 @@
     "loadstringFinal": null,
     "thumbnail": "https://tr.rbxcdn.com/180DAY-14bd122a8537251973d318596d460f3d/768/432/Image/Webp/noFilter",
     "rscriptsId": "6ad8d148281dd807193d873f"
+  },
+  {
+    "jogo": "Evade",
+    "place_id": "9872472334",
+    "hub": "@MinirickDev",
+    "loadstringOriginal": "https://rscripts.net/raw/escape-tsunami-for-brainrots-auto-farmor-minirickhub_1768523313635_CqwniQBMIG.txt",
+    "keyless": false,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Key System • Compatible with Delta",
+    "creditos": "MinirickDev",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-425190812e4f81a37050f479ddc7ce69/480/270/Image/Webp/noFilter",
+    "rscriptsId": "69698325d2d79ba08cb717ac"
   }
 ]
