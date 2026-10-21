@@ -3389,5 +3389,22 @@
     "loadstringFinal": "loadstring(game:HttpGet(\"https://rscripts.net/raw/rivals-best-ragebot-aimbot-anti-aim-anti-smoke-silent-aim_1772244711574_8oXrEVJaMo.txt\"))()",
     "thumbnail": "https://tr.rbxcdn.com/180DAY-b2b718b190726ac0e498f3fd3afc30d9/512/512/Image/Png/noFilter",
     "rscriptsId": "699fa01b3f143b49d18fd3cf"
+  },
+  {
+    "jogo": "[🎉UPDATE] Roll A Stickman!",
+    "place_id": "115068315659966",
+    "hub": "@ykut",
+    "loadstringOriginal": "https://rscripts.net/raw/roll-a-stickman-universal-script_1792600893300_tcE1bsrfKW.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "creditos": "ykut",
+    "pastefyRaw": null,
+    "linkShrtfly": null,
+    "loadstringFinal": null,
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-f9ba14b71dd65d281ea63758e5a3d7f9/768/432/Image/Webp/noFilter",
+    "rscriptsId": "6ad8eb3d281dd807193db956"
   }
 ]
