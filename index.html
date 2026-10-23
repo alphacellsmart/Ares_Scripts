@@ -216,7 +216,7 @@ footer span { color:var(--purple); }
       </div>
       <div class="task-txt">
         <div class="task-name">Curtir e comentar o vídeo</div>
-        <div class="task-hint" id="video-hint">Carregando último vídeo...</div>
+        <div class="task-hint" id="video-hint">Carregando vídeo...</div>
       </div>
       <div class="task-arr" style="color:var(--purple);" id="t2-arr">→</div>
     </a>
@@ -242,7 +242,7 @@ footer span { color:var(--purple); }
       </div>
     </div>
 
-    <a href="downloads.html" class="unlock-btn locked au d6" id="unlock-btn">
+    <a href="https://asus-studios.vercel.app/Comprar/Scripts/Games/Universal" class="unlock-btn locked au d6" id="unlock-btn">
       🔒 &nbsp;LINK BLOQUEADO
     </a>
   </div>
@@ -338,7 +338,7 @@ function updateProgress() {
     b.classList.add('unlocked');
     b.style.opacity = '1';
     b.style.animationName = 'unlockglow';
-    b.innerHTML = '✅ &nbsp;LINK DESBLOQUEADO — ACESSAR DOWNLOADS';
+    b.innerHTML = '✅ &nbsp;LINK DESBLOQUEADO — ACESSAR SCRIPTS';
   }
 }
 
@@ -392,11 +392,12 @@ async function loadLatestVideo() {
     const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=' + rss);
     const data = await res.json();
     if (data && data.items && data.items.length) {
-      const item = data.items[0];
+      // Penúltimo vídeo (index 1) — se só tiver 1, usa o mais recente
+      const item = data.items.length >= 2 ? data.items[1] : data.items[0];
       latestVideoUrl = item.link || latestVideoUrl;
       if (link) link.href = latestVideoUrl;
       if (hint && !done.t2) {
-        const title = (item.title || 'Último vídeo').slice(0, 42);
+        const title = (item.title || 'Vídeo do canal').slice(0, 42);
         hint.textContent = title + (item.title && item.title.length > 42 ? '…' : '');
       }
       return;
@@ -407,7 +408,7 @@ async function loadLatestVideo() {
   // fallback: página de vídeos do canal
   latestVideoUrl = 'https://www.youtube.com/@ares_script/videos';
   if (link) link.href = latestVideoUrl;
-  if (hint && !done.t2) hint.textContent = 'Abrir último vídeo do canal';
+  if (hint && !done.t2) hint.textContent = 'Abrir vídeo do canal';
 }
 loadLatestVideo();
 
