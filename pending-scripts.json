@@ -1,5 +1,56 @@
 [
   {
+    "rscriptsId": "6addded391f0da85692b3cbb",
+    "slug": "free-wanted-script-or-autofarm-silent-aim-money-aura-3JU0",
+    "title": "Free Wanted Script | Autofarm, Silent Aim, Money Aura",
+    "jogo": "Wanted",
+    "place_id": "14438406081",
+    "hub": "@darkhunter610",
+    "creditos": "darkhunter610",
+    "loadstringOriginal": "https://rscripts.net/raw/free-wanted-script-or-autofarm-silent-aim-money-aura_1792925395528_eMVchjEihJ.txt",
+    "rawScript": "https://rscripts.net/raw/free-wanted-script-or-autofarm-silent-aim-money-aura_1792925395528_eMVchjEihJ.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "[+] Silent Aim | Enabled, Max Distance, Team Check, Wall Check, Alive Check, Skip Downed, Auto Shoot, Hitchance [+] FOV | Enabled, Method, Size, Thickness, Color 1, Color 2, Base Rotation, Spin Ring, Spin Speed, Fill, Fill Color 1, Fill Color 2, Fill Transparency, Fill Rotate, Outline, Outline Color",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-954f171ebe596914a87b046e1f3a149e/480/270/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 1,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-25T10:53:24.342Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6addb0571ca28656b60fd7a3",
+    "slug": "auto-farm-or-sell-a-fries-auto-all-op-r72J",
+    "title": "Auto Farm | Sell A Fries! Auto All [OP]",
+    "jogo": "Sell Fries",
+    "place_id": "94891079210424",
+    "hub": "@HeroSeno",
+    "creditos": "HeroSeno",
+    "loadstringOriginal": "https://rscripts.net/raw/auto-farm-or-sell-a-fries-auto-all-op_1792913495607_jdjvaA6SUV.txt",
+    "rawScript": "https://rscripts.net/raw/auto-farm-or-sell-a-fries-auto-all-op_1792913495607_jdjvaA6SUV.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta",
+      "Mobile"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Sell Fries Script Features :🍟 Kitchen+ All Automation+ Instant Teleport Navigation+ Auto Serve Window Customer+ Auto Pickup Customer Fries+ Auto Load Peeled into Fryer+ Auto Collect Ready Fries+ Auto Harvest Potato Pile+ Auto Peel at Station🥔 Peeling+ Instant Peels🚪 Shutter &amp; Anomaly+ Auto Cl",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-1b4250c40a63fa862a56fbf37ada5e60/768/432/Image/Webp/noFilter",
+    "mobileReady": true,
+    "paid": false,
+    "likes": 0,
+    "views": 29,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-25T10:53:19.996Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6add76751ca28656b60f63ad",
     "slug": "gost-driver-WwFm",
     "title": "gost driver",
