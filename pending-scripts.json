@@ -1,5 +1,55 @@
 [
   {
+    "rscriptsId": "6ae020d3f733a6e82c149b86",
+    "slug": "c4-auto-all-GOQJ",
+    "title": "(c4) auto all",
+    "jogo": "Chicken Farm 🐣",
+    "place_id": "137233438285284",
+    "hub": "@fakecap",
+    "creditos": "fakecap",
+    "loadstringOriginal": "https://rscripts.net/raw/c4-auto-all_1793073363691_ke6CPqosrF.txt",
+    "rawScript": "https://rscripts.net/raw/c4-auto-all_1793073363691_ke6CPqosrF.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "not use antilag with autofarm (eggs not gives)",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-40884ecbf2fafe47e78befbff75cdef8/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 5,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-27T04:00:25.419Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6adfd8b03e43a26ae108c535",
+    "slug": "dont-splash-or-noise-alert-or-stage-assist-NYol",
+    "title": "DONT SPLASH | Noise Alert | Stage Assist",
+    "jogo": "DONT SPLASH",
+    "place_id": "119958473240233",
+    "hub": "@automationlink292",
+    "creditos": "automationlink292",
+    "loadstringOriginal": "https://rscripts.net/raw/dont-splash-or-noise-alert-or-stage-assist_1793054896189_xqdZDxZmi3.txt",
+    "rawScript": "https://rscripts.net/raw/dont-splash-or-noise-alert-or-stage-assist_1793054896189_xqdZDxZmi3.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Watch for noise and entity warnings, and use stage assistance to help navigate the eerie Poolrooms.",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0689ccb932043bd8b4456ed1a7eb5d53/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 5,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-27T04:00:13.674Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6adfd172ef5f71aa1f94f330",
     "slug": "draw-spells-magic-arena-or-auto-draw-and-more-qAfj",
     "title": "DRAW SPELLS MAGIC ARENA | Auto Draw & More",
