@@ -1,5 +1,55 @@
 [
   {
+    "rscriptsId": "6ad9bc031978a999d4f1ab52",
+    "slug": "keylessauto-fish-auto-sell-auto-upgrade-auto-quest-2Mw2",
+    "title": "[KEYLESS]Auto Fish, Auto Sell, Auto Upgrade, Auto Quest",
+    "jogo": "[UPD] Deep Fishing",
+    "place_id": "132239307080610",
+    "hub": "@akkiwi",
+    "creditos": "akkiwi",
+    "loadstringOriginal": "https://rscripts.net/raw/keylessauto-fish-auto-sell-auto-upgrade-auto-quest_1792654339018_kmvfvVrjZb.txt",
+    "rawScript": "https://rscripts.net/raw/keylessauto-fish-auto-sell-auto-upgrade-auto-quest_1792654339018_kmvfvVrjZb.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "- Auto Fish- Fishing world- Fast casting (x1.5)- Aim priority- Teleport to the water- Auto Best Fish- Minimum rarity- Mutations to keep- Always grab bosses and items- Items to pick up- Recast when nothing is wanted- Auto Sell- Sell when the bag holds- Keep from rarity- Max kept fish- Sell now- Auto ",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-834aece3205537c877e9c474c2b760a0/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 1,
+    "views": 1311,
+    "source": "rscripts",
+    "fetchedAt": "2026-10-30T21:59:24.530Z",
+    "status": "pending"
+  },
+  {
+    "rscriptsId": "6ae43938c3bfab0dc8e50b0a",
+    "slug": "dont-splash-universal-7nOT",
+    "title": "DONT SPLASH — Universal",
+    "jogo": "DONT SPLASH",
+    "place_id": "119958473240233",
+    "hub": "@frostviper88",
+    "creditos": "frostviper88",
+    "loadstringOriginal": "https://rscripts.net/raw/dont-splash-universal_1793341752392_IASqkV5jxc.txt",
+    "rawScript": "https://rscripts.net/raw/dont-splash-universal_1793341752392_IASqkV5jxc.txt",
+    "keyless": true,
+    "compatible": [
+      "Delta"
+    ],
+    "descricao": "Keyless • Compatible with Delta",
+    "description": "Fully featured DONT SPLASH universal script.",
+    "thumbnail": "https://tr.rbxcdn.com/180DAY-0689ccb932043bd8b4456ed1a7eb5d53/768/432/Image/Webp/noFilter",
+    "mobileReady": false,
+    "paid": false,
+    "likes": 0,
+    "views": 16,
+    "source": "rscripts-top-games",
+    "fetchedAt": "2026-10-30T21:59:04.767Z",
+    "status": "pending"
+  },
+  {
     "rscriptsId": "6902fcca2d1f2158a6de61f0",
     "slug": "ro-ghoul-script-autofarm-autotrain-Uatb",
     "title": "Ro-Ghoul Script [No Key]  – (AutoFarm, AutoTrain)",
